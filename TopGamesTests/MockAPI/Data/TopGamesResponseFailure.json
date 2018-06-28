@@ -1,0 +1,5 @@
+{
+    "error": "Unauthorized",
+    "status": 401,
+    "message": "Must provide a valid Client-ID or OAuth token"
+}

@@ -1,0 +1,22 @@
+PODS:
+  - Alamofire (4.7.2)
+  - Marshal (1.2.4)
+  - Swinject (2.4.0)
+  - SwinjectStoryboard (2.0.1):
+    - Swinject (~> 2.4)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - Marshal (~> 1.2)
+  - Swinject (~> 2.4)
+  - SwinjectStoryboard (~> 2.0)
+
+SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  Marshal: 8e04e6624e506921db7143b0bfd83caee03f32d6
+  Swinject: a1364b0f66c2736bb03c1c7cab54809e16df25da
+  SwinjectStoryboard: ad2529218a1504cc888040ee56c13d7cb1cc7998
+
+PODFILE CHECKSUM: e284b5e2cc35617208302e126ae5927f638011d5
+
+COCOAPODS: 1.4.0
