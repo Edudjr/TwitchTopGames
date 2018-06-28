@@ -13,12 +13,18 @@
 		28D6984920E440C30031D561 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28D6984720E440C30031D561 /* Main.storyboard */; };
 		28D6984B20E440C50031D561 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28D6984A20E440C50031D561 /* Assets.xcassets */; };
 		28D6984E20E440C50031D561 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28D6984C20E440C50031D561 /* LaunchScreen.storyboard */; };
-		28D6985920E440C50031D561 /* TopGamesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D6985820E440C50031D561 /* TopGamesTests.swift */; };
+		28D6985920E440C50031D561 /* TwitchAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D6985820E440C50031D561 /* TwitchAPITests.swift */; };
 		28D6986520E4429E0031D561 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D6986420E4429E0031D561 /* RequestProtocol.swift */; };
 		28D6986720E4445A0031D561 /* AlamofireRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D6986620E4445A0031D561 /* AlamofireRequest.swift */; };
 		28D6986B20E44C210031D561 /* TwitchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D6986A20E44C210031D561 /* TwitchAPI.swift */; };
 		28D6986D20E44CA10031D561 /* SwinjectStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D6986C20E44CA10031D561 /* SwinjectStoryboard+Extension.swift */; };
 		28D6986F20E453300031D561 /* TwitchAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D6986E20E453300031D561 /* TwitchAPIProtocol.swift */; };
+		28D6987220E45A910031D561 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D6987120E45A910031D561 /* GameModel.swift */; };
+		28D6987420E45D2C0031D561 /* GamesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D6987320E45D2C0031D561 /* GamesModel.swift */; };
+		28D6987720E47DF90031D561 /* MockRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D6987620E47DF90031D561 /* MockRequest.swift */; };
+		28D6987A20E483930031D561 /* TopGamesResponseSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = 28D6987820E483930031D561 /* TopGamesResponseSuccess.json */; };
+		28D6987B20E483930031D561 /* TopGamesResponseEmpty.json in Resources */ = {isa = PBXBuildFile; fileRef = 28D6987920E483930031D561 /* TopGamesResponseEmpty.json */; };
+		28D6988020E48AFA0031D561 /* TopGamesResponseFailure.json in Resources */ = {isa = PBXBuildFile; fileRef = 28D6987F20E48AF90031D561 /* TopGamesResponseFailure.json */; };
 		5D8B7BB06278E17EA8398E4B /* Pods_TopGamesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7B248A9D9A0F58DA27DB91 /* Pods_TopGamesTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,13 +49,19 @@
 		28D6984D20E440C50031D561 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28D6984F20E440C50031D561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28D6985420E440C50031D561 /* TopGamesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopGamesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		28D6985820E440C50031D561 /* TopGamesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopGamesTests.swift; sourceTree = "<group>"; };
+		28D6985820E440C50031D561 /* TwitchAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitchAPITests.swift; sourceTree = "<group>"; };
 		28D6985A20E440C50031D561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28D6986420E4429E0031D561 /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
 		28D6986620E4445A0031D561 /* AlamofireRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireRequest.swift; sourceTree = "<group>"; };
 		28D6986A20E44C210031D561 /* TwitchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitchAPI.swift; sourceTree = "<group>"; };
 		28D6986C20E44CA10031D561 /* SwinjectStoryboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwinjectStoryboard+Extension.swift"; sourceTree = "<group>"; };
 		28D6986E20E453300031D561 /* TwitchAPIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitchAPIProtocol.swift; sourceTree = "<group>"; };
+		28D6987120E45A910031D561 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		28D6987320E45D2C0031D561 /* GamesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesModel.swift; sourceTree = "<group>"; };
+		28D6987620E47DF90031D561 /* MockRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRequest.swift; sourceTree = "<group>"; };
+		28D6987820E483930031D561 /* TopGamesResponseSuccess.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TopGamesResponseSuccess.json; sourceTree = "<group>"; };
+		28D6987920E483930031D561 /* TopGamesResponseEmpty.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TopGamesResponseEmpty.json; sourceTree = "<group>"; };
+		28D6987F20E48AF90031D561 /* TopGamesResponseFailure.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TopGamesResponseFailure.json; sourceTree = "<group>"; };
 		A0CB07803622F4507DE57F14 /* Pods-TopGamesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopGamesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TopGamesTests/Pods-TopGamesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A2AA677D44C1FFEC56DBF0F1 /* Pods-TopGames.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopGames.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TopGames/Pods-TopGames.debug.xcconfig"; sourceTree = "<group>"; };
 		E23B35CFF47B39C9F0353753 /* Pods_TopGames.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TopGames.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,7 +126,8 @@
 		28D6985720E440C50031D561 /* TopGamesTests */ = {
 			isa = PBXGroup;
 			children = (
-				28D6985820E440C50031D561 /* TopGamesTests.swift */,
+				28D6987520E47CE00031D561 /* MockAPI */,
+				28D6985820E440C50031D561 /* TwitchAPITests.swift */,
 				28D6985A20E440C50031D561 /* Info.plist */,
 			);
 			path = TopGamesTests;
@@ -123,6 +136,7 @@
 		28D6986320E441E00031D561 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				28D6987020E45A3D0031D561 /* Models */,
 				28D6986920E44C130031D561 /* API */,
 				28D6986820E44C0A0031D561 /* Request */,
 			);
@@ -145,6 +159,34 @@
 				28D6986E20E453300031D561 /* TwitchAPIProtocol.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		28D6987020E45A3D0031D561 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				28D6987120E45A910031D561 /* GameModel.swift */,
+				28D6987320E45D2C0031D561 /* GamesModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		28D6987520E47CE00031D561 /* MockAPI */ = {
+			isa = PBXGroup;
+			children = (
+				28D6987C20E488010031D561 /* Data */,
+				28D6987620E47DF90031D561 /* MockRequest.swift */,
+			);
+			path = MockAPI;
+			sourceTree = "<group>";
+		};
+		28D6987C20E488010031D561 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				28D6987F20E48AF90031D561 /* TopGamesResponseFailure.json */,
+				28D6987820E483930031D561 /* TopGamesResponseSuccess.json */,
+				28D6987920E483930031D561 /* TopGamesResponseEmpty.json */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		62937AB3CD8D5F989AEBDBC4 /* Pods */ = {
@@ -264,6 +306,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28D6987B20E483930031D561 /* TopGamesResponseEmpty.json in Resources */,
+				28D6987A20E483930031D561 /* TopGamesResponseSuccess.json in Resources */,
+				28D6988020E48AFA0031D561 /* TopGamesResponseFailure.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,12 +323,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TopGames/Pods-TopGames-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Marshal/Marshal.framework",
 				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
 				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Marshal.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
 			);
@@ -385,8 +432,10 @@
 				28D6986720E4445A0031D561 /* AlamofireRequest.swift in Sources */,
 				28D6986D20E44CA10031D561 /* SwinjectStoryboard+Extension.swift in Sources */,
 				28D6986B20E44C210031D561 /* TwitchAPI.swift in Sources */,
+				28D6987220E45A910031D561 /* GameModel.swift in Sources */,
 				28D6986F20E453300031D561 /* TwitchAPIProtocol.swift in Sources */,
 				28D6984420E440C30031D561 /* AppDelegate.swift in Sources */,
+				28D6987420E45D2C0031D561 /* GamesModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,7 +443,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28D6985920E440C50031D561 /* TopGamesTests.swift in Sources */,
+				28D6985920E440C50031D561 /* TwitchAPITests.swift in Sources */,
+				28D6987720E47DF90031D561 /* MockRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

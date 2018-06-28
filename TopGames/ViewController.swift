@@ -13,10 +13,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
-        twitchAPI?.getTopGames(page: 1, completion: { (resp) in
-            print(resp)
-        })
     }
 
     override func didReceiveMemoryWarning() {

@@ -13,5 +13,5 @@ protocol RequestProtocol {
                  method: HTTPMethod,
                  params: [String: Any]?,
                  headers: HTTPHeaders?,
-                 completion: @escaping(Any) -> Void)
+                 completion: @escaping(DataResponse<Any>) -> Void)
 }

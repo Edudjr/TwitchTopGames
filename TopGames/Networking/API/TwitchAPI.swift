@@ -21,14 +21,30 @@ class TwitchAPI: TwitchAPIProtocol {
         self.provider = provider
     }
     
-    func getTopGames(page: Int, completion: @escaping CompletionWithAny) {
+    func getTopGames(_ fetchNextFromCursor: String?, completion: @escaping CompletionWithGames) {
         let url = baseURL + Endpoint.topGames.rawValue
         provider?.request(url: url,
                           method: .get,
                           params: nil,
                           headers: headers,
-                          completion: { (data) in
-            completion(data)
+                          completion: { (response) in
+                            
+                            switch response.result {
+                            case .success:
+                                let code = response.response?.statusCode
+                                if code != 200 && code != 201 {
+                                    completion(false, nil)
+                                    return
+                                }
+                                if let json = response.result.value as? [String: Any] {
+                                    let games = GamesModel(object: json)
+                                    completion(true, games)
+                                } else {
+                                    completion(false, nil)
+                                }
+                            case .failure:
+                                completion(false, nil)
+                            }
         })
     }
 }
