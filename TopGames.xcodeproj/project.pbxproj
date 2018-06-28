@@ -25,6 +25,8 @@
 		28D6987A20E483930031D561 /* TopGamesResponseSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = 28D6987820E483930031D561 /* TopGamesResponseSuccess.json */; };
 		28D6987B20E483930031D561 /* TopGamesResponseEmpty.json in Resources */ = {isa = PBXBuildFile; fileRef = 28D6987920E483930031D561 /* TopGamesResponseEmpty.json */; };
 		28D6988020E48AFA0031D561 /* TopGamesResponseFailure.json in Resources */ = {isa = PBXBuildFile; fileRef = 28D6987F20E48AF90031D561 /* TopGamesResponseFailure.json */; };
+		28D6988320E4A3890031D561 /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D6988220E4A3890031D561 /* CatalogViewController.swift */; };
+		28D6988720E4A58D0031D561 /* GameItemColletionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D6988620E4A58D0031D561 /* GameItemColletionViewCell.swift */; };
 		5D8B7BB06278E17EA8398E4B /* Pods_TopGamesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7B248A9D9A0F58DA27DB91 /* Pods_TopGamesTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +64,8 @@
 		28D6987820E483930031D561 /* TopGamesResponseSuccess.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TopGamesResponseSuccess.json; sourceTree = "<group>"; };
 		28D6987920E483930031D561 /* TopGamesResponseEmpty.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TopGamesResponseEmpty.json; sourceTree = "<group>"; };
 		28D6987F20E48AF90031D561 /* TopGamesResponseFailure.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TopGamesResponseFailure.json; sourceTree = "<group>"; };
+		28D6988220E4A3890031D561 /* CatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = "<group>"; };
+		28D6988620E4A58D0031D561 /* GameItemColletionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameItemColletionViewCell.swift; sourceTree = "<group>"; };
 		A0CB07803622F4507DE57F14 /* Pods-TopGamesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopGamesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TopGamesTests/Pods-TopGamesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A2AA677D44C1FFEC56DBF0F1 /* Pods-TopGames.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopGames.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TopGames/Pods-TopGames.debug.xcconfig"; sourceTree = "<group>"; };
 		E23B35CFF47B39C9F0353753 /* Pods_TopGames.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TopGames.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +115,7 @@
 		28D6984220E440C30031D561 /* TopGames */ = {
 			isa = PBXGroup;
 			children = (
+				28D6988120E4A3620031D561 /* Catalog */,
 				28D6986320E441E00031D561 /* Networking */,
 				28D6984320E440C30031D561 /* AppDelegate.swift */,
 				28D6984520E440C30031D561 /* ViewController.swift */,
@@ -187,6 +192,15 @@
 				28D6987920E483930031D561 /* TopGamesResponseEmpty.json */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		28D6988120E4A3620031D561 /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				28D6988220E4A3890031D561 /* CatalogViewController.swift */,
+				28D6988620E4A58D0031D561 /* GameItemColletionViewCell.swift */,
+			);
+			path = Catalog;
 			sourceTree = "<group>";
 		};
 		62937AB3CD8D5F989AEBDBC4 /* Pods */ = {
@@ -427,12 +441,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28D6988320E4A3890031D561 /* CatalogViewController.swift in Sources */,
 				28D6986520E4429E0031D561 /* RequestProtocol.swift in Sources */,
 				28D6984620E440C30031D561 /* ViewController.swift in Sources */,
 				28D6986720E4445A0031D561 /* AlamofireRequest.swift in Sources */,
 				28D6986D20E44CA10031D561 /* SwinjectStoryboard+Extension.swift in Sources */,
 				28D6986B20E44C210031D561 /* TwitchAPI.swift in Sources */,
 				28D6987220E45A910031D561 /* GameModel.swift in Sources */,
+				28D6988720E4A58D0031D561 /* GameItemColletionViewCell.swift in Sources */,
 				28D6986F20E453300031D561 /* TwitchAPIProtocol.swift in Sources */,
 				28D6984420E440C30031D561 /* AppDelegate.swift in Sources */,
 				28D6987420E45D2C0031D561 /* GamesModel.swift in Sources */,

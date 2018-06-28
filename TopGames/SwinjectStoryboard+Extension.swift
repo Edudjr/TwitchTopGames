@@ -14,7 +14,7 @@ extension SwinjectStoryboard {
         defaultContainer.register(TwitchAPIProtocol.self) { r in
             TwitchAPI(provider: r.resolve(RequestProtocol.self)!)
         }
-        defaultContainer.storyboardInitCompleted(ViewController.self) { r, c in
+        defaultContainer.storyboardInitCompleted(CatalogViewController.self) { r, c in
             c.twitchAPI = r.resolve(TwitchAPIProtocol.self)
         }
     }
