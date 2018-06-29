@@ -34,13 +34,16 @@
                     <view key="view" contentMode="scaleToFill" id="0VF-kz-Gxc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZFR-oW-zEq">
+                                <rect key="frame" x="109" y="235" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            </containerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="rOd-L6-zjX"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Favoritos" id="32c-6C-44t"/>
-                    <connections>
-                        <segue destination="KbC-YL-tJG" kind="show" id="o88-zf-o9F"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xFt-Vk-YfN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -71,21 +74,74 @@
                                             <rect key="frame" x="0.0" y="0.0" width="175" height="205"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfG-fs-wzF">
-                                                    <rect key="frame" x="18" y="139" width="139" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uso-2e-6fo">
+                                                    <rect key="frame" x="0.0" y="0.0" width="175" height="205"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6EN-cY-zPI" customClass="FavoriteButton" customModule="TopGames" customModuleProvider="target">
+                                                    <rect key="frame" x="136" y="13" width="26" height="26"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="26" id="6iw-o5-OdK"/>
+                                                        <constraint firstAttribute="height" constant="26" id="wzh-f7-5vc"/>
+                                                    </constraints>
+                                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <state key="selected">
+                                                        <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="image" keyPath="defaultImage" value="heart"/>
+                                                        <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="heart_filled"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="buttonPressed:" destination="9vE-n4-Rwy" eventType="touchUpInside" id="9De-rX-WZn"/>
+                                                    </connections>
+                                                </button>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fbq-uz-hjh" customClass="GradientView" customModule="TopGames" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="168.5" width="175" height="36.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="FfG-fs-wzF">
+                                                            <rect key="frame" x="10" y="10" width="155" height="21.5"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="FfG-fs-wzF" secondAttribute="trailing" constant="10" id="Lhn-X0-QQ4"/>
+                                                        <constraint firstAttribute="bottom" secondItem="FfG-fs-wzF" secondAttribute="bottom" constant="5" id="N8d-hS-cLX"/>
+                                                        <constraint firstItem="FfG-fs-wzF" firstAttribute="top" secondItem="fbq-uz-hjh" secondAttribute="top" constant="10" id="iLR-Q7-YeN"/>
+                                                        <constraint firstItem="FfG-fs-wzF" firstAttribute="leading" secondItem="fbq-uz-hjh" secondAttribute="leading" constant="10" id="ton-7C-zcG"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                                            <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                                            <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="startLocation">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="endLocation">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailingMargin" secondItem="FfG-fs-wzF" secondAttribute="trailing" constant="10" id="V90-ND-eT7"/>
-                                            <constraint firstItem="FfG-fs-wzF" firstAttribute="leading" secondItem="9vE-n4-Rwy" secondAttribute="leadingMargin" constant="10" id="iQh-nD-4UX"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="FfG-fs-wzF" secondAttribute="bottom" constant="12" id="mU6-gX-JSr"/>
+                                            <constraint firstItem="uso-2e-6fo" firstAttribute="top" secondItem="9vE-n4-Rwy" secondAttribute="top" id="9RP-hB-7Ux"/>
+                                            <constraint firstItem="6EN-cY-zPI" firstAttribute="top" secondItem="9vE-n4-Rwy" secondAttribute="topMargin" constant="5" id="J9X-qb-Yd8"/>
+                                            <constraint firstItem="uso-2e-6fo" firstAttribute="trailing" secondItem="fbq-uz-hjh" secondAttribute="trailing" id="Mug-1i-HYI"/>
+                                            <constraint firstAttribute="bottom" secondItem="uso-2e-6fo" secondAttribute="bottom" id="Qm7-Xg-KV3"/>
+                                            <constraint firstItem="uso-2e-6fo" firstAttribute="leading" secondItem="9vE-n4-Rwy" secondAttribute="leading" id="Tzl-ut-PbH"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="6EN-cY-zPI" secondAttribute="trailing" constant="5" id="eaV-g4-YYE"/>
+                                            <constraint firstAttribute="bottom" secondItem="fbq-uz-hjh" secondAttribute="bottom" id="lBQ-3R-0Ls"/>
+                                            <constraint firstItem="fbq-uz-hjh" firstAttribute="leading" secondItem="9vE-n4-Rwy" secondAttribute="leading" id="lO6-ir-QPa"/>
+                                            <constraint firstAttribute="trailing" secondItem="uso-2e-6fo" secondAttribute="trailing" id="orF-7y-KBs"/>
                                         </constraints>
                                         <connections>
+                                            <outlet property="gameImage" destination="uso-2e-6fo" id="Mck-tT-xIk"/>
                                             <outlet property="titleLabel" destination="FfG-fs-wzF" id="8sN-DG-swM"/>
                                         </connections>
                                     </collectionViewCell>
@@ -109,12 +165,11 @@
                     <connections>
                         <outlet property="collectionView" destination="ACF-G5-72h" id="lbo-nY-BWw"/>
                         <outlet property="flowLayout" destination="MUO-q8-ffv" id="EzU-It-cjL"/>
-                        <segue destination="KbC-YL-tJG" kind="show" id="QdW-LS-Ebh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I5s-k8-3EI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1374" y="-277"/>
+            <point key="canvasLocation" x="1373.5999999999999" y="-277.51124437781112"/>
         </scene>
         <!--Game Title-->
         <scene sceneID="twZ-cm-c7Y">
@@ -129,7 +184,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y0Y-5D-BDo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2298" y="69"/>
+            <point key="canvasLocation" x="2961" y="41"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="pL6-9g-deZ">
@@ -150,8 +205,24 @@
             </objects>
             <point key="canvasLocation" x="418" y="69"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="EKW-Ch-aFd">
+            <objects>
+                <viewController id="udS-H4-pUU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F1H-Y4-ls3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="BpA-fg-uXF"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pTv-VY-uXA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2164" y="-278"/>
+        </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="QdW-LS-Ebh"/>
-    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="heart" width="32" height="32"/>
+        <image name="heart_filled" width="32" height="32"/>
+    </resources>
 </document>

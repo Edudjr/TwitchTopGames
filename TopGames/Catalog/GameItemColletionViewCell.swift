@@ -10,4 +10,11 @@ import UIKit
 
 class GameItemCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var titleLabel: UILabel!  
+    @IBOutlet weak var gameImage: UIImageView!
+    
+    @IBAction func buttonPressed(_ sender: Any) {
+        if let button = sender as? UIButton {
+            button.isSelected = !button.isSelected
+        }
+    }
 }

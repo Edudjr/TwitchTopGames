@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class CatalogViewController: UIViewController {
     var twitchAPI: TwitchAPIProtocol?
@@ -23,7 +24,6 @@ class CatalogViewController: UIViewController {
         setupCollectionViewCellSize()
         twitchAPI?.getTopGames(nil, completion: { (success, games) in
             self.gamesModel = games
-            
         })
     }
     
@@ -41,6 +41,13 @@ extension CatalogViewController: UICollectionViewDelegate, UICollectionViewDataS
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GameItemCollectionViewCellIdentifier", for: indexPath) as? GameItemCollectionViewCell {
             if let game = gamesModel?.data?[indexPath.row] {
                 cell.titleLabel.text = game.name
+                if let art = game.boxArtUrl {
+                    let url = art
+                        .replacingOccurrences(of: "{width}", with: "400")
+                        .replacingOccurrences(of: "{height}", with: "500")
+                    cell.gameImage.kf.setImage(with: URL(string: url), placeholder: #imageLiteral(resourceName: "placeholder"))
+                }
+                
             }
 
             return cell

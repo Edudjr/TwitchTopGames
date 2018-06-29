@@ -7,9 +7,9 @@ target 'TopGames' do
     pod 'SwinjectStoryboard', '~> 2.0'
     pod 'Alamofire', '~> 4.7'
     pod 'Marshal', '~> 1.2'
+    pod 'Kingfisher', '~> 4.0'
 
     target 'TopGamesTests' do
         inherit! :search_paths
     end
 end
-
