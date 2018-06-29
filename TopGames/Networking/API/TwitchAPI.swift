@@ -23,9 +23,10 @@ class TwitchAPI: TwitchAPIProtocol {
     
     func getTopGames(_ fetchNextFromCursor: String?, completion: @escaping CompletionWithGames) {
         let url = baseURL + Endpoint.topGames.rawValue
+        let params = ["after": fetchNextFromCursor ?? ""]
         provider?.request(url: url,
                           method: .get,
-                          params: nil,
+                          params: params,
                           headers: headers,
                           completion: { (response) in
                             

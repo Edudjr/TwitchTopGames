@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1CAC5497BC9F366150FB2A12 /* Pods_TopGames.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E23B35CFF47B39C9F0353753 /* Pods_TopGames.framework */; };
+		280A48D520E5FB7500C42F8B /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280A48D420E5FB7500C42F8B /* FavoritesViewController.swift */; };
+		280A48D720E5FC4600C42F8B /* TwitchAPICache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280A48D620E5FC4600C42F8B /* TwitchAPICache.swift */; };
 		281EAF4E20E5D3B0004C7C39 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281EAF4D20E5D3B0004C7C39 /* GradientView.swift */; };
 		281EAF5120E5DFFA004C7C39 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281EAF5020E5DFFA004C7C39 /* UIView+Extension.swift */; };
 		281EAF5520E5E571004C7C39 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281EAF5420E5E571004C7C39 /* FavoriteButton.swift */; };
@@ -46,6 +48,8 @@
 /* Begin PBXFileReference section */
 		025A1BCE7C6B70067CB9CFC2 /* Pods-TopGames.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopGames.release.xcconfig"; path = "Pods/Target Support Files/Pods-TopGames/Pods-TopGames.release.xcconfig"; sourceTree = "<group>"; };
 		06F27996FA898CEB834A1C1A /* Pods-TopGamesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopGamesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TopGamesTests/Pods-TopGamesTests.release.xcconfig"; sourceTree = "<group>"; };
+		280A48D420E5FB7500C42F8B /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		280A48D620E5FC4600C42F8B /* TwitchAPICache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitchAPICache.swift; sourceTree = "<group>"; };
 		281EAF4D20E5D3B0004C7C39 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		281EAF5020E5DFFA004C7C39 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		281EAF5420E5E571004C7C39 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
@@ -98,6 +102,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		280A48D320E5FB5B00C42F8B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				28D6988120E4A3620031D561 /* Catalog */,
+				280A48D420E5FB7500C42F8B /* FavoritesViewController.swift */,
+				28D6984520E440C30031D561 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		280A48D820E5FF8600C42F8B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				28D6984720E440C30031D561 /* Main.storyboard */,
+				28D6984C20E440C50031D561 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		281EAF4C20E5D388004C7C39 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,15 +162,13 @@
 		28D6984220E440C30031D561 /* TopGames */ = {
 			isa = PBXGroup;
 			children = (
+				280A48D820E5FF8600C42F8B /* Storyboards */,
+				280A48D320E5FB5B00C42F8B /* Controllers */,
 				281EAF4F20E5DFE4004C7C39 /* Extensions */,
 				281EAF4C20E5D388004C7C39 /* Components */,
-				28D6988120E4A3620031D561 /* Catalog */,
 				28D6986320E441E00031D561 /* Networking */,
 				28D6984320E440C30031D561 /* AppDelegate.swift */,
-				28D6984520E440C30031D561 /* ViewController.swift */,
-				28D6984720E440C30031D561 /* Main.storyboard */,
 				28D6984A20E440C50031D561 /* Assets.xcassets */,
-				28D6984C20E440C50031D561 /* LaunchScreen.storyboard */,
 				28D6984F20E440C50031D561 /* Info.plist */,
 			);
 			path = TopGames;
@@ -187,6 +208,7 @@
 			children = (
 				28D6986A20E44C210031D561 /* TwitchAPI.swift */,
 				28D6986E20E453300031D561 /* TwitchAPIProtocol.swift */,
+				280A48D620E5FC4600C42F8B /* TwitchAPICache.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -468,6 +490,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				280A48D720E5FC4600C42F8B /* TwitchAPICache.swift in Sources */,
 				28D6988320E4A3890031D561 /* CatalogViewController.swift in Sources */,
 				281EAF5120E5DFFA004C7C39 /* UIView+Extension.swift in Sources */,
 				281EAF5520E5E571004C7C39 /* FavoriteButton.swift in Sources */,
@@ -481,6 +504,7 @@
 				28D6988720E4A58D0031D561 /* GameItemColletionViewCell.swift in Sources */,
 				28D6986F20E453300031D561 /* TwitchAPIProtocol.swift in Sources */,
 				28D6984420E440C30031D561 /* AppDelegate.swift in Sources */,
+				280A48D520E5FB7500C42F8B /* FavoritesViewController.swift in Sources */,
 				28D6987420E45D2C0031D561 /* GamesModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

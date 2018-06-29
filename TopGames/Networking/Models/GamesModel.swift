@@ -16,6 +16,6 @@ struct GamesModel: Unmarshaling{
 extension GamesModel{
     init(object: MarshaledObject){
         data = try? object.value(for: "data")
-        paginationCursor = try? object.value(for: "data.cursor")
+        paginationCursor = try? object.value(for: "pagination.cursor")
     }
 }

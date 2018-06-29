@@ -30,35 +30,43 @@
         <!--Favoritos-->
         <scene sceneID="6HR-gj-gAO">
             <objects>
-                <viewController id="cN3-TV-rqt" sceneMemberID="viewController">
+                <viewController id="cN3-TV-rqt" customClass="FavoritesViewController" customModule="TopGames" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0VF-kz-Gxc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZFR-oW-zEq">
-                                <rect key="frame" x="109" y="235" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZFR-oW-zEq">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <connections>
+                                    <segue destination="IK3-ip-WOt" kind="embed" id="wbI-6Q-fdS"/>
+                                </connections>
                             </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZFR-oW-zEq" firstAttribute="leading" secondItem="rOd-L6-zjX" secondAttribute="leading" id="Ep4-fc-hFe"/>
+                            <constraint firstItem="ZFR-oW-zEq" firstAttribute="top" secondItem="rOd-L6-zjX" secondAttribute="top" id="POe-fv-axg"/>
+                            <constraint firstItem="rOd-L6-zjX" firstAttribute="bottom" secondItem="ZFR-oW-zEq" secondAttribute="bottom" id="wiF-ct-WUj"/>
+                            <constraint firstItem="rOd-L6-zjX" firstAttribute="trailing" secondItem="ZFR-oW-zEq" secondAttribute="trailing" id="z9p-IS-01s"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="rOd-L6-zjX"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Favoritos" id="32c-6C-44t"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xFt-Vk-YfN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1374" y="387"/>
+            <point key="canvasLocation" x="1305" y="422"/>
         </scene>
         <!--Top Games-->
         <scene sceneID="Exv-bN-H8t">
             <objects>
                 <viewController title="Top Games" id="IK3-ip-WOt" customClass="CatalogViewController" customModule="TopGames" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N6l-Ah-Mbh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ACF-G5-72h">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="534"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MUO-q8-ffv">
                                     <size key="itemSize" width="175" height="205"/>
@@ -169,7 +177,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I5s-k8-3EI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1373.5999999999999" y="-277.51124437781112"/>
+            <point key="canvasLocation" x="2326" y="87"/>
         </scene>
         <!--Game Title-->
         <scene sceneID="twZ-cm-c7Y">
@@ -184,7 +192,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y0Y-5D-BDo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2961" y="41"/>
+            <point key="canvasLocation" x="3207" y="24"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="pL6-9g-deZ">
@@ -197,7 +205,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="IK3-ip-WOt" kind="relationship" relationship="viewControllers" id="2aG-fH-PI6"/>
+                        <segue destination="udS-H4-pUU" kind="relationship" relationship="viewControllers" id="55e-xF-z01"/>
                         <segue destination="cN3-TV-rqt" kind="relationship" relationship="viewControllers" id="yK5-Bb-1C8"/>
                     </connections>
                 </tabBarController>
@@ -205,24 +213,42 @@
             </objects>
             <point key="canvasLocation" x="418" y="69"/>
         </scene>
-        <!--View Controller-->
+        <!--Top Games-->
         <scene sceneID="EKW-Ch-aFd">
             <objects>
                 <viewController id="udS-H4-pUU" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F1H-Y4-ls3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h94-PH-Kx6">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <connections>
+                                    <segue destination="IK3-ip-WOt" kind="embed" id="kfp-DA-KLs"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BpA-fg-uXF" firstAttribute="trailing" secondItem="h94-PH-Kx6" secondAttribute="trailing" id="I1D-v9-dtB"/>
+                            <constraint firstItem="h94-PH-Kx6" firstAttribute="top" secondItem="BpA-fg-uXF" secondAttribute="top" id="i2n-Qz-VTN"/>
+                            <constraint firstItem="h94-PH-Kx6" firstAttribute="leading" secondItem="BpA-fg-uXF" secondAttribute="leading" id="lGb-mo-U2T"/>
+                            <constraint firstItem="BpA-fg-uXF" firstAttribute="bottom" secondItem="h94-PH-Kx6" secondAttribute="bottom" id="v1J-EU-OAV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="BpA-fg-uXF"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Top Games" id="lSS-wa-L8a"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pTv-VY-uXA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2164" y="-278"/>
+            <point key="canvasLocation" x="1306" y="-250"/>
         </scene>
     </scenes>
     <resources>
         <image name="heart" width="32" height="32"/>
         <image name="heart_filled" width="32" height="32"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="wbI-6Q-fdS"/>
+    </inferredMetricsTieBreakers>
 </document>

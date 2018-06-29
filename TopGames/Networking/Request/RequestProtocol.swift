@@ -11,7 +11,7 @@ import Alamofire
 protocol RequestProtocol {
     func request(url: String,
                  method: HTTPMethod,
-                 params: [String: Any]?,
+                 params: [String: String]?,
                  headers: HTTPHeaders?,
                  completion: @escaping(DataResponse<Any>) -> Void)
 }
