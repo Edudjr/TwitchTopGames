@@ -51,7 +51,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rOd-L6-zjX"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Favoritos" id="32c-6C-44t"/>
+                    <tabBarItem key="tabBarItem" title="Favoritos" image="star_home" id="32c-6C-44t"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xFt-Vk-YfN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -237,7 +237,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BpA-fg-uXF"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Top Games" id="lSS-wa-L8a"/>
+                    <tabBarItem key="tabBarItem" title="Top Games" image="house-outline" id="lSS-wa-L8a"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pTv-VY-uXA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -247,6 +247,8 @@
     <resources>
         <image name="heart" width="32" height="32"/>
         <image name="heart_filled" width="32" height="32"/>
+        <image name="house-outline" width="32" height="32"/>
+        <image name="star_home" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="wbI-6Q-fdS"/>
