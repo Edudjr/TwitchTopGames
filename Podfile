@@ -8,6 +8,7 @@ target 'TopGames' do
     pod 'Alamofire', '~> 4.7'
     pod 'Marshal', '~> 1.2'
     pod 'Kingfisher', '~> 4.0'
+    pod 'RealmSwift', '~> 3.7'
 
     target 'TopGamesTests' do
         inherit! :search_paths

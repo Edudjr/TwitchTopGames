@@ -12,7 +12,7 @@ class FavoritesViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? CatalogViewController {
             //Overriding default Injection done by SwinjectStoryboard
-            destination.twitchAPI = TwitchAPICache()
+            //destination.twitchAPI = TwitchAPICache()
         }
     }
 }

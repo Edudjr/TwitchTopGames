@@ -11,11 +11,20 @@ import SwinjectStoryboard
 extension SwinjectStoryboard {
     @objc class func setup() {
         defaultContainer.register(RequestProtocol.self) { _ in AlamofireRequest() }
-        defaultContainer.register(TwitchAPIProtocol.self) { r in
+        defaultContainer.register(NetworkAPIProtocol.self) { r in
             TwitchAPI(provider: r.resolve(RequestProtocol.self)!)
         }
+        defaultContainer.register(CacheAPIProtocol.self) { r in
+            cacheAPI()
+        }
+        defaultContainer.register(RepositoryProtocol.self) { r in
+            CatalogRepositoryAPI(
+                networkAPI: r.resolve(NetworkAPIProtocol.self)!,
+                cacheAPI: r.resolve(CacheAPIProtocol.self)!
+            )
+        }
         defaultContainer.storyboardInitCompleted(CatalogViewController.self) { r, c in
-            c.twitchAPI = r.resolve(TwitchAPIProtocol.self)
+            c.repository = r.resolve(RepositoryProtocol.self)
         }
     }
 }

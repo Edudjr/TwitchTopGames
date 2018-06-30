@@ -10,8 +10,8 @@ import UIKit
 import Kingfisher
 
 class CatalogViewController: UIViewController {
-    var twitchAPI: TwitchAPIProtocol?
-    var gamesModel: GamesModel? {
+    var repository: RepositoryProtocol?
+    var gamesModel = [RepositoryGameModel]() {
         didSet {
             collectionView.reloadData()
         }
@@ -21,14 +21,8 @@ class CatalogViewController: UIViewController {
     @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
     
     override func viewDidLoad() {
-        setupModel()
         setupCollectionViewCellSize()
-        fetchNextTopGames()
-    }
-    
-    private func setupModel(){
-        gamesModel = GamesModel()
-        gamesModel?.data = [GameModel]()
+        repository?.getMoreTopGames(completion: handleGetMoreTopGames)
     }
     
     private func setupCollectionViewCellSize(){
@@ -38,22 +32,15 @@ class CatalogViewController: UIViewController {
         flowLayout.itemSize = CGSize(width: width, height: height)
     }
     
-    private func fetchNextTopGames(_ nextFor: String? = nil) {
-        twitchAPI?.getTopGames(nextFor, completion: { (success, games) in
-            if success {
-                //Only append if cursor is different (response is not the same)
-                if self.gamesModel?.paginationCursor == games?.paginationCursor {
-                    return
-                }
-                
-                if let data = games?.data {
-                    self.gamesModel?.data? += data
-                    self.gamesModel?.paginationCursor = games?.paginationCursor
-                    self.collectionView.reloadData()
-                }
-            }
-            
-        })
+    private func findGameBy(id: Int) -> RepositoryGameModel? {
+        return gamesModel.filter({ $0.id! == id}).first
+    }
+    
+    private func handleGetMoreTopGames(success: Bool, games: [RepositoryGameModel]?) {
+        if success, let games = games {
+            self.gamesModel = games
+        }
+        //TODO: Alert for failure
     }
 }
 
@@ -61,32 +48,26 @@ class CatalogViewController: UIViewController {
 extension CatalogViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GameItemCollectionViewCellIdentifier", for: indexPath) as? GameItemCollectionViewCell {
-            if let game = gamesModel?.data?[indexPath.row] {
-                cell.titleLabel.text = game.name
-                if let art = game.boxArtUrl {
-                    let url = art
-                        .replacingOccurrences(of: "{width}", with: "400")
-                        .replacingOccurrences(of: "{height}", with: "500")
-                    cell.gameImage.kf.setImage(with: URL(string: url), placeholder: #imageLiteral(resourceName: "placeholder"))
-                }
-                
-            }
-
+            let game = gamesModel[indexPath.row]
+            cell.delegate = self
+            cell.id = game.id
+            cell.titleLabel.text = game.name
+            cell.gameImage.kf.setImage(with: URL(string: game.thumbnail ?? ""), placeholder: #imageLiteral(resourceName: "placeholder"))
             return cell
         }
         return UICollectionViewCell()
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        guard let count = gamesModel?.data?.count else { return 0 }
+        let count = gamesModel.count
         return count
     }
     
     //Infinite scroll
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        guard let count = gamesModel?.data?.count else { return }
+        let count = gamesModel.count
         if indexPath.row == count - 1 {
-            fetchNextTopGames(gamesModel?.paginationCursor)
+            repository?.getMoreTopGames(completion: handleGetMoreTopGames)
         }
     }
 }
@@ -103,5 +84,19 @@ extension CatalogViewController: UICollectionViewDelegateFlowLayout {
                         minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         let padding: CGFloat = 40/3
         return padding
+    }
+}
+
+extension CatalogViewController: GameItemCellDelegate {
+    func clickToAddFavoriteGame(gameId: Int) {
+        if let game = findGameBy(id: gameId) {
+            repository?.addFavoriteGame(game, completion: handleGetMoreTopGames)
+        }
+    }
+    
+    func clickToRemoveFavoriteGame(gameId: Int) {
+        if let game = findGameBy(id: gameId) {
+            repository?.removeFavoriteGame(game, completion: handleGetMoreTopGames)
+        }
     }
 }
