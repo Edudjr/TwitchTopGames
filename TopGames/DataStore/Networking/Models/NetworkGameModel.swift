@@ -7,13 +7,13 @@
 //
 import Marshal
 
-struct GameModel: Unmarshaling {
+struct NetworkGameModel: Unmarshaling {
     var id: String?
     var name: String?
     var boxArtUrl: String?
 }
 
-extension GameModel{
+extension NetworkGameModel{
     init(object: MarshaledObject){
         id = try? object.value(for: "id")
         name = try? object.value(for: "name")

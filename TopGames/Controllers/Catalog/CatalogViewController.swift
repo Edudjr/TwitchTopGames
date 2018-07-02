@@ -21,8 +21,14 @@ class CatalogViewController: UIViewController {
     @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         setupCollectionViewCellSize()
         repository?.getMoreTopGames(completion: handleGetMoreTopGames)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        repository?.getCurrentGames(completion: handleGetMoreTopGames)
     }
     
     private func setupCollectionViewCellSize(){
@@ -53,6 +59,7 @@ extension CatalogViewController: UICollectionViewDelegate, UICollectionViewDataS
             cell.id = game.id
             cell.titleLabel.text = game.name
             cell.gameImage.kf.setImage(with: URL(string: game.thumbnail ?? ""), placeholder: #imageLiteral(resourceName: "placeholder"))
+            cell.favoriteButton.isSelected = game.isFavorite ?? false
             return cell
         }
         return UICollectionViewCell()
@@ -66,7 +73,7 @@ extension CatalogViewController: UICollectionViewDelegate, UICollectionViewDataS
     //Infinite scroll
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         let count = gamesModel.count
-        if indexPath.row == count - 1 {
+        if count > 15 && indexPath.row == count - 2 {
             repository?.getMoreTopGames(completion: handleGetMoreTopGames)
         }
     }

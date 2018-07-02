@@ -9,15 +9,6 @@
 import Foundation
 
 class TwitchAPI: NetworkAPIProtocol {
-    func addFavoriteGame(_ game: GameModel, completion: @escaping CompletionWithGames) {
-        //
-    }
-    
-    func removeFavoriteGame(_ game: GameModel, completion: @escaping CompletionWithGames) {
-        //
-    }
-    
-    
     let baseURL = "https://api.twitch.tv"
     let headers = ["Client-ID": "xzqsdxt247xi72kder6l57r0aksbsh"]
     let provider: RequestProtocol?
@@ -47,7 +38,7 @@ class TwitchAPI: NetworkAPIProtocol {
                                     return
                                 }
                                 if let json = response.result.value as? [String: Any] {
-                                    let games = GamesModel(object: json)
+                                    let games = NetworkGamesModel(object: json)
                                     completion(true, games)
                                 } else {
                                     completion(false, nil)

@@ -9,7 +9,7 @@
 import Foundation
 import RealmSwift
 
-class cacheAPI: CacheAPIProtocol {
+class CacheAPI: CacheAPIProtocol {
     let realm = try! Realm()
     
     func getAllFavoriteGames(completion: @escaping CompletionWithGameModelCaches) {
@@ -21,15 +21,25 @@ class cacheAPI: CacheAPIProtocol {
         completion(true, gamesCacheList)
     }
     
+    func getFavoriteGame(id: String, completion: @escaping CompletionWithGameModelCache) {
+        if let game = realm.objects(GameModelCache.self).filter("id == '\(id)'").first {
+            completion(true, game)
+        } else {
+            completion(false, nil)
+        }
+    }
+    
     func addFavoriteGame(_ game: GameModelCache, completion: @escaping CompletionWithGameModelCaches) {
         try! realm.write {
             realm.add(game)
         }
+        getAllFavoriteGames(completion: completion)
     }
     
     func removeFavoriteGame(_ game: GameModelCache, completion: @escaping CompletionWithGameModelCaches) {
         try! realm.write {
             realm.delete(game)
         }
+        getAllFavoriteGames(completion: completion)
     }
 }

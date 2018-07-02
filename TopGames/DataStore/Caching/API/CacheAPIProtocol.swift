@@ -7,9 +7,12 @@
 //
 
 typealias CompletionWithGameModelCaches = (Bool, [GameModelCache]?)->Void
+typealias CompletionWithGameModelCache = (Bool, GameModelCache?)->Void
 
 protocol CacheAPIProtocol {
+//    var shared: CacheAPIProtocol? { get set }
     func getAllFavoriteGames(completion: @escaping CompletionWithGameModelCaches)
+    func getFavoriteGame(id: String, completion: @escaping CompletionWithGameModelCache)
     func addFavoriteGame(_ game: GameModelCache, completion: @escaping CompletionWithGameModelCaches)
     func removeFavoriteGame(_ game: GameModelCache, completion: @escaping CompletionWithGameModelCaches)
 }

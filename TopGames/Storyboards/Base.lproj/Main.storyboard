@@ -149,6 +149,7 @@
                                             <constraint firstAttribute="trailing" secondItem="uso-2e-6fo" secondAttribute="trailing" id="orF-7y-KBs"/>
                                         </constraints>
                                         <connections>
+                                            <outlet property="favoriteButton" destination="6EN-cY-zPI" id="Mjt-Pg-D9i"/>
                                             <outlet property="gameImage" destination="uso-2e-6fo" id="Mck-tT-xIk"/>
                                             <outlet property="titleLabel" destination="FfG-fs-wzF" id="8sN-DG-swM"/>
                                         </connections>

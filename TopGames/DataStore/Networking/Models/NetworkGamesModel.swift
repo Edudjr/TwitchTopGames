@@ -8,12 +8,12 @@
 
 import Marshal
 
-struct GamesModel: Unmarshaling{
-    var data: [GameModel]?
+struct NetworkGamesModel: Unmarshaling{
+    var data: [NetworkGameModel]?
     var paginationCursor: String?
 }
 
-extension GamesModel{
+extension NetworkGamesModel{
     init(object: MarshaledObject){
         data = try? object.value(for: "data")
         paginationCursor = try? object.value(for: "pagination.cursor")

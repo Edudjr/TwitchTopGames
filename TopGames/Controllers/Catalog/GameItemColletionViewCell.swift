@@ -16,6 +16,7 @@ protocol GameItemCellDelegate {
 class GameItemCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var titleLabel: UILabel!  
     @IBOutlet weak var gameImage: UIImageView!
+    @IBOutlet weak var favoriteButton: FavoriteButton!
     var id: Int?
     var delegate: GameItemCellDelegate?
     

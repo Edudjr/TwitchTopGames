@@ -15,7 +15,7 @@ extension SwinjectStoryboard {
             TwitchAPI(provider: r.resolve(RequestProtocol.self)!)
         }
         defaultContainer.register(CacheAPIProtocol.self) { r in
-            cacheAPI()
+            CacheAPI()
         }
         defaultContainer.register(RepositoryProtocol.self) { r in
             CatalogRepositoryAPI(
