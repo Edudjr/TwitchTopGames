@@ -13,7 +13,6 @@ class CatalogRepositoryAPI: RepositoryProtocol {
     var cacheAPI: CacheAPIProtocol?
     
     var currentGames = [RepositoryGameModel]()
-    var cachedGames = [GameModelCache]()
     var currentCursor = ""
     
     public init(networkAPI: NetworkAPIProtocol, cacheAPI: CacheAPIProtocol) {
@@ -45,6 +44,7 @@ class CatalogRepositoryAPI: RepositoryProtocol {
     }
     
     func getCurrentGames(completion: @escaping CompletionWithRepositoryGames) {
+        self.applyFavoriteGamesFromCache()
         completion(true, currentGames)
     }
     
@@ -91,6 +91,8 @@ extension CatalogRepositoryAPI {
             cacheAPI?.getFavoriteGame(id: id, completion: { (success, cachedGame) in
                 if success {
                     self.currentGames[index].isFavorite = true
+                } else {
+                    self.currentGames[index].isFavorite = false
                 }
             })
         }

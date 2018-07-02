@@ -30,7 +30,12 @@ class CatalogViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        repository?.getCurrentGames(completion: handleGetMoreTopGames)
+        repository?.getCurrentGames(completion: { (success, games) in
+            if success {
+                self.currentGames = games!
+                self.lastFetchedCount = games!.count
+            }
+        })
     }
     
     private func setupCollectionViewCellSize(){
