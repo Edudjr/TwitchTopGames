@@ -62,7 +62,8 @@ extension FavoritesRepositoryAPI {
     }
     private func createRepositoryGameModel(fromGameModelCache game: GameModelCache) -> RepositoryGameModel? {
         guard let id = game.id, let name = game.name, let thumb = game.thumbnail else { return nil }
-        let game = RepositoryGameModel(id: Int(id), name: name, thumbnail: thumb, isFavorite: true)
+        let intId = Int(id)
+        let game = RepositoryGameModel(id: intId, name: name, thumbnail: thumb, isFavorite: true)
         return game
     }
 }

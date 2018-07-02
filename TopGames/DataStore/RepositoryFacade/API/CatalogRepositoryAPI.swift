@@ -75,12 +75,6 @@ class CatalogRepositoryAPI: RepositoryProtocol {
 }
 
 extension CatalogRepositoryAPI {
-    private func checkFavoriteGame(gameId: String) -> Bool {
-        return (cachedGames.contains(where: { (gameCached) -> Bool in
-            gameCached.id == gameId
-        }))
-    }
-    
     private func setFavoriteGame(_ game: RepositoryGameModel) {
         guard let id = game.id,
             let index = currentGames.index(where: { (repoGame) -> Bool in
@@ -115,8 +109,7 @@ extension CatalogRepositoryAPI {
         let thumb = url
             .replacingOccurrences(of: "{width}", with: "400")
             .replacingOccurrences(of: "{height}", with: "500")
-        
-        let isFavorite = checkFavoriteGame(gameId: game.id ?? "")
-        return RepositoryGameModel(id: Int(id), name: name, thumbnail: thumb, isFavorite: isFavorite)
+
+        return RepositoryGameModel(id: Int(id), name: name, thumbnail: thumb, isFavorite: nil)
     }
 }

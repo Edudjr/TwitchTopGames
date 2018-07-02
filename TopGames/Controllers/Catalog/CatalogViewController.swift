@@ -11,7 +11,9 @@ import Kingfisher
 
 class CatalogViewController: UIViewController {
     var repository: RepositoryProtocol?
-    var gamesModel = [RepositoryGameModel]() {
+    var shouldFetch = true
+    var lastFetchedCount = 0
+    var currentGames = [RepositoryGameModel]() {
         didSet {
             collectionView.reloadData()
         }
@@ -39,12 +41,14 @@ class CatalogViewController: UIViewController {
     }
     
     private func findGameBy(id: Int) -> RepositoryGameModel? {
-        return gamesModel.filter({ $0.id! == id}).first
+        return currentGames.filter({ $0.id! == id}).first
     }
     
     private func handleGetMoreTopGames(success: Bool, games: [RepositoryGameModel]?) {
-        if success, let games = games {
-            self.gamesModel = games
+        //Don't reload if fetched games are the same as the current ones
+        if success, let games = games, games.count != lastFetchedCount {
+            self.currentGames = games
+            self.lastFetchedCount = games.count
         }
         //TODO: Alert for failure
     }
@@ -54,7 +58,7 @@ class CatalogViewController: UIViewController {
 extension CatalogViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GameItemCollectionViewCellIdentifier", for: indexPath) as? GameItemCollectionViewCell {
-            let game = gamesModel[indexPath.row]
+            let game = currentGames[indexPath.row]
             cell.delegate = self
             cell.id = game.id
             cell.titleLabel.text = game.name
@@ -66,15 +70,22 @@ extension CatalogViewController: UICollectionViewDelegate, UICollectionViewDataS
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        let count = gamesModel.count
+        let count = currentGames.count
         return count
     }
     
     //Infinite scroll
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        let count = gamesModel.count
-        if count > 15 && indexPath.row == count - 2 {
-            repository?.getMoreTopGames(completion: handleGetMoreTopGames)
+        let count = currentGames.count
+        let row = indexPath.row
+
+        if row > count - 2 {
+            if shouldFetch {
+                repository?.getMoreTopGames(completion: handleGetMoreTopGames)
+                shouldFetch = false
+            }
+        } else {
+            shouldFetch = true
         }
     }
 }
