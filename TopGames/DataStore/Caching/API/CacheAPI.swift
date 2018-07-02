@@ -13,7 +13,7 @@ class CacheAPI: CacheAPIProtocol {
     let realm = try! Realm()
     
     func getAllFavoriteGames(completion: @escaping CompletionWithGameModelCaches) {
-        let gamesCache = realm.objects(GameModelCache.self)
+        let gamesCache = realm.objects(GameModelCache.self).sorted(byKeyPath: "name")
         var gamesCacheList = [GameModelCache]()
         for game in gamesCache {
             gamesCacheList.append(game)
