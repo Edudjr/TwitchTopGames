@@ -70,7 +70,19 @@ class CatalogRepositoryAPI: RepositoryProtocol {
     }
     
     func removeFavoriteGame(_ game: RepositoryGameModel, completion: @escaping CompletionWithRepositoryGames) {
-        //
+        //delete from currentGames
+        let gameId = String(describing: game.id ?? 0)
+        cacheAPI?.getFavoriteGame(id: gameId, completion: { (success, game) in
+            if success {
+                self.cacheAPI?.removeFavoriteGame(game!, completion: { (success, cachedGames) in
+                    if success {
+                        completion(true, self.currentGames)
+                        return
+                    }
+                })
+            }
+        })
+        completion(false, nil)
     }
 }
 
