@@ -45,7 +45,11 @@ class CatalogRepositoryAPI: RepositoryProtocol {
     
     func getCurrentGames(completion: @escaping CompletionWithRepositoryGames) {
         self.applyFavoriteGamesFromCache()
-        completion(true, currentGames)
+        if currentGames.isEmpty {
+            completion(false, nil)
+        } else {
+            completion(true, currentGames)
+        }
     }
     
     func addFavoriteGame(_ game: RepositoryGameModel, completion: @escaping CompletionWithRepositoryGames) {

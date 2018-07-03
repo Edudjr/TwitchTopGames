@@ -13,7 +13,7 @@ class CatalogViewController: UIViewController {
     var repository: RepositoryProtocol?
     var shouldFetch = true
     var lastFetchedCount = 0
-    var currentGames = [RepositoryGameModel]() {
+    var currentGames: [RepositoryGameModel]? {
         didSet {
             collectionView.reloadData()
         }
@@ -21,9 +21,11 @@ class CatalogViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
+    @IBOutlet weak var containerView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        containerView.isHidden = true
         setupCollectionViewCellSize()
         repository?.getMoreTopGames(completion: handleGetMoreTopGames)
     }
@@ -46,7 +48,7 @@ class CatalogViewController: UIViewController {
     }
     
     private func findGameBy(id: Int) -> RepositoryGameModel? {
-        return currentGames.filter({ $0.id! == id}).first
+        return currentGames?.filter({ $0.id! == id}).first
     }
     
     private func handleGetMoreTopGames(success: Bool, games: [RepositoryGameModel]?) {
@@ -63,25 +65,35 @@ class CatalogViewController: UIViewController {
 extension CatalogViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GameItemCollectionViewCellIdentifier", for: indexPath) as? GameItemCollectionViewCell {
-            let game = currentGames[indexPath.row]
-            cell.delegate = self
-            cell.id = game.id
-            cell.titleLabel.text = game.name
-            cell.gameImage.kf.setImage(with: URL(string: game.thumbnail ?? ""), placeholder: #imageLiteral(resourceName: "placeholder"))
-            cell.favoriteButton.isSelected = game.isFavorite ?? false
-            return cell
+            if let game = currentGames?[indexPath.row] {
+                cell.delegate = self
+                cell.id = game.id
+                cell.titleLabel.text = game.name
+                cell.gameImage.kf.setImage(with: URL(string: game.thumbnail ?? ""), placeholder: #imageLiteral(resourceName: "placeholder"))
+                cell.favoriteButton.isSelected = game.isFavorite ?? false
+                return cell
+            }
         }
         return UICollectionViewCell()
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        let count = currentGames.count
-        return count
+        if let count = currentGames?.count {
+            if count == 0 {
+                containerView.isHidden = false
+                collectionView.isHidden = true
+            } else {
+                containerView.isHidden = true
+                collectionView.isHidden = false
+            }
+            return count
+        }
+        return 0
     }
     
     //Infinite scroll
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        let count = currentGames.count
+        let count = currentGames?.count ?? 0
         let row = indexPath.row
 
         if row > count - 2 {
