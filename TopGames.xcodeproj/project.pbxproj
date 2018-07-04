@@ -15,9 +15,22 @@
 		2815DF1C20EC500900211A80 /* NetworkStreamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815DF1B20EC500900211A80 /* NetworkStreamModel.swift */; };
 		2815DF1E20EC519E00211A80 /* NetworkStreamsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815DF1D20EC519E00211A80 /* NetworkStreamsModel.swift */; };
 		2815DF2220EC819700211A80 /* TopGamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815DF2120EC819700211A80 /* TopGamesViewController.swift */; };
+		2815DF2920EC924800211A80 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2815DF2820EC924800211A80 /* NotificationCenter.framework */; };
+		2815DF2C20EC924800211A80 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815DF2B20EC924800211A80 /* TodayViewController.swift */; };
+		2815DF2F20EC924800211A80 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2815DF2D20EC924800211A80 /* MainInterface.storyboard */; };
+		2815DF3320EC924800211A80 /* TopGamesToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2815DF2720EC924800211A80 /* TopGamesToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2815DF3920EC939600211A80 /* TodayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815DF3820EC939600211A80 /* TodayTableViewCell.swift */; };
+		2815DF3A20EC975A00211A80 /* TwitchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D6986A20E44C210031D561 /* TwitchAPI.swift */; };
+		2815DF3B20EC976600211A80 /* NetworkAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D6986E20E453300031D561 /* NetworkAPIProtocol.swift */; };
+		2815DF3C20EC97B100211A80 /* AlamofireRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D6986620E4445A0031D561 /* AlamofireRequest.swift */; };
+		2815DF3D20EC97B400211A80 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D6986420E4429E0031D561 /* RequestProtocol.swift */; };
 		281EAF4E20E5D3B0004C7C39 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281EAF4D20E5D3B0004C7C39 /* GradientView.swift */; };
 		281EAF5120E5DFFA004C7C39 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281EAF5020E5DFFA004C7C39 /* UIView+Extension.swift */; };
 		281EAF5520E5E571004C7C39 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281EAF5420E5E571004C7C39 /* FavoriteButton.swift */; };
+		28260B6320EC98D000DBB0D5 /* NetworkGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D6987120E45A910031D561 /* NetworkGameModel.swift */; };
+		28260B6420EC98D000DBB0D5 /* NetworkGamesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D6987320E45D2C0031D561 /* NetworkGamesModel.swift */; };
+		28260B6520EC98D000DBB0D5 /* NetworkStreamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815DF1B20EC500900211A80 /* NetworkStreamModel.swift */; };
+		28260B6620EC98D000DBB0D5 /* NetworkStreamsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815DF1D20EC519E00211A80 /* NetworkStreamsModel.swift */; };
 		2842F49C20E98D9500C1BEED /* FavoritesRepositoryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2842F49B20E98D9500C1BEED /* FavoritesRepositoryAPI.swift */; };
 		28D4096720E71BC400786E5D /* GameModelCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D4096620E71BC400786E5D /* GameModelCache.swift */; };
 		28D4097020E7342500786E5D /* CatalogRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D4096F20E7342500786E5D /* CatalogRepositoryProtocol.swift */; };
@@ -44,10 +57,18 @@
 		28D6988320E4A3890031D561 /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D6988220E4A3890031D561 /* CatalogViewController.swift */; };
 		28D6988720E4A58D0031D561 /* GameItemColletionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D6988620E4A58D0031D561 /* GameItemColletionViewCell.swift */; };
 		28F0511E20EB29790022DB43 /* GameDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F0511D20EB29790022DB43 /* GameDetailsViewController.swift */; };
+		3C4C01BA4DC86B2FF883FA35 /* Pods_TopGamesToday.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8312DA6474BBE8C96F82018 /* Pods_TopGamesToday.framework */; };
 		5D8B7BB06278E17EA8398E4B /* Pods_TopGamesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7B248A9D9A0F58DA27DB91 /* Pods_TopGamesTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2815DF3120EC924800211A80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28D6983820E440C30031D561 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2815DF2620EC924800211A80;
+			remoteInfo = TopGamesToday;
+		};
 		28D6985520E440C50031D561 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 28D6983820E440C30031D561 /* Project object */;
@@ -56,6 +77,20 @@
 			remoteInfo = TopGames;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2815DF3720EC924800211A80 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2815DF3320EC924800211A80 /* TopGamesToday.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		025A1BCE7C6B70067CB9CFC2 /* Pods-TopGames.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopGames.release.xcconfig"; path = "Pods/Target Support Files/Pods-TopGames/Pods-TopGames.release.xcconfig"; sourceTree = "<group>"; };
@@ -67,6 +102,12 @@
 		2815DF1B20EC500900211A80 /* NetworkStreamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStreamModel.swift; sourceTree = "<group>"; };
 		2815DF1D20EC519E00211A80 /* NetworkStreamsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStreamsModel.swift; sourceTree = "<group>"; };
 		2815DF2120EC819700211A80 /* TopGamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopGamesViewController.swift; sourceTree = "<group>"; };
+		2815DF2720EC924800211A80 /* TopGamesToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TopGamesToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2815DF2820EC924800211A80 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		2815DF2B20EC924800211A80 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		2815DF2E20EC924800211A80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		2815DF3020EC924800211A80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2815DF3820EC939600211A80 /* TodayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayTableViewCell.swift; sourceTree = "<group>"; };
 		281EAF4D20E5D3B0004C7C39 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		281EAF5020E5DFFA004C7C39 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		281EAF5420E5E571004C7C39 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
@@ -100,13 +141,25 @@
 		28D6988220E4A3890031D561 /* CatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = "<group>"; };
 		28D6988620E4A58D0031D561 /* GameItemColletionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameItemColletionViewCell.swift; sourceTree = "<group>"; };
 		28F0511D20EB29790022DB43 /* GameDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailsViewController.swift; sourceTree = "<group>"; };
+		64ABAFBFE9FF18E12749B3AF /* Pods-TopGamesToday.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopGamesToday.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TopGamesToday/Pods-TopGamesToday.debug.xcconfig"; sourceTree = "<group>"; };
+		6A7FAA2635335E7466D0BCB1 /* Pods-TopGamesToday.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopGamesToday.release.xcconfig"; path = "Pods/Target Support Files/Pods-TopGamesToday/Pods-TopGamesToday.release.xcconfig"; sourceTree = "<group>"; };
 		A0CB07803622F4507DE57F14 /* Pods-TopGamesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopGamesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TopGamesTests/Pods-TopGamesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A2AA677D44C1FFEC56DBF0F1 /* Pods-TopGames.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopGames.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TopGames/Pods-TopGames.debug.xcconfig"; sourceTree = "<group>"; };
+		A8312DA6474BBE8C96F82018 /* Pods_TopGamesToday.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TopGamesToday.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E23B35CFF47B39C9F0353753 /* Pods_TopGames.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TopGames.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE7B248A9D9A0F58DA27DB91 /* Pods_TopGamesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TopGamesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2815DF2420EC924800211A80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2815DF2920EC924800211A80 /* NotificationCenter.framework in Frameworks */,
+				3C4C01BA4DC86B2FF883FA35 /* Pods_TopGamesToday.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		28D6983D20E440C30031D561 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -180,6 +233,17 @@
 				280A48D420E5FB7500C42F8B /* FavoritesViewController.swift */,
 			);
 			path = Favorites;
+			sourceTree = "<group>";
+		};
+		2815DF2A20EC924800211A80 /* TopGamesToday */ = {
+			isa = PBXGroup;
+			children = (
+				2815DF2B20EC924800211A80 /* TodayViewController.swift */,
+				2815DF2D20EC924800211A80 /* MainInterface.storyboard */,
+				2815DF3020EC924800211A80 /* Info.plist */,
+				2815DF3820EC939600211A80 /* TodayTableViewCell.swift */,
+			);
+			path = TopGamesToday;
 			sourceTree = "<group>";
 		};
 		281EAF4C20E5D388004C7C39 /* Components */ = {
@@ -275,6 +339,7 @@
 			children = (
 				28D6984220E440C30031D561 /* TopGames */,
 				28D6985720E440C50031D561 /* TopGamesTests */,
+				2815DF2A20EC924800211A80 /* TopGamesToday */,
 				28D6984120E440C30031D561 /* Products */,
 				62937AB3CD8D5F989AEBDBC4 /* Pods */,
 				6795F5837F35DE4BD5EF39F0 /* Frameworks */,
@@ -286,6 +351,7 @@
 			children = (
 				28D6984020E440C30031D561 /* TopGames.app */,
 				28D6985420E440C50031D561 /* TopGamesTests.xctest */,
+				2815DF2720EC924800211A80 /* TopGamesToday.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -397,6 +463,8 @@
 				025A1BCE7C6B70067CB9CFC2 /* Pods-TopGames.release.xcconfig */,
 				A0CB07803622F4507DE57F14 /* Pods-TopGamesTests.debug.xcconfig */,
 				06F27996FA898CEB834A1C1A /* Pods-TopGamesTests.release.xcconfig */,
+				64ABAFBFE9FF18E12749B3AF /* Pods-TopGamesToday.debug.xcconfig */,
+				6A7FAA2635335E7466D0BCB1 /* Pods-TopGamesToday.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -406,6 +474,8 @@
 			children = (
 				E23B35CFF47B39C9F0353753 /* Pods_TopGames.framework */,
 				FE7B248A9D9A0F58DA27DB91 /* Pods_TopGamesTests.framework */,
+				2815DF2820EC924800211A80 /* NotificationCenter.framework */,
+				A8312DA6474BBE8C96F82018 /* Pods_TopGamesToday.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -413,6 +483,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2815DF2620EC924800211A80 /* TopGamesToday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2815DF3620EC924800211A80 /* Build configuration list for PBXNativeTarget "TopGamesToday" */;
+			buildPhases = (
+				3E421D38A9EE225D305E2650 /* [CP] Check Pods Manifest.lock */,
+				2815DF2320EC924800211A80 /* Sources */,
+				2815DF2420EC924800211A80 /* Frameworks */,
+				2815DF2520EC924800211A80 /* Resources */,
+				DB147765F7C9BDD424A49355 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TopGamesToday;
+			productName = TopGamesToday;
+			productReference = 2815DF2720EC924800211A80 /* TopGamesToday.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		28D6983F20E440C30031D561 /* TopGames */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28D6985D20E440C50031D561 /* Build configuration list for PBXNativeTarget "TopGames" */;
@@ -423,10 +512,12 @@
 				28D6983E20E440C30031D561 /* Resources */,
 				29B93910AA5036FC8948F0C3 /* [CP] Embed Pods Frameworks */,
 				5FBD1A2F5503ABC0F9940C70 /* [CP] Copy Pods Resources */,
+				2815DF3720EC924800211A80 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2815DF3220EC924800211A80 /* PBXTargetDependency */,
 			);
 			name = TopGames;
 			productName = TopGames;
@@ -464,6 +555,9 @@
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Eduardo Domene Junior";
 				TargetAttributes = {
+					2815DF2620EC924800211A80 = {
+						CreatedOnToolsVersion = 9.3;
+					};
 					28D6983F20E440C30031D561 = {
 						CreatedOnToolsVersion = 9.3;
 					};
@@ -488,11 +582,20 @@
 			targets = (
 				28D6983F20E440C30031D561 /* TopGames */,
 				28D6985320E440C50031D561 /* TopGamesTests */,
+				2815DF2620EC924800211A80 /* TopGamesToday */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2815DF2520EC924800211A80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2815DF2F20EC924800211A80 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		28D6983E20E440C30031D561 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -561,6 +664,24 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TopGamesTests/Pods-TopGamesTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		3E421D38A9EE225D305E2650 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TopGamesToday-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4587AF40DF5EDB5048E106E5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -627,9 +748,41 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DB147765F7C9BDD424A49355 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TopGamesToday/Pods-TopGamesToday-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2815DF2320EC924800211A80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2815DF3A20EC975A00211A80 /* TwitchAPI.swift in Sources */,
+				28260B6520EC98D000DBB0D5 /* NetworkStreamModel.swift in Sources */,
+				2815DF3B20EC976600211A80 /* NetworkAPIProtocol.swift in Sources */,
+				28260B6420EC98D000DBB0D5 /* NetworkGamesModel.swift in Sources */,
+				2815DF2C20EC924800211A80 /* TodayViewController.swift in Sources */,
+				2815DF3D20EC97B400211A80 /* RequestProtocol.swift in Sources */,
+				28260B6320EC98D000DBB0D5 /* NetworkGameModel.swift in Sources */,
+				2815DF3C20EC97B100211A80 /* AlamofireRequest.swift in Sources */,
+				28260B6620EC98D000DBB0D5 /* NetworkStreamsModel.swift in Sources */,
+				2815DF3920EC939600211A80 /* TodayTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		28D6983C20E440C30031D561 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -677,6 +830,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2815DF3220EC924800211A80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2815DF2620EC924800211A80 /* TopGamesToday */;
+			targetProxy = 2815DF3120EC924800211A80 /* PBXContainerItemProxy */;
+		};
 		28D6985620E440C50031D561 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 28D6983F20E440C30031D561 /* TopGames */;
@@ -685,6 +843,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		2815DF2D20EC924800211A80 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2815DF2E20EC924800211A80 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		28D6984720E440C30031D561 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -704,6 +870,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2815DF3420EC924800211A80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64ABAFBFE9FF18E12749B3AF /* Pods-TopGamesToday.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6RDBHT79U2;
+				INFOPLIST_FILE = TopGamesToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.edudjr.TopGames.TopGamesToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2815DF3520EC924800211A80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A7FAA2635335E7466D0BCB1 /* Pods-TopGamesToday.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6RDBHT79U2;
+				INFOPLIST_FILE = TopGamesToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.edudjr.TopGames.TopGamesToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		28D6985B20E440C50031D561 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -822,6 +1028,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A2AA677D44C1FFEC56DBF0F1 /* Pods-TopGames.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6RDBHT79U2;
@@ -841,6 +1048,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 025A1BCE7C6B70067CB9CFC2 /* Pods-TopGames.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6RDBHT79U2;
@@ -903,6 +1111,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2815DF3620EC924800211A80 /* Build configuration list for PBXNativeTarget "TopGamesToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2815DF3420EC924800211A80 /* Debug */,
+				2815DF3520EC924800211A80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		28D6983B20E440C30031D561 /* Build configuration list for PBXProject "TopGames" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

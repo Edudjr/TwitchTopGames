@@ -58,9 +58,10 @@ class FavoritesRepositoryAPI: CatalogRepositoryProtocol {
                         return
                     }
                 })
+            } else {
+                completion(false, nil)
             }
         })
-        completion(false, nil)
     }
 }
 
