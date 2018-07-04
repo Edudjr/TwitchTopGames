@@ -148,11 +148,12 @@ extension CatalogViewController: UICollectionViewDelegateFlowLayout {
 extension CatalogViewController: GameItemCellDelegate {
     func clickToAddFavoriteGame(gameId: Int) {
         if let index = findGameIndexBy(id: gameId), let game = currentGames?[index] {
-            repository?.addFavoriteGame(game, completion: { (success, _) in
+            repository?.addFavoriteGame(game, completion: { (success, games) in
                 //Only set model if successful
                 if success {
                     self.currentGames![index].isFavorite = true
                 }
+                self.handleGetMoreTopGames(success: success, games: games)
             })
         }
     }
@@ -160,11 +161,12 @@ extension CatalogViewController: GameItemCellDelegate {
     func clickToRemoveFavoriteGame(gameId: Int) {
         if let index = findGameIndexBy(id: gameId), let game = currentGames?[index] {
             currentGames![index].isFavorite = false
-            repository?.removeFavoriteGame(game, completion: { (success, _) in
+            repository?.removeFavoriteGame(game, completion: { (success, games) in
                 //Only set model if successful
                 if success {
                     self.currentGames![index].isFavorite = false
                 }
+                self.handleGetMoreTopGames(success: success, games: games)
             })
         }
     }

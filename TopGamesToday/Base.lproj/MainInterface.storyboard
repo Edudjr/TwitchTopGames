@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="TopGamesToday" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="toQ-C7-554" userLabel="ContentView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="26" estimatedRowHeight="26" sectionHeaderHeight="25" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QXc-Db-4ai">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <view key="tableHeaderView" contentMode="scaleToFill" id="rbH-fw-ilG">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top 3 games today" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cN8-YJ-xWJ">
+                                                    <rect key="frame" x="87" y="4" width="146" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="cN8-YJ-xWJ" firstAttribute="centerX" secondItem="rbH-fw-ilG" secondAttribute="centerX" id="P0S-7m-ybL"/>
+                                                <constraint firstItem="cN8-YJ-xWJ" firstAttribute="centerY" secondItem="rbH-fw-ilG" secondAttribute="centerY" id="tF0-Qh-FAt"/>
+                                            </constraints>
+                                        </view>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TodayCell" rowHeight="26" id="bc7-ro-jIT" customClass="TodayTableViewCell" customModule="TopGamesToday" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="55" width="320" height="26"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bc7-ro-jIT" id="1bi-WG-idn">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="26"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLX-qI-gTF">
+                                                            <rect key="frame" x="20" y="4.5" width="280" height="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailingMargin" secondItem="SLX-qI-gTF" secondAttribute="trailing" constant="5" id="VIq-k0-Naj"/>
+                                                        <constraint firstItem="SLX-qI-gTF" firstAttribute="centerY" secondItem="1bi-WG-idn" secondAttribute="centerY" id="a9o-KM-3G0"/>
+                                                        <constraint firstItem="SLX-qI-gTF" firstAttribute="leading" secondItem="1bi-WG-idn" secondAttribute="leadingMargin" constant="5" id="nyQ-xu-h7P"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="gameTitle" destination="SLX-qI-gTF" id="0Cv-aB-ClC"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="M4Y-Lb-cyx" id="uuI-9S-JbY"/>
+                                            <outlet property="delegate" destination="M4Y-Lb-cyx" id="aUp-mu-xAn"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="QXc-Db-4ai" firstAttribute="leading" secondItem="toQ-C7-554" secondAttribute="leading" id="JTg-eH-B2Q"/>
+                                    <constraint firstAttribute="trailing" secondItem="QXc-Db-4ai" secondAttribute="trailing" id="NGM-pq-T9v"/>
+                                    <constraint firstItem="QXc-Db-4ai" firstAttribute="top" secondItem="toQ-C7-554" secondAttribute="top" id="fyd-B9-2X0"/>
+                                    <constraint firstAttribute="bottom" secondItem="QXc-Db-4ai" secondAttribute="bottom" id="kq6-qB-fBM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="toQ-C7-554" secondAttribute="trailing" id="I89-AU-xTi"/>
+                            <constraint firstItem="toQ-C7-554" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" id="PfS-MQ-P6Q"/>
+                            <constraint firstItem="toQ-C7-554" firstAttribute="bottom" secondItem="ssy-KU-ocm" secondAttribute="bottom" id="Zub-ui-e9A"/>
+                            <constraint firstItem="toQ-C7-554" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" id="feU-MJ-hFT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ssy-KU-ocm"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="120"/>
+                    <connections>
+                        <outlet property="tableview" destination="QXc-Db-4ai" id="0L1-sf-LnI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="115.2" y="117.84107946026987"/>
+        </scene>
+    </scenes>
+</document>

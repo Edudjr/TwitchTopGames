@@ -10,6 +10,7 @@
 		0096C6816AC3D92834AB65C49518C177 /* ImageView+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FE045B960EB091A65EB9A09FBCADBA /* ImageView+Kingfisher.swift */; };
 		018E7DEE44B23A6424E171D9C390C990 /* RLMSchema.h in Headers */ = {isa = PBXBuildFile; fileRef = F369C000314DEB1116E04DD6B553E316 /* RLMSchema.h */; };
 		01A2A50017706DD0C72F5297CD4CCDE8 /* list_notifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08C9E2D862D37E8588F2A169DCD8FD84 /* list_notifier.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.7.4\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
+		0246A28D6A8162707A3357AE69DC21F7 /* Pods-TopGamesToday-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FB427A3D0501EC66EE97D3AC6E642B /* Pods-TopGamesToday-dummy.m */; };
 		02B6FC77E62F9E8E89BDF0B99E6F7912 /* MarshalDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F36283E0BEF9028263E7EF6BB400932 /* MarshalDictionary.swift */; };
 		03E0A134F1DDF33EA16F004F1A230CA1 /* FormatIndicatedCacheSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C78B03FEF043373541857D02173C64 /* FormatIndicatedCacheSerializer.swift */; };
 		0596FD84091DDCE138CB4C97B945C2F0 /* RealmConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3ADEE02D72C9FCB653CB7409C390BF4 /* RealmConfiguration.swift */; };
@@ -33,6 +34,7 @@
 		152DC41360A44D1E6ED6C090F70128D2 /* RLMObjectBase_Private.h in Copy . Private Headers */ = {isa = PBXBuildFile; fileRef = 891606518F14E2F5D5A6DEB99D97586C /* RLMObjectBase_Private.h */; };
 		165F300A1DA6ABCD501FC0332B886BA6 /* _SwinjectStoryboardBase.h in Headers */ = {isa = PBXBuildFile; fileRef = F0B7B71171158C02F38AF42412D5948A /* _SwinjectStoryboardBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		16AB2B1AE8305FB3497B3C9C40D98366 /* MarshaledObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5907B0AF64C958B670B1DDE2AA8AE182 /* MarshaledObject.swift */; };
+		16F75E70883DE64D1CBA2B0B1BDFFD1B /* Pods-TopGamesToday-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 855FDD5B830CB546A310B4A2EF6C84D9 /* Pods-TopGamesToday-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		17AC0374DCF31E484598D166067D66AD /* RLMSyncConfiguration.mm in Sources */ = {isa = PBXBuildFile; fileRef = D8082D48D873A9089F8737A2C8181D76 /* RLMSyncConfiguration.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.7.4\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		18A9935F7FBF8C3B70A8F084E3C49DE8 /* object_store.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC1ABFB50391FBCBEA6DD741D1579C13 /* object_store.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.7.4\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		19A18B9BBEC4AA0A5A3D06E84840574E /* RLMMigration_Private.h in Copy . Private Headers */ = {isa = PBXBuildFile; fileRef = 61D46FD76F12F4DC756430B71DB8392A /* RLMMigration_Private.h */; };
@@ -97,7 +99,7 @@
 		479BC838AA54F4738F401FB18AD3A20A /* RLMSyncPermission.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 2ADBD6E2D3F81B901A36B161ADB9C2C9 /* RLMSyncPermission.h */; };
 		4847A3404401CCBD01F5321DADD33B81 /* RLMRealm_Private.h in Copy . Private Headers */ = {isa = PBXBuildFile; fileRef = E8DBD1FAD9EDB76D43E862BFA948EB24 /* RLMRealm_Private.h */; };
 		4891B4723AD2C9B783C5DB286BFE046A /* RLMNetworkClient.mm in Sources */ = {isa = PBXBuildFile; fileRef = E9ABC3640032308514B7C308C947FC2F /* RLMNetworkClient.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.7.4\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
-		492DE8805B6BFF4C498EA418A3C8CF2F /* Pods-TopGamesTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 69C44D48167A8120043E657191371C8B /* Pods-TopGamesTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		492DE8805B6BFF4C498EA418A3C8CF2F /* Pods-TopGamesTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 852CCAD1ADC190D120F7919A818461D6 /* Pods-TopGamesTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		498DC29155467AC093701C1AF5EE3807 /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E5F31B94DEBBCD5DB53C13FC87029B /* Placeholder.swift */; };
 		4D221B0FF8314D784F46F882F0DF95DE /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFE1B6DBF9AABEA6F5C05B26DB87161 /* JSON.swift */; };
 		4D8779F6D482EFDEFDAA19DB069696E1 /* RLMArray.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 63E62C34546CCA6C2B158658AA255AD8 /* RLMArray.h */; };
@@ -139,7 +141,7 @@
 		6632ACF425BB0804A3884CD9D0445237 /* Container.TypeForwarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D254525016F98EA2EE69C8AE5AA252D /* Container.TypeForwarding.swift */; };
 		67568D492A9B8847D0EC6D748BAD655A /* RLMSchema.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0254E71C60F9E6B5DE6EDAEFFFB7FFE6 /* RLMSchema.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.7.4\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		67903B2B0F52643EC9E4F499AE4A712B /* RLMObjectSchema.h in Headers */ = {isa = PBXBuildFile; fileRef = A0BFA2CE9461CD5CC7D19BF1233B4234 /* RLMObjectSchema.h */; };
-		690A60D9647755F6673B078BF53D04B2 /* Pods-TopGamesTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D22438CC9E8BFE8959015EC631BADB /* Pods-TopGamesTests-dummy.m */; };
+		690A60D9647755F6673B078BF53D04B2 /* Pods-TopGamesTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFDB820EE58B9AAA4137C97BFC26864 /* Pods-TopGamesTests-dummy.m */; };
 		69601649717817E10770DA3171E51625 /* RLMOptionalBase.h in Copy . Private Headers */ = {isa = PBXBuildFile; fileRef = 1E36E8AD1A60BD2CEF91EBE6FB833B6C /* RLMOptionalBase.h */; };
 		6A777442ABE0693D597D32BDF3620651 /* RLMSyncSubscription.h in Headers */ = {isa = PBXBuildFile; fileRef = 80EB27F64CC5EFEA7ACF4275D79F3947 /* RLMSyncSubscription.h */; };
 		6AF22CCB12C56FA5E6C5DD609618ECB9 /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1142EAD204514387DBEEB190EF2B22 /* Resolver.swift */; };
@@ -160,10 +162,11 @@
 		76A49D736A7F6C67C449015E26F4D2E2 /* ThreadSafeReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB159296B0B12373767EC4EB95F0824 /* ThreadSafeReference.swift */; };
 		76A73D792098F56FACA5C87106277E8C /* Migration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8B2659E406F29A624D11A7A67EDB07 /* Migration.swift */; };
 		76E95E48A2FA35D0530AA6F282A79862 /* RLMRealmConfiguration+Sync.h in Headers */ = {isa = PBXBuildFile; fileRef = 073596AE1B7AAA841C71F7C013EE5C06 /* RLMRealmConfiguration+Sync.h */; };
-		778C1478C18865045D6988CD92D3A6D1 /* Pods-TopGames-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 841C776904150F79335931DD9740FC0E /* Pods-TopGames-dummy.m */; };
+		778C1478C18865045D6988CD92D3A6D1 /* Pods-TopGames-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF39582FC674E3BD8EB7591366A226F3 /* Pods-TopGames-dummy.m */; };
 		77E539CFCD8DB243A4A8600F80944161 /* GraphIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8656DD2D43ECE9F96F57ED49A1D9D230 /* GraphIdentifier.swift */; };
 		78A1935ED4F78D970293C455B4A6082A /* RLMSyncManager_Private.h in Copy . Private Headers */ = {isa = PBXBuildFile; fileRef = 2EE67F498E5640C7979E510B469AD011 /* RLMSyncManager_Private.h */; };
 		7936DB6EB0BF69741B89A24C97FED634 /* RLMSyncUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7A41F55621FCE51913A7E2FB34B66F18 /* RLMSyncUtil.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.7.4\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
+		7A8135CDE0C80090974E355703B56B2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98E9767C427EA3D652F93D8228E7EE9 /* Foundation.framework */; };
 		7B2A61E55C43E9B12E5B7DD852456AEE /* ImageTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90289AF1B1CFAA7139A5421B25172A5E /* ImageTransition.swift */; };
 		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7550A88F70EA91339B0DB3C6AFE6FF08 /* SessionDelegate.swift */; };
 		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4756FE764195C04323B0C68AD040A8 /* Result.swift */; };
@@ -191,7 +194,7 @@
 		8C358036C63CBCD0C1C27C1211D5D85A /* RLMRealm.h in Headers */ = {isa = PBXBuildFile; fileRef = 381AA27F1761301284A32CA2C03794EA /* RLMRealm.h */; };
 		8D1A8008080EFA9C77311F559FF8DB7F /* RLMRealmConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DC48432173FADFF50E5C17A7024FF70 /* RLMRealmConfiguration.h */; };
 		8D995B64ECBC09563C1308FF2ECAEE41 /* RLMProperty_Private.h in Copy . Private Headers */ = {isa = PBXBuildFile; fileRef = 53FDA563270587E21136000D2FD7AD91 /* RLMProperty_Private.h */; };
-		8DB39A15801D313230D1CDF570227220 /* Pods-TopGames-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E76FD0E3B8433974F0D2FB5582C86A1 /* Pods-TopGames-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DB39A15801D313230D1CDF570227220 /* Pods-TopGames-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 29DA69F9BE6CD4CEC4DAB1E689AC212F /* Pods-TopGames-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8DD6A705DA8AFD80B3071267ACF43E7B /* RLMSyncSubscription.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9A14E09BD855EA4424352F538AE34DD8 /* RLMSyncSubscription.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.7.4\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		8F175126F9ECCBB8503690107BA6C6DA /* ServiceEntry.TypeForwarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55629747C78D1CB748BC6CFD99965EE /* ServiceEntry.TypeForwarding.swift */; };
 		902E1E0AE314A4CDF783B2557465A293 /* RLMRealm+Sync.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 71D4FE61249187C17CA8C2BDB635EA0C /* RLMRealm+Sync.h */; };
@@ -466,20 +469,19 @@
 		01E5F31B94DEBBCD5DB53C13FC87029B /* Placeholder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Placeholder.swift; path = Sources/Placeholder.swift; sourceTree = "<group>"; };
 		02212300B038D3D2F545017FBDE9C285 /* RealmSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RealmSwift.modulemap; sourceTree = "<group>"; };
 		0254E71C60F9E6B5DE6EDAEFFFB7FFE6 /* RLMSchema.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMSchema.mm; path = Realm/RLMSchema.mm; sourceTree = "<group>"; };
+		02CCC3BEA0843F38E2366B0A50D32822 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		03B01EE0053F7C840F60E76C233D0788 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		03B27F30273D8958319F1972FCFDB048 /* RLMObjectSchema_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMObjectSchema_Private.h; path = include/RLMObjectSchema_Private.h; sourceTree = "<group>"; };
-		03DD334FBE3CDC908BC98E319F50BB18 /* SwinjectStoryboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwinjectStoryboard.framework; path = SwinjectStoryboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0710E5D74F8326863BFA49FB0497788B /* RLMRealmConfiguration_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMRealmConfiguration_Private.h; path = include/RLMRealmConfiguration_Private.h; sourceTree = "<group>"; };
 		073596AE1B7AAA841C71F7C013EE5C06 /* RLMRealmConfiguration+Sync.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RLMRealmConfiguration+Sync.h"; path = "include/RLMRealmConfiguration+Sync.h"; sourceTree = "<group>"; };
 		07C8D8E1807676ABAE5B0D49C3BB4C67 /* RealmCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RealmCollection.swift; path = RealmSwift/RealmCollection.swift; sourceTree = "<group>"; };
 		08C9E2D862D37E8588F2A169DCD8FD84 /* list_notifier.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = list_notifier.cpp; path = Realm/ObjectStore/src/impl/list_notifier.cpp; sourceTree = "<group>"; };
-		0A1EC9404470CA2D5E593300D7B97C8E /* Pods-TopGamesTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TopGamesTests-frameworks.sh"; sourceTree = "<group>"; };
-		0AAADFFF7B1ACF39DC9E52C554E3DACC /* Pods-TopGamesTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TopGamesTests.modulemap"; sourceTree = "<group>"; };
 		0AC8E20277BAF3FF4EBFA3B371D426ED /* RLMClassInfo.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMClassInfo.mm; path = Realm/RLMClassInfo.mm; sourceTree = "<group>"; };
 		0D899621F10FA7A79E6BA117CCE7197B /* RLMSyncManager.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMSyncManager.mm; path = Realm/RLMSyncManager.mm; sourceTree = "<group>"; };
 		0DB5DE774CA960B41D5BFD0478B9F9B8 /* KingfisherManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherManager.swift; path = Sources/KingfisherManager.swift; sourceTree = "<group>"; };
 		0E2DB489E07ED25F08678AC5533BE7B2 /* SwinjectStoryboard+SetUp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SwinjectStoryboard+SetUp.m"; path = "Sources/SwinjectStoryboard+SetUp.m"; sourceTree = "<group>"; };
 		0F334ACDB521CB391D854F1BCEB4FB60 /* RLMRealmConfiguration+Sync.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = "RLMRealmConfiguration+Sync.mm"; path = "Realm/RLMRealmConfiguration+Sync.mm"; sourceTree = "<group>"; };
+		100923F26421A228BDC8F1B4DE03C85C /* Pods-TopGamesTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TopGamesTests-frameworks.sh"; sourceTree = "<group>"; };
 		10572CF150DF8B0CCF3960F6606E2965 /* _Resolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = _Resolver.swift; path = Sources/_Resolver.swift; sourceTree = "<group>"; };
 		10F789DF213C826168621D99539E7617 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		116B391D9D1E84BEE04948F5318374BC /* thread_safe_reference.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = thread_safe_reference.cpp; path = Realm/ObjectStore/src/thread_safe_reference.cpp; sourceTree = "<group>"; };
@@ -494,6 +496,7 @@
 		18646C4159D4BC4E2FF84E27288E323D /* Swinject.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Swinject.modulemap; sourceTree = "<group>"; };
 		196E4C5AD099D8B26F77664D6F2E6C65 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		1A80564D7F923FFF1B99A3496B94D6B9 /* RealmSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RealmSwift.xcconfig; sourceTree = "<group>"; };
+		1A9227279F0C35FF2D92032892127A8D /* Pods_TopGamesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TopGamesTests.framework; path = "Pods-TopGamesTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AB1427062EE0AE340C12FA5A10C7E25 /* RLMUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMUtil.mm; path = Realm/RLMUtil.mm; sourceTree = "<group>"; };
 		1BE1B3F7F4777B7E85F8EE777779D706 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E36E8AD1A60BD2CEF91EBE6FB833B6C /* RLMOptionalBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMOptionalBase.h; path = include/RLMOptionalBase.h; sourceTree = "<group>"; };
@@ -503,6 +506,7 @@
 		2052D0FB705FD850B5BAE01108287467 /* _SwinjectStoryboardBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _SwinjectStoryboardBase.m; path = "Sources/iOS-tvOS/_SwinjectStoryboardBase.m"; sourceTree = "<group>"; };
 		20B50CF5525C5AD476EACC340485AC9C /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
 		229C229486079986E92D827A3C87715E /* RLMRealmUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMRealmUtil.mm; path = Realm/RLMRealmUtil.mm; sourceTree = "<group>"; };
+		22BB105F7F59CDB8FA877757676FC2F4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2386E8CA97FE73E39A4940156EAD59A6 /* Migration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Migration.swift; path = Sources/Migration.swift; sourceTree = "<group>"; };
 		239FC2C29ADE85B204EEC5DCC412B2DA /* list.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = list.cpp; path = Realm/ObjectStore/src/list.cpp; sourceTree = "<group>"; };
 		240448638DD108DBB4E8EB3018BA4DC8 /* NSError+RLMSync.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSError+RLMSync.m"; path = "Realm/NSError+RLMSync.m"; sourceTree = "<group>"; };
@@ -513,12 +517,11 @@
 		2744388DFD13F3C82DFFE708E12F8E9A /* UIStoryboard+Swizzling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIStoryboard+Swizzling.m"; path = "Sources/iOS-tvOS/UIStoryboard+Swizzling.m"; sourceTree = "<group>"; };
 		27D0B41FA588B44A12DBAC645E2D7195 /* RLMArray_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMArray_Private.h; path = include/RLMArray_Private.h; sourceTree = "<group>"; };
 		286A8A996235845764C9D38C4E6C84D9 /* Marshaling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Marshaling.swift; path = Sources/Marshaling.swift; sourceTree = "<group>"; };
-		295A1AB1D7D5796BC821C95402B122DD /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Realm.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29DA69F9BE6CD4CEC4DAB1E689AC212F /* Pods-TopGames-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TopGames-umbrella.h"; sourceTree = "<group>"; };
 		2A2269437D16804D384D5BFDDE0ED9C4 /* RLMMigration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMMigration.h; path = include/RLMMigration.h; sourceTree = "<group>"; };
 		2A3CAD18688A886A47466571D0CD7232 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
 		2A8786ECB5E9439F7EAF4F73BB9CAEA6 /* librealmcore-ios.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "librealmcore-ios.a"; path = "core/librealmcore-ios.a"; sourceTree = "<group>"; };
 		2ADBD6E2D3F81B901A36B161ADB9C2C9 /* RLMSyncPermission.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSyncPermission.h; path = include/RLMSyncPermission.h; sourceTree = "<group>"; };
-		2AF3FCF7F1AFB1F5A8ABF9B88734F8F0 /* Pods-TopGames.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TopGames.debug.xcconfig"; sourceTree = "<group>"; };
 		2C1977B90D42DFCF336775B5AC933CF8 /* Realm.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Realm.xcconfig; sourceTree = "<group>"; };
 		2D18195A5951D3B8A2A35EAB9AB7851C /* RLMPredicateUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMPredicateUtil.mm; path = Realm/RLMPredicateUtil.mm; sourceTree = "<group>"; };
 		2EE67F498E5640C7979E510B469AD011 /* RLMSyncManager_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSyncManager_Private.h; path = include/RLMSyncManager_Private.h; sourceTree = "<group>"; };
@@ -527,19 +530,21 @@
 		30A34C475FA9623C3213F1A8AE7D423B /* UnmarshalUpdating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnmarshalUpdating.swift; path = Sources/UnmarshalUpdating.swift; sourceTree = "<group>"; };
 		30ACC0B814D92BF40D53A27E9CE0DFB4 /* Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Kingfisher.swift; path = Sources/Kingfisher.swift; sourceTree = "<group>"; };
 		32441A8075D8AB04D89FA6C9EFF15420 /* RLMResults.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMResults.h; path = include/RLMResults.h; sourceTree = "<group>"; };
-		35D0B3D1F2D43680A84C9785CB1221F5 /* Pods-TopGamesTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TopGamesTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3615E12C7E52526EA25A48B7EFEF26F0 /* Pods-TopGamesToday-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TopGamesToday-acknowledgements.markdown"; sourceTree = "<group>"; };
 		364D52D9F6D12499813D6721AB61A5E2 /* RLMRealm_Dynamic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMRealm_Dynamic.h; path = include/RLMRealm_Dynamic.h; sourceTree = "<group>"; };
+		366991E8BF458690F902BB56DC97E4F5 /* Pods-TopGames-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TopGames-acknowledgements.markdown"; sourceTree = "<group>"; };
 		381AA27F1761301284A32CA2C03794EA /* RLMRealm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMRealm.h; path = include/RLMRealm.h; sourceTree = "<group>"; };
-		383A0481049790524F63A1B5AAC70028 /* Pods-TopGames.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TopGames.modulemap"; sourceTree = "<group>"; };
 		38D0A3404A112EE49183E0000F239D07 /* Kingfisher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kingfisher-dummy.m"; sourceTree = "<group>"; };
 		399B45C431F9469D9F0BA83ED9A2D79D /* RLMAccessor.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMAccessor.mm; path = Realm/RLMAccessor.mm; sourceTree = "<group>"; };
 		3A29A9A6A0BFCA063675FC5EB3C7F12E /* RLMSchema_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSchema_Private.h; path = include/RLMSchema_Private.h; sourceTree = "<group>"; };
+		3B2D43777F54B549F09D1EF102A57716 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Realm.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BE66DE353CD9B3F38A335693477F430 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
 		3C0130B31F30E7A5A2FD4F4B4D92C8A5 /* keychain_helper.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = keychain_helper.cpp; path = Realm/ObjectStore/src/impl/apple/keychain_helper.cpp; sourceTree = "<group>"; };
 		3D9866AD5987264BC2174F4F8B7C0D9A /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		3D9F251C4FFA652541FF2196FF7DF54C /* Pods-TopGamesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TopGamesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3DDABD795689F362A092B3233B4D9CE3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E6DC0F097717C905348D268D91C5395 /* collection_change_builder.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = collection_change_builder.cpp; path = Realm/ObjectStore/src/impl/collection_change_builder.cpp; sourceTree = "<group>"; };
 		3E779B1B524774CA3C191B656A17532D /* Box.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Box.swift; path = Sources/Box.swift; sourceTree = "<group>"; };
+		3F625BAB61F12624D43CFAB9C1EB266B /* Pods_TopGames.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TopGames.framework; path = "Pods-TopGames.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40C01F477434310F2A6661A15037F858 /* ObjectScope.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjectScope.swift; path = Sources/ObjectScope.swift; sourceTree = "<group>"; };
 		44519D9C82E78492BA69B72ACEE28C3A /* SwinjectStoryboard-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwinjectStoryboard-prefix.pch"; sourceTree = "<group>"; };
 		44F502A4545E0CD13C11698A45FB421C /* Object.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Object.swift; path = RealmSwift/Object.swift; sourceTree = "<group>"; };
@@ -555,18 +560,17 @@
 		49FE045B960EB091A65EB9A09FBCADBA /* ImageView+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ImageView+Kingfisher.swift"; path = "Sources/ImageView+Kingfisher.swift"; sourceTree = "<group>"; };
 		4BAF415DB252B32FEAC32490B9C69E88 /* KeyType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyType.swift; path = Sources/KeyType.swift; sourceTree = "<group>"; };
 		4DD4E85DEF92D4984B82CD0085FB3F76 /* Container.Arguments.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Container.Arguments.swift; path = Sources/Container.Arguments.swift; sourceTree = "<group>"; };
+		4EF1C642F4942E5778BCC3FB6EBAFEBF /* Pods-TopGamesToday.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TopGamesToday.release.xcconfig"; sourceTree = "<group>"; };
 		506ECBA90A4BB8732BDB17C017EB0AC8 /* InstanceStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InstanceStorage.swift; path = Sources/InstanceStorage.swift; sourceTree = "<group>"; };
 		517901F2CC8328212EB6815D382F3C86 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		5204D130B1EAC49E365A8165D0F4749F /* Pods-TopGamesTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TopGamesTests-resources.sh"; sourceTree = "<group>"; };
 		52792A91DD13B7B9A3A9A04982B2B761 /* sync_config.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = sync_config.cpp; path = Realm/ObjectStore/src/sync/sync_config.cpp; sourceTree = "<group>"; };
-		52DD35BBB7FD2928E2D939F93F9C9D13 /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Kingfisher.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53366A7EA3D02171C2458C9B3D13E146 /* sync_user.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = sync_user.cpp; path = Realm/ObjectStore/src/sync/sync_user.cpp; sourceTree = "<group>"; };
 		5382636AFA23FFED8F7573B0C056BEE9 /* Swinject-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Swinject-umbrella.h"; sourceTree = "<group>"; };
 		53FDA563270587E21136000D2FD7AD91 /* RLMProperty_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMProperty_Private.h; path = include/RLMProperty_Private.h; sourceTree = "<group>"; };
 		540F2DD4CA4F384B1B5DBBD9216E4618 /* network_reachability_observer.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = network_reachability_observer.cpp; path = Realm/ObjectStore/src/sync/impl/apple/network_reachability_observer.cpp; sourceTree = "<group>"; };
 		547D024CA0C5B19CD5079C4F913D1831 /* Marshal-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Marshal-prefix.pch"; sourceTree = "<group>"; };
 		5527C4B441325619354AD3F159B77E6F /* Kingfisher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Kingfisher.h; path = Sources/Kingfisher.h; sourceTree = "<group>"; };
-		563C6481EA643A340E5D9E2FC5EDDF6B /* Pods-TopGames-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TopGames-acknowledgements.plist"; sourceTree = "<group>"; };
+		56339A871AB5AE2087440B09D229EAAC /* Pods-TopGames.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TopGames.debug.xcconfig"; sourceTree = "<group>"; };
 		56CADC345FF632F784AF0933BC78C2E2 /* RLMObjectBase_Dynamic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMObjectBase_Dynamic.h; path = include/RLMObjectBase_Dynamic.h; sourceTree = "<group>"; };
 		56CF6F77D5F5D1F6F02457DE280386FF /* RLMObjectStore.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMObjectStore.mm; path = Realm/RLMObjectStore.mm; sourceTree = "<group>"; };
 		5701CC02482D031EB1477D29124DA256 /* Resource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resource.swift; path = Sources/Resource.swift; sourceTree = "<group>"; };
@@ -575,17 +579,19 @@
 		5907B0AF64C958B670B1DDE2AA8AE182 /* MarshaledObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MarshaledObject.swift; path = Sources/MarshaledObject.swift; sourceTree = "<group>"; };
 		59424ABACCF2016F7E40E6CD617752CA /* RequestModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestModifier.swift; path = Sources/RequestModifier.swift; sourceTree = "<group>"; };
 		5AAC788CCD6F56C1274DDFDCF7ED7EAA /* RLMManagedArray.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMManagedArray.mm; path = Realm/RLMManagedArray.mm; sourceTree = "<group>"; };
+		5B96BB090F3A10D976C22E7EE30C8494 /* Pods-TopGames-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TopGames-resources.sh"; sourceTree = "<group>"; };
+		5C83F9DD5A206C8A68EABE1A9736E7A3 /* Pods-TopGamesTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TopGamesTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		5D254525016F98EA2EE69C8AE5AA252D /* Container.TypeForwarding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Container.TypeForwarding.swift; path = Sources/Container.TypeForwarding.swift; sourceTree = "<group>"; };
 		5DC48432173FADFF50E5C17A7024FF70 /* RLMRealmConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMRealmConfiguration.h; path = include/RLMRealmConfiguration.h; sourceTree = "<group>"; };
 		5F36283E0BEF9028263E7EF6BB400932 /* MarshalDictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MarshalDictionary.swift; path = Sources/MarshalDictionary.swift; sourceTree = "<group>"; };
 		5F8323BEDFD5CF4C90DC5EA702A3676B /* Swinject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Swinject.h; path = Sources/Swinject.h; sourceTree = "<group>"; };
 		5FD7B4AFE6D3AFDDEDFB763AC449E7AC /* RLMSyncCredentials.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSyncCredentials.h; path = include/RLMSyncCredentials.h; sourceTree = "<group>"; };
+		616599874D8640ED48DC2FEE6AEA36C6 /* Pods-TopGamesToday-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TopGamesToday-acknowledgements.plist"; sourceTree = "<group>"; };
 		61A01AA538BCD533D919B5430F499D45 /* SwinjectStoryboard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwinjectStoryboard.swift; path = Sources/SwinjectStoryboard.swift; sourceTree = "<group>"; };
 		61D46FD76F12F4DC756430B71DB8392A /* RLMMigration_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMMigration_Private.h; path = include/RLMMigration_Private.h; sourceTree = "<group>"; };
 		62107279D0CE567C6B7289668A31603A /* UnavailableItems.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnavailableItems.swift; path = Sources/UnavailableItems.swift; sourceTree = "<group>"; };
 		62BF9619F40512D1A8E9609F2797F431 /* RLMMigration.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMMigration.mm; path = Realm/RLMMigration.mm; sourceTree = "<group>"; };
 		62F7F3B7BE10B97EDC60BD93A23F670E /* RLMSyncPermission.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMSyncPermission.mm; path = Realm/RLMSyncPermission.mm; sourceTree = "<group>"; };
-		630531E4959CCF9CC83E250B6880446E /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6340C8A603AB7FBA89184AD8CFB284A0 /* Container.Logging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Container.Logging.swift; path = Sources/Container.Logging.swift; sourceTree = "<group>"; };
 		6377537763C618EF02A118C296CF16C5 /* RLMProperty.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMProperty.mm; path = Realm/RLMProperty.mm; sourceTree = "<group>"; };
 		63E62C34546CCA6C2B158658AA255AD8 /* RLMArray.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMArray.h; path = include/RLMArray.h; sourceTree = "<group>"; };
@@ -597,13 +603,14 @@
 		682B2763A58DFEBE360A2446B581E759 /* RLMSyncConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSyncConfiguration.h; path = include/RLMSyncConfiguration.h; sourceTree = "<group>"; };
 		69060768AD8DA29681D65FA7B5B2A00C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6915B36A659D79CF3DAE8AA486FE823D /* ObjectSchema.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjectSchema.swift; path = RealmSwift/ObjectSchema.swift; sourceTree = "<group>"; };
-		69C44D48167A8120043E657191371C8B /* Pods-TopGamesTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TopGamesTests-umbrella.h"; sourceTree = "<group>"; };
 		6B3A10D0B337D7395E1E50980FA2E524 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
 		6B3ADFECA2952A5FE0D331C9E6D31D1C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
 		6B7629484D2CB309C50889BFCBE0390C /* SpinLock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpinLock.swift; path = Sources/SpinLock.swift; sourceTree = "<group>"; };
 		6BD2B180A2E4F4AD379F79563B92CF48 /* ThreadHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThreadHelper.swift; path = Sources/ThreadHelper.swift; sourceTree = "<group>"; };
+		6DFD1987FFB832739B59E02A7933B53E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E706E079602F1165B7125C60B67DF32 /* RLMSyncUser.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMSyncUser.mm; path = Realm/RLMSyncUser.mm; sourceTree = "<group>"; };
-		6E76FD0E3B8433974F0D2FB5582C86A1 /* Pods-TopGames-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TopGames-umbrella.h"; sourceTree = "<group>"; };
+		6ED6D3CB718E0BB89560025E0DA3DCDD /* Pods-TopGamesToday-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TopGamesToday-resources.sh"; sourceTree = "<group>"; };
+		6EFDB820EE58B9AAA4137C97BFC26864 /* Pods-TopGamesTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TopGamesTests-dummy.m"; sourceTree = "<group>"; };
 		6FEA52702B9D45318CCAC7144DA0106D /* object_schema.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = object_schema.cpp; path = Realm/ObjectStore/src/object_schema.cpp; sourceTree = "<group>"; };
 		7082B2F802E65A83D4B5593D0FDB878E /* SwiftVersion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftVersion.swift; path = RealmSwift/SwiftVersion.swift; sourceTree = "<group>"; };
 		71ADF33876AB90735B3675B67D32F3BA /* primitive_list_notifier.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = primitive_list_notifier.cpp; path = Realm/ObjectStore/src/impl/primitive_list_notifier.cpp; sourceTree = "<group>"; };
@@ -616,23 +623,23 @@
 		768A6BD5A896D0C9D6D15E197E666CCF /* KingfisherOptionsInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherOptionsInfo.swift; path = Sources/KingfisherOptionsInfo.swift; sourceTree = "<group>"; };
 		76D3A2577E78D5D9F9D3BBC1068389AA /* Realm-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Realm-prefix.pch"; sourceTree = "<group>"; };
 		77ED5A7526208EA7484A4D91E80E06C5 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		78E8EFF27BC0186A0C954BA94178552F /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RealmSwift.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79C78B03FEF043373541857D02173C64 /* FormatIndicatedCacheSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormatIndicatedCacheSerializer.swift; path = Sources/FormatIndicatedCacheSerializer.swift; sourceTree = "<group>"; };
-		7A4163023AF728731862EBD1718CF39B /* Pods-TopGames.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TopGames.release.xcconfig"; sourceTree = "<group>"; };
 		7A41F55621FCE51913A7E2FB34B66F18 /* RLMSyncUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMSyncUtil.mm; path = Realm/RLMSyncUtil.mm; sourceTree = "<group>"; };
 		7A60048346FDE1BC7F376653BAD7C670 /* DebugHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DebugHelper.swift; path = Sources/DebugHelper.swift; sourceTree = "<group>"; };
-		7B61DFA65AB9E9371851A5156BC41774 /* Pods-TopGamesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TopGamesTests.release.xcconfig"; sourceTree = "<group>"; };
 		7D88CBCDAC803B5025CBE702EB8B98E3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DB159296B0B12373767EC4EB95F0824 /* ThreadSafeReference.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThreadSafeReference.swift; path = RealmSwift/ThreadSafeReference.swift; sourceTree = "<group>"; };
 		80EB27F64CC5EFEA7ACF4275D79F3947 /* RLMSyncSubscription.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSyncSubscription.h; path = include/RLMSyncSubscription.h; sourceTree = "<group>"; };
-		81CBC1C33EDE123198DDC1ADFE5160DE /* Pods-TopGames-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TopGames-resources.sh"; sourceTree = "<group>"; };
+		813BC6031BFFB8F5B42B8E6F89234FD7 /* Pods_TopGamesToday.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TopGamesToday.framework; path = "Pods-TopGamesToday.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		82E6B15CBBD0C3D1F96D184695346A73 /* ValueType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValueType.swift; path = Sources/ValueType.swift; sourceTree = "<group>"; };
-		841C776904150F79335931DD9740FC0E /* Pods-TopGames-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TopGames-dummy.m"; sourceTree = "<group>"; };
 		84A5A8CCB48BA51DB3A5223157CAA8EE /* ServiceEntry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceEntry.swift; path = Sources/ServiceEntry.swift; sourceTree = "<group>"; };
 		8517C60824F413ED44A5EA92B0FB7E0F /* collection_notifications.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = collection_notifications.cpp; path = Realm/ObjectStore/src/collection_notifications.cpp; sourceTree = "<group>"; };
+		852CCAD1ADC190D120F7919A818461D6 /* Pods-TopGamesTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TopGamesTests-umbrella.h"; sourceTree = "<group>"; };
+		855FDD5B830CB546A310B4A2EF6C84D9 /* Pods-TopGamesToday-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TopGamesToday-umbrella.h"; sourceTree = "<group>"; };
 		857E9294D17DAAE527844E69F8A35B4C /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
 		8656DD2D43ECE9F96F57ED49A1D9D230 /* GraphIdentifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphIdentifier.swift; path = Sources/GraphIdentifier.swift; sourceTree = "<group>"; };
 		86A34758DE6BA432394E3A6C56C332FC /* Realm.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Realm.modulemap; sourceTree = "<group>"; };
-		87D22438CC9E8BFE8959015EC631BADB /* Pods-TopGamesTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TopGamesTests-dummy.m"; sourceTree = "<group>"; };
+		876AD9FD5D5C963D431C59571370D625 /* Pods-TopGames-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TopGames-acknowledgements.plist"; sourceTree = "<group>"; };
 		8910708AF58A4E63C620EF556DABD619 /* RLMObject_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMObject_Private.h; path = include/RLMObject_Private.h; sourceTree = "<group>"; };
 		891606518F14E2F5D5A6DEB99D97586C /* RLMObjectBase_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMObjectBase_Private.h; path = include/RLMObjectBase_Private.h; sourceTree = "<group>"; };
 		8B088BB1BC6FF3D10A955E099A2D7E27 /* RLMConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RLMConstants.m; path = Realm/RLMConstants.m; sourceTree = "<group>"; };
@@ -640,17 +647,18 @@
 		8BE9C4A268D69596049D4AB854670378 /* Assembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Assembly.swift; path = Sources/Assembly.swift; sourceTree = "<group>"; };
 		8C5938B33672E74AE0A77C20D5E4BD61 /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Sources/ImageCache.swift; sourceTree = "<group>"; };
 		8EDD029652B9F3C467D758C7DFA85B12 /* SwinjectStoryboardOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwinjectStoryboardOption.swift; path = Sources/SwinjectStoryboardOption.swift; sourceTree = "<group>"; };
-		9008A549F907CBE73610B51D6DC96E57 /* Pods-TopGames-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TopGames-acknowledgements.markdown"; sourceTree = "<group>"; };
 		90289AF1B1CFAA7139A5421B25172A5E /* ImageTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageTransition.swift; path = Sources/ImageTransition.swift; sourceTree = "<group>"; };
+		90DB9241592D1DD26101B8477125A323 /* Pods-TopGamesTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TopGamesTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		914F7A2C2E1B1AD9C09DE0A92213AF82 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		915ECA8BEF5B72923625F6BED380BAE4 /* Pods_TopGames.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TopGames.framework; path = "Pods-TopGames.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92BF66343683F7D847B16E5DC90ED3C1 /* Results.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Results.swift; path = RealmSwift/Results.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94FB427A3D0501EC66EE97D3AC6E642B /* Pods-TopGamesToday-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TopGamesToday-dummy.m"; sourceTree = "<group>"; };
 		95790A991C4B87AD339536B915BF946F /* Property.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Property.swift; path = RealmSwift/Property.swift; sourceTree = "<group>"; };
 		958DF41B7EF800F9254402ADF2ADDC02 /* weak_realm_notifier.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = weak_realm_notifier.cpp; path = Realm/ObjectStore/src/impl/weak_realm_notifier.cpp; sourceTree = "<group>"; };
 		9618737A09293E3E83F2483164412C0A /* sync_session.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = sync_session.cpp; path = Realm/ObjectStore/src/sync/sync_session.cpp; sourceTree = "<group>"; };
 		97BE6EB7F323A1A2D1EA0E89BCFDD4EE /* String+MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+MD5.swift"; path = "Sources/String+MD5.swift"; sourceTree = "<group>"; };
 		97CF3AE25ABEB3602523ECCA8B06A937 /* Marshal-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Marshal-dummy.m"; sourceTree = "<group>"; };
+		985BB2CE8B87E1B9B9DFC5E913A580C6 /* Pods-TopGamesTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TopGamesTests-resources.sh"; sourceTree = "<group>"; };
 		9886F88C47B20B82FBE8E74F3CBB12D6 /* RLMSyncPermissionResults.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMSyncPermissionResults.mm; path = Realm/RLMSyncPermissionResults.mm; sourceTree = "<group>"; };
 		9A14E09BD855EA4424352F538AE34DD8 /* RLMSyncSubscription.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMSyncSubscription.mm; path = Realm/RLMSyncSubscription.mm; sourceTree = "<group>"; };
 		9A2BB31F679D042973FA7DF5C37667B3 /* UIButton+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Kingfisher.swift"; path = "Sources/UIButton+Kingfisher.swift"; sourceTree = "<group>"; };
@@ -658,7 +666,6 @@
 		9C4435F3FD1D5AC1D433A3B20947F870 /* sync_permission.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = sync_permission.cpp; path = Realm/ObjectStore/src/sync/sync_permission.cpp; sourceTree = "<group>"; };
 		9CAF382245BA75AAF614BB7C230F5AA1 /* sync_manager.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = sync_manager.cpp; path = Realm/ObjectStore/src/sync/sync_manager.cpp; sourceTree = "<group>"; };
 		9D11A9B57326FD91BADEE955FCB0545D /* RLMSyncSessionRefreshHandle.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMSyncSessionRefreshHandle.mm; path = Realm/RLMSyncSessionRefreshHandle.mm; sourceTree = "<group>"; };
-		9D934BDC71A16F8AE62F3E286FD3DC92 /* Pods-TopGamesTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TopGamesTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		9E02678008CB10BB125F2B8289FAFD46 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Sources/Error.swift; sourceTree = "<group>"; };
 		A0BFA2CE9461CD5CC7D19BF1233B4234 /* RLMObjectSchema.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMObjectSchema.h; path = include/RLMObjectSchema.h; sourceTree = "<group>"; };
 		A26FA1E3AA18C4F0E13F97261AAA6978 /* RLMAccessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMAccessor.h; path = include/RLMAccessor.h; sourceTree = "<group>"; };
@@ -666,6 +673,7 @@
 		A2A2CFB573D1B9FA4BFB1E353C8FCD17 /* Realm-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Realm-dummy.m"; sourceTree = "<group>"; };
 		A338781263C52B4B727917B480479060 /* ObjectiveCSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjectiveCSupport.swift; path = RealmSwift/ObjectiveCSupport.swift; sourceTree = "<group>"; };
 		A3CAE6684F9935C6787F8245E37ACB35 /* RLMProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMProperty.h; path = include/RLMProperty.h; sourceTree = "<group>"; };
+		A403E49A0464DBE5216F23F7A6804A6C /* Pods-TopGames-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TopGames-frameworks.sh"; sourceTree = "<group>"; };
 		A481BA57AA8F0577DC25AF8A97D3E5CF /* ObjectScope.Standard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjectScope.Standard.swift; path = Sources/ObjectScope.Standard.swift; sourceTree = "<group>"; };
 		A5958848B6220535E1A9DD1B80D7C3EC /* SynchronizedResolver.Arguments.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SynchronizedResolver.Arguments.swift; path = Sources/SynchronizedResolver.Arguments.swift; sourceTree = "<group>"; };
 		A6F48EB628F991D1FB68C172EA2F64AC /* SwinjectStoryboard+StoryboardReference.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwinjectStoryboard+StoryboardReference.swift"; path = "Sources/SwinjectStoryboard+StoryboardReference.swift"; sourceTree = "<group>"; };
@@ -675,7 +683,6 @@
 		A9B994175632B5209DFBC62252742E28 /* Marshal.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Marshal.modulemap; sourceTree = "<group>"; };
 		AA1B8C9F7AEC5E7BD28A2F20AE8D6AC5 /* binding_callback_thread_observer.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = binding_callback_thread_observer.cpp; path = Realm/ObjectStore/src/binding_callback_thread_observer.cpp; sourceTree = "<group>"; };
 		AAD120743BDD53BCFCFC1C7E3F4C77FD /* realm_coordinator.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = realm_coordinator.cpp; path = Realm/ObjectStore/src/impl/realm_coordinator.cpp; sourceTree = "<group>"; };
-		AB5CD73678DED28A668E6AAB6D98906B /* Marshal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Marshal.framework; path = Marshal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB665269219BAB913DC4AFB370E32680 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
 		AC1333B5A6C7E33C00E5C08EE91C4E61 /* RLMCollection.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMCollection.mm; path = Realm/RLMCollection.mm; sourceTree = "<group>"; };
 		ACF2C9292A15C6420E5DCC3983389ECA /* InjectionVerifiable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InjectionVerifiable.swift; path = Sources/InjectionVerifiable.swift; sourceTree = "<group>"; };
@@ -685,6 +692,7 @@
 		B3ADEE02D72C9FCB653CB7409C390BF4 /* RealmConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RealmConfiguration.swift; path = RealmSwift/RealmConfiguration.swift; sourceTree = "<group>"; };
 		B3F0F2BD973BE16CE1E23B75929C9EDC /* RLMThreadSafeReference.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMThreadSafeReference.mm; path = Realm/RLMThreadSafeReference.mm; sourceTree = "<group>"; };
 		B4379033CA0F424391FBDD3718ACA143 /* UIStoryboard+Swizzling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIStoryboard+Swizzling.h"; path = "Sources/iOS-tvOS/UIStoryboard+Swizzling.h"; sourceTree = "<group>"; };
+		B4643A949DF8465386296A9BB715C99B /* Marshal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Marshal.framework; path = Marshal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B80C9085B157270146D4F4D14E1546C0 /* RealmSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RealmSwift-dummy.m"; sourceTree = "<group>"; };
 		B8F510BE8B92F3337E3A4127AD580E26 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B98E9767C427EA3D652F93D8228E7EE9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -701,19 +709,21 @@
 		C2B169C6741FCBD7DA1D485A90F121CE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		C30E417B2E0570399358A03FB3DBE721 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
 		C3F08CECEF83E0156268F9C5C8AF234B /* SortDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SortDescriptor.swift; path = RealmSwift/SortDescriptor.swift; sourceTree = "<group>"; };
+		C4F0A88039333165A3ECF81FA9A79ED3 /* Pods-TopGamesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TopGamesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C584283CFBD445049CCA36FF8BAD02AA /* Schema.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Schema.swift; path = RealmSwift/Schema.swift; sourceTree = "<group>"; };
 		C6B626FB58CA3A33589B0CF907218C14 /* RLMQueryUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMQueryUtil.mm; path = Realm/RLMQueryUtil.mm; sourceTree = "<group>"; };
 		C97057DAA8A328ACEA72A4CCA4A25857 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
 		C9C37DB6947DB7F922E7A887C32D7245 /* InstanceWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InstanceWrapper.swift; path = Sources/InstanceWrapper.swift; sourceTree = "<group>"; };
+		CA890AEC43E445F24059C9C3DDADD0F6 /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Kingfisher.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAF6C5C2FA54474035EDCDB487841817 /* Realm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Realm.swift; path = RealmSwift/Realm.swift; sourceTree = "<group>"; };
 		CB0DF56C7BADD1E7E4F6863C24965D99 /* object.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = object.cpp; path = Realm/ObjectStore/src/object.cpp; sourceTree = "<group>"; };
 		CB155788C14AF8063109D49F4B32D274 /* RLMListBase.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMListBase.mm; path = Realm/RLMListBase.mm; sourceTree = "<group>"; };
 		CB3F2D454F3AD62273E0F29C48E130D8 /* CacheSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CacheSerializer.swift; path = Sources/CacheSerializer.swift; sourceTree = "<group>"; };
 		CB4B419825DEB6C8FE2AE2BFC10D52DF /* Kingfisher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Kingfisher.modulemap; sourceTree = "<group>"; };
-		CC24481CE4DE36DDF27F9BE99888003E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCF6D5286D799D67E2E38A237D49128E /* RLMSyncUtil_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSyncUtil_Private.h; path = include/RLMSyncUtil_Private.h; sourceTree = "<group>"; };
 		CD85D3813ABA35FF936305ECE066F818 /* Swinject.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Swinject.xcconfig; sourceTree = "<group>"; };
 		CEA86A4BCC895687DCAB7CB31CC02D6F /* RLMRealm+Sync.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = "RLMRealm+Sync.mm"; path = "Realm/RLMRealm+Sync.mm"; sourceTree = "<group>"; };
+		CF39582FC674E3BD8EB7591366A226F3 /* Pods-TopGames-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TopGames-dummy.m"; sourceTree = "<group>"; };
 		CFA0771335ADE6CC3E4F359A9C6DBFEE /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		D517DC7887D78E1A6CC4B5109BA06301 /* ImageModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageModifier.swift; path = Sources/ImageModifier.swift; sourceTree = "<group>"; };
 		D558B212A0E39561BFBA8539A2CAD299 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -723,12 +733,13 @@
 		D7CBD7E5A9358AE8F45CE99460EA526D /* SwinjectStoryboardProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwinjectStoryboardProtocol.h; path = Sources/SwinjectStoryboardProtocol.h; sourceTree = "<group>"; };
 		D8082D48D873A9089F8737A2C8181D76 /* RLMSyncConfiguration.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMSyncConfiguration.mm; path = Realm/RLMSyncConfiguration.mm; sourceTree = "<group>"; };
 		D8347F2E030E7E6245F105622E1719C9 /* RLMRealmConfiguration.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMRealmConfiguration.mm; path = Realm/RLMRealmConfiguration.mm; sourceTree = "<group>"; };
-		D98F26F6C2BB9027628B2BF0BB7977FC /* Swinject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Swinject.framework; path = Swinject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAC24F47432654689A7E4BE1602A0F6E /* RLMObservation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMObservation.mm; path = Realm/RLMObservation.mm; sourceTree = "<group>"; };
 		DD38202CD116F9C2FD63953FAD3E3BD2 /* NSError+RLMSync.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSError+RLMSync.h"; path = "include/NSError+RLMSync.h"; sourceTree = "<group>"; };
 		DDADFBDC1987007A78FF08285202C21C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDD55DF539F77BA35F0F80A69849FCDB /* Swinject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Swinject.framework; path = Swinject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDFE1B6DBF9AABEA6F5C05B26DB87161 /* JSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = Sources/JSON.swift; sourceTree = "<group>"; };
 		DF09CCE4E35E8D1EB569C73286C08070 /* RLMThreadSafeReference.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMThreadSafeReference.h; path = include/RLMThreadSafeReference.h; sourceTree = "<group>"; };
+		DF48A9AE5893007FCEF15562B2291CCF /* Pods-TopGamesToday.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TopGamesToday.debug.xcconfig"; sourceTree = "<group>"; };
 		E090E566B2C31AA852B5B0401CBAE6D3 /* Container+SwinjectStoryboard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Container+SwinjectStoryboard.swift"; path = "Sources/Container+SwinjectStoryboard.swift"; sourceTree = "<group>"; };
 		E3D180486D4DC3F99991F172133B05F5 /* Kingfisher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-umbrella.h"; sourceTree = "<group>"; };
 		E465512DB0349CA34AAEE08462149DF0 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
@@ -742,6 +753,7 @@
 		E9265FF230BF2623B6B66C8CBB2166EC /* Realm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Realm.h; path = include/Realm.h; sourceTree = "<group>"; };
 		E9ABC3640032308514B7C308C947FC2F /* RLMNetworkClient.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMNetworkClient.mm; path = Realm/RLMNetworkClient.mm; sourceTree = "<group>"; };
 		E9BCD02809CCFAFAB24BE908D3FEC643 /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Sources/ImageDownloader.swift; sourceTree = "<group>"; };
+		EA52131D374DA9166D02D81C617F0B6F /* SwinjectStoryboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwinjectStoryboard.framework; path = SwinjectStoryboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA71E44883E82EDD78C2E095A70B42C6 /* placeholder.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = placeholder.cpp; path = Realm/ObjectStore/src/placeholder.cpp; sourceTree = "<group>"; };
 		EB02C8EF37ACD0F08AE7D6FE473341DC /* RLMCollection_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMCollection_Private.h; path = include/RLMCollection_Private.h; sourceTree = "<group>"; };
 		EB2C1DCB25270F305C0A8B4E90A398A3 /* UnavailableItems.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnavailableItems.swift; path = Sources/UnavailableItems.swift; sourceTree = "<group>"; };
@@ -750,26 +762,27 @@
 		ED38272980DCC51DDCE6AED74174A9BE /* Kingfisher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kingfisher.xcconfig; sourceTree = "<group>"; };
 		ED6FF73BE155F6CD535234D2C4C20145 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = RealmSwift/Error.swift; sourceTree = "<group>"; };
 		ED8B2659E406F29A624D11A7A67EDB07 /* Migration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Migration.swift; path = RealmSwift/Migration.swift; sourceTree = "<group>"; };
-		EEBDFFC5D989C5922BEE1130D93EACF2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFC8438C340C954B96B9F1599826120C /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		F0B7B71171158C02F38AF42412D5948A /* _SwinjectStoryboardBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _SwinjectStoryboardBase.h; path = "Sources/iOS-tvOS/_SwinjectStoryboardBase.h"; sourceTree = "<group>"; };
+		F1079ACC37D55A00863756A7F4B15DC5 /* Pods-TopGamesTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TopGamesTests.modulemap"; sourceTree = "<group>"; };
 		F2D974AE7E086DAA57F22787BFB9E99F /* Assembler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Assembler.swift; path = Sources/Assembler.swift; sourceTree = "<group>"; };
 		F2E738A2AC877FF8BB95D8CAE3689FAA /* Container.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Container.swift; path = Sources/Container.swift; sourceTree = "<group>"; };
 		F369C000314DEB1116E04DD6B553E316 /* RLMSchema.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSchema.h; path = include/RLMSchema.h; sourceTree = "<group>"; };
 		F3B10D57B7C8F45BCD409F7F0945A127 /* RealmSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RealmSwift-umbrella.h"; sourceTree = "<group>"; };
 		F55629747C78D1CB748BC6CFD99965EE /* ServiceEntry.TypeForwarding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceEntry.TypeForwarding.swift; path = Sources/ServiceEntry.TypeForwarding.swift; sourceTree = "<group>"; };
-		F5647FC53E5935C22E72131867AE7452 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RealmSwift.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F577E91E8E9E1B62102FFDDC8B7560C6 /* Behavior.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Behavior.swift; path = Sources/Behavior.swift; sourceTree = "<group>"; };
+		F5E3D864695B7D3B75A4D1333E4A1DA1 /* Pods-TopGames.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TopGames.release.xcconfig"; sourceTree = "<group>"; };
 		F6E7C9A859BF3DA1FF47EEE4DE58E413 /* transact_log_handler.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = transact_log_handler.cpp; path = Realm/ObjectStore/src/impl/transact_log_handler.cpp; sourceTree = "<group>"; };
 		F77DE96ADFDF148561D29FB6212F36DF /* ImagePrefetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePrefetcher.swift; path = Sources/ImagePrefetcher.swift; sourceTree = "<group>"; };
 		F8186A84E4A78346D10F389C1184715B /* uuid.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = uuid.cpp; path = Realm/ObjectStore/src/util/uuid.cpp; sourceTree = "<group>"; };
-		F927BC1AA946479DB69D0748E8F88CFD /* Pods-TopGames-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TopGames-frameworks.sh"; sourceTree = "<group>"; };
+		F864D2A3A007EA1138673C3D62316F84 /* Pods-TopGamesToday.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TopGamesToday.modulemap"; sourceTree = "<group>"; };
+		F90659CA21243B94FBE826AB462873F4 /* Pods-TopGamesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TopGamesTests.release.xcconfig"; sourceTree = "<group>"; };
 		F9F770439E3ADD11A21C718942D8EA0D /* ViewController+Swinject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ViewController+Swinject.swift"; path = "Sources/ViewController+Swinject.swift"; sourceTree = "<group>"; };
 		FAEA5A8986E8E29362816440F5585903 /* partial_sync.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = partial_sync.cpp; path = Realm/ObjectStore/src/sync/partial_sync.cpp; sourceTree = "<group>"; };
-		FB860C8C3D93F08DE80895B987F8F601 /* Pods_TopGamesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TopGamesTests.framework; path = "Pods-TopGamesTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA4D58893839C5802F5E7EB87116D25 /* RLMConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMConstants.h; path = include/RLMConstants.h; sourceTree = "<group>"; };
 		FBC76EA1C86316C87F63FD5AA3767D84 /* RLMRealm.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMRealm.mm; path = Realm/RLMRealm.mm; sourceTree = "<group>"; };
 		FC235FB2551D19C880E66C1302681ED7 /* RLMSwiftSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RLMSwiftSupport.m; path = Realm/RLMSwiftSupport.m; sourceTree = "<group>"; };
+		FD46BCFFD3F92D826BDF4ADD37DB9189 /* Pods-TopGames.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TopGames.modulemap"; sourceTree = "<group>"; };
 		FD563F9D50EA32CBA565FA89EDCD8DDC /* SwinjectStoryboard.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwinjectStoryboard.xcconfig; sourceTree = "<group>"; };
 		FD72ECA564D92A108BDCED90E89EAB40 /* RLMSyncUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSyncUtil.h; path = include/RLMSyncUtil.h; sourceTree = "<group>"; };
 		FDCF7C794C37CE25C49008EB1202DE7A /* ImageProcessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageProcessor.swift; path = Sources/ImageProcessor.swift; sourceTree = "<group>"; };
@@ -808,6 +821,14 @@
 			files = (
 				7E465933C374C8B63B970F2850A71746 /* Foundation.framework in Frameworks */,
 				5AA3FAA37C0050DF9B7EA39DB772F7A3 /* Swinject.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		644FFF89EBE946F00651950A3423B7CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A8135CDE0C80090974E355703B56B2F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -856,33 +877,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		18F5650B0F4E8680E49BAD7C20715340 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				EF056A3E2F2AE2174A263E62ACA20D73 /* Pods-TopGames */,
-				273E60E5DAA50173C775229471D9F428 /* Pods-TopGamesTests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		273E60E5DAA50173C775229471D9F428 /* Pods-TopGamesTests */ = {
-			isa = PBXGroup;
-			children = (
-				CC24481CE4DE36DDF27F9BE99888003E /* Info.plist */,
-				0AAADFFF7B1ACF39DC9E52C554E3DACC /* Pods-TopGamesTests.modulemap */,
-				35D0B3D1F2D43680A84C9785CB1221F5 /* Pods-TopGamesTests-acknowledgements.markdown */,
-				9D934BDC71A16F8AE62F3E286FD3DC92 /* Pods-TopGamesTests-acknowledgements.plist */,
-				87D22438CC9E8BFE8959015EC631BADB /* Pods-TopGamesTests-dummy.m */,
-				0A1EC9404470CA2D5E593300D7B97C8E /* Pods-TopGamesTests-frameworks.sh */,
-				5204D130B1EAC49E365A8165D0F4749F /* Pods-TopGamesTests-resources.sh */,
-				69C44D48167A8120043E657191371C8B /* Pods-TopGamesTests-umbrella.h */,
-				3D9F251C4FFA652541FF2196FF7DF54C /* Pods-TopGamesTests.debug.xcconfig */,
-				7B61DFA65AB9E9371851A5156BC41774 /* Pods-TopGamesTests.release.xcconfig */,
-			);
-			name = "Pods-TopGamesTests";
-			path = "Target Support Files/Pods-TopGamesTests";
-			sourceTree = "<group>";
-		};
 		3426020D9FE0752DBFC3CD65FC1456C6 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -903,6 +897,16 @@
 				2A8786ECB5E9439F7EAF4F73BB9CAEA6 /* librealmcore-ios.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4302E49EC978D7D79370FDF79A1DFB8E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A12B8B9703D4E77A0659C03559247249 /* Pods-TopGames */,
+				FD03B01353D69AC94CF88D115C251BE4 /* Pods-TopGamesTests */,
+				4EED0F59A192943CEDD296DF94E5DAF7 /* Pods-TopGamesToday */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		4484E17ED254DB99CA830712BD6C76C2 /* SwinjectStoryboard */ = {
@@ -961,6 +965,23 @@
 			);
 			name = Kingfisher;
 			path = Kingfisher;
+			sourceTree = "<group>";
+		};
+		4EED0F59A192943CEDD296DF94E5DAF7 /* Pods-TopGamesToday */ = {
+			isa = PBXGroup;
+			children = (
+				6DFD1987FFB832739B59E02A7933B53E /* Info.plist */,
+				F864D2A3A007EA1138673C3D62316F84 /* Pods-TopGamesToday.modulemap */,
+				3615E12C7E52526EA25A48B7EFEF26F0 /* Pods-TopGamesToday-acknowledgements.markdown */,
+				616599874D8640ED48DC2FEE6AEA36C6 /* Pods-TopGamesToday-acknowledgements.plist */,
+				94FB427A3D0501EC66EE97D3AC6E642B /* Pods-TopGamesToday-dummy.m */,
+				6ED6D3CB718E0BB89560025E0DA3DCDD /* Pods-TopGamesToday-resources.sh */,
+				855FDD5B830CB546A310B4A2EF6C84D9 /* Pods-TopGamesToday-umbrella.h */,
+				DF48A9AE5893007FCEF15562B2291CCF /* Pods-TopGamesToday.debug.xcconfig */,
+				4EF1C642F4942E5778BCC3FB6EBAFEBF /* Pods-TopGamesToday.release.xcconfig */,
+			);
+			name = "Pods-TopGamesToday";
+			path = "Target Support Files/Pods-TopGamesToday";
 			sourceTree = "<group>";
 		};
 		54308444EDE79E4F95A9C7A1FFBC4BFE /* Frameworks */ = {
@@ -1056,8 +1077,8 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				54308444EDE79E4F95A9C7A1FFBC4BFE /* Frameworks */,
 				56CC7F62203866B8B1BFC59E4FAACD14 /* Pods */,
-				A2E65C38B03CC8A318C0A5F36D97DC89 /* Products */,
-				18F5650B0F4E8680E49BAD7C20715340 /* Targets Support Files */,
+				AC15CC6EC56D4DF391FA47BE9C251F8A /* Products */,
+				4302E49EC978D7D79370FDF79A1DFB8E /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1126,18 +1147,37 @@
 			path = RealmSwift;
 			sourceTree = "<group>";
 		};
-		A2E65C38B03CC8A318C0A5F36D97DC89 /* Products */ = {
+		A12B8B9703D4E77A0659C03559247249 /* Pods-TopGames */ = {
 			isa = PBXGroup;
 			children = (
-				630531E4959CCF9CC83E250B6880446E /* Alamofire.framework */,
-				52DD35BBB7FD2928E2D939F93F9C9D13 /* Kingfisher.framework */,
-				AB5CD73678DED28A668E6AAB6D98906B /* Marshal.framework */,
-				915ECA8BEF5B72923625F6BED380BAE4 /* Pods_TopGames.framework */,
-				FB860C8C3D93F08DE80895B987F8F601 /* Pods_TopGamesTests.framework */,
-				295A1AB1D7D5796BC821C95402B122DD /* Realm.framework */,
-				F5647FC53E5935C22E72131867AE7452 /* RealmSwift.framework */,
-				D98F26F6C2BB9027628B2BF0BB7977FC /* Swinject.framework */,
-				03DD334FBE3CDC908BC98E319F50BB18 /* SwinjectStoryboard.framework */,
+				3DDABD795689F362A092B3233B4D9CE3 /* Info.plist */,
+				FD46BCFFD3F92D826BDF4ADD37DB9189 /* Pods-TopGames.modulemap */,
+				366991E8BF458690F902BB56DC97E4F5 /* Pods-TopGames-acknowledgements.markdown */,
+				876AD9FD5D5C963D431C59571370D625 /* Pods-TopGames-acknowledgements.plist */,
+				CF39582FC674E3BD8EB7591366A226F3 /* Pods-TopGames-dummy.m */,
+				A403E49A0464DBE5216F23F7A6804A6C /* Pods-TopGames-frameworks.sh */,
+				5B96BB090F3A10D976C22E7EE30C8494 /* Pods-TopGames-resources.sh */,
+				29DA69F9BE6CD4CEC4DAB1E689AC212F /* Pods-TopGames-umbrella.h */,
+				56339A871AB5AE2087440B09D229EAAC /* Pods-TopGames.debug.xcconfig */,
+				F5E3D864695B7D3B75A4D1333E4A1DA1 /* Pods-TopGames.release.xcconfig */,
+			);
+			name = "Pods-TopGames";
+			path = "Target Support Files/Pods-TopGames";
+			sourceTree = "<group>";
+		};
+		AC15CC6EC56D4DF391FA47BE9C251F8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02CCC3BEA0843F38E2366B0A50D32822 /* Alamofire.framework */,
+				CA890AEC43E445F24059C9C3DDADD0F6 /* Kingfisher.framework */,
+				B4643A949DF8465386296A9BB715C99B /* Marshal.framework */,
+				3F625BAB61F12624D43CFAB9C1EB266B /* Pods_TopGames.framework */,
+				1A9227279F0C35FF2D92032892127A8D /* Pods_TopGamesTests.framework */,
+				813BC6031BFFB8F5B42B8E6F89234FD7 /* Pods_TopGamesToday.framework */,
+				3B2D43777F54B549F09D1EF102A57716 /* Realm.framework */,
+				78E8EFF27BC0186A0C954BA94178552F /* RealmSwift.framework */,
+				DDD55DF539F77BA35F0F80A69849FCDB /* Swinject.framework */,
+				EA52131D374DA9166D02D81C617F0B6F /* SwinjectStoryboard.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1322,24 +1362,6 @@
 			path = "../Target Support Files/Realm";
 			sourceTree = "<group>";
 		};
-		EF056A3E2F2AE2174A263E62ACA20D73 /* Pods-TopGames */ = {
-			isa = PBXGroup;
-			children = (
-				EEBDFFC5D989C5922BEE1130D93EACF2 /* Info.plist */,
-				383A0481049790524F63A1B5AAC70028 /* Pods-TopGames.modulemap */,
-				9008A549F907CBE73610B51D6DC96E57 /* Pods-TopGames-acknowledgements.markdown */,
-				563C6481EA643A340E5D9E2FC5EDDF6B /* Pods-TopGames-acknowledgements.plist */,
-				841C776904150F79335931DD9740FC0E /* Pods-TopGames-dummy.m */,
-				F927BC1AA946479DB69D0748E8F88CFD /* Pods-TopGames-frameworks.sh */,
-				81CBC1C33EDE123198DDC1ADFE5160DE /* Pods-TopGames-resources.sh */,
-				6E76FD0E3B8433974F0D2FB5582C86A1 /* Pods-TopGames-umbrella.h */,
-				2AF3FCF7F1AFB1F5A8ABF9B88734F8F0 /* Pods-TopGames.debug.xcconfig */,
-				7A4163023AF728731862EBD1718CF39B /* Pods-TopGames.release.xcconfig */,
-			);
-			name = "Pods-TopGames";
-			path = "Target Support Files/Pods-TopGames";
-			sourceTree = "<group>";
-		};
 		FB0C006024F13FD623BC1054AABA3190 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
@@ -1375,9 +1397,35 @@
 			name = Headers;
 			sourceTree = "<group>";
 		};
+		FD03B01353D69AC94CF88D115C251BE4 /* Pods-TopGamesTests */ = {
+			isa = PBXGroup;
+			children = (
+				22BB105F7F59CDB8FA877757676FC2F4 /* Info.plist */,
+				F1079ACC37D55A00863756A7F4B15DC5 /* Pods-TopGamesTests.modulemap */,
+				90DB9241592D1DD26101B8477125A323 /* Pods-TopGamesTests-acknowledgements.markdown */,
+				5C83F9DD5A206C8A68EABE1A9736E7A3 /* Pods-TopGamesTests-acknowledgements.plist */,
+				6EFDB820EE58B9AAA4137C97BFC26864 /* Pods-TopGamesTests-dummy.m */,
+				100923F26421A228BDC8F1B4DE03C85C /* Pods-TopGamesTests-frameworks.sh */,
+				985BB2CE8B87E1B9B9DFC5E913A580C6 /* Pods-TopGamesTests-resources.sh */,
+				852CCAD1ADC190D120F7919A818461D6 /* Pods-TopGamesTests-umbrella.h */,
+				C4F0A88039333165A3ECF81FA9A79ED3 /* Pods-TopGamesTests.debug.xcconfig */,
+				F90659CA21243B94FBE826AB462873F4 /* Pods-TopGamesTests.release.xcconfig */,
+			);
+			name = "Pods-TopGamesTests";
+			path = "Target Support Files/Pods-TopGamesTests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		17C6B68E9D8DEE07AFCC773BFF4FA599 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16F75E70883DE64D1CBA2B0B1BDFFD1B /* Pods-TopGamesToday-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		544B8928F0E31154740C7568664E6D9D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1518,7 +1566,7 @@
 			);
 			name = Swinject;
 			productName = Swinject;
-			productReference = D98F26F6C2BB9027628B2BF0BB7977FC /* Swinject.framework */;
+			productReference = DDD55DF539F77BA35F0F80A69849FCDB /* Swinject.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		1E4BFC2A7261777EE0D49DF35663559C /* SwinjectStoryboard */ = {
@@ -1536,7 +1584,7 @@
 			);
 			name = SwinjectStoryboard;
 			productName = SwinjectStoryboard;
-			productReference = 03DD334FBE3CDC908BC98E319F50BB18 /* SwinjectStoryboard.framework */;
+			productReference = EA52131D374DA9166D02D81C617F0B6F /* SwinjectStoryboard.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		4F87037150ABE2C9238B54E8F6E33F36 /* Kingfisher */ = {
@@ -1553,7 +1601,7 @@
 			);
 			name = Kingfisher;
 			productName = Kingfisher;
-			productReference = 52DD35BBB7FD2928E2D939F93F9C9D13 /* Kingfisher.framework */;
+			productReference = CA890AEC43E445F24059C9C3DDADD0F6 /* Kingfisher.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		622AA4554EEF801923AD0BD460528EFA /* Pods-TopGamesTests */ = {
@@ -1570,7 +1618,7 @@
 			);
 			name = "Pods-TopGamesTests";
 			productName = "Pods-TopGamesTests";
-			productReference = FB860C8C3D93F08DE80895B987F8F601 /* Pods_TopGamesTests.framework */;
+			productReference = 1A9227279F0C35FF2D92032892127A8D /* Pods_TopGamesTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		7746DACAD5D8ED717EDD90F48AAA21DF /* Realm */ = {
@@ -1589,7 +1637,24 @@
 			);
 			name = Realm;
 			productName = Realm;
-			productReference = 295A1AB1D7D5796BC821C95402B122DD /* Realm.framework */;
+			productReference = 3B2D43777F54B549F09D1EF102A57716 /* Realm.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		881B274AC8EBF4F6CD4B93EDC5D8E977 /* Pods-TopGamesToday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 718BCE892808CB9E3B8AD09F14F7823C /* Build configuration list for PBXNativeTarget "Pods-TopGamesToday" */;
+			buildPhases = (
+				D106CBF705FE9B2FC4B9B22719AA1B0D /* Sources */,
+				644FFF89EBE946F00651950A3423B7CE /* Frameworks */,
+				17C6B68E9D8DEE07AFCC773BFF4FA599 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TopGamesToday";
+			productName = "Pods-TopGamesToday";
+			productReference = 813BC6031BFFB8F5B42B8E6F89234FD7 /* Pods_TopGamesToday.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */ = {
@@ -1606,7 +1671,7 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = 630531E4959CCF9CC83E250B6880446E /* Alamofire.framework */;
+			productReference = 02CCC3BEA0843F38E2366B0A50D32822 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A62776E7622E4F88DD0A5C482EB53067 /* RealmSwift */ = {
@@ -1624,7 +1689,7 @@
 			);
 			name = RealmSwift;
 			productName = RealmSwift;
-			productReference = F5647FC53E5935C22E72131867AE7452 /* RealmSwift.framework */;
+			productReference = 78E8EFF27BC0186A0C954BA94178552F /* RealmSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		DB2A41967AA5E5033112FBCB4EE67203 /* Pods-TopGames */ = {
@@ -1648,7 +1713,7 @@
 			);
 			name = "Pods-TopGames";
 			productName = "Pods-TopGames";
-			productReference = 915ECA8BEF5B72923625F6BED380BAE4 /* Pods_TopGames.framework */;
+			productReference = 3F625BAB61F12624D43CFAB9C1EB266B /* Pods_TopGames.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		FBE2BABDD2574C536D98AC5C29F59AAC /* Marshal */ = {
@@ -1665,7 +1730,7 @@
 			);
 			name = Marshal;
 			productName = Marshal;
-			productReference = AB5CD73678DED28A668E6AAB6D98906B /* Marshal.framework */;
+			productReference = B4643A949DF8465386296A9BB715C99B /* Marshal.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -1685,7 +1750,7 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = A2E65C38B03CC8A318C0A5F36D97DC89 /* Products */;
+			productRefGroup = AC15CC6EC56D4DF391FA47BE9C251F8A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -1694,6 +1759,7 @@
 				FBE2BABDD2574C536D98AC5C29F59AAC /* Marshal */,
 				DB2A41967AA5E5033112FBCB4EE67203 /* Pods-TopGames */,
 				622AA4554EEF801923AD0BD460528EFA /* Pods-TopGamesTests */,
+				881B274AC8EBF4F6CD4B93EDC5D8E977 /* Pods-TopGamesToday */,
 				7746DACAD5D8ED717EDD90F48AAA21DF /* Realm */,
 				A62776E7622E4F88DD0A5C482EB53067 /* RealmSwift */,
 				00600636D01471771A40587CC631CBDC /* Swinject */,
@@ -1951,6 +2017,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D106CBF705FE9B2FC4B9B22719AA1B0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0246A28D6A8162707A3357AE69DC21F7 /* Pods-TopGamesToday-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EABFE16260FC3BBB4CF939D7EDC36544 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2203,7 +2277,7 @@
 		};
 		4A88E912C5A48A07A330042F64A625FF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AF3FCF7F1AFB1F5A8ABF9B88734F8F0 /* Pods-TopGames.debug.xcconfig */;
+			baseConfigurationReference = 56339A871AB5AE2087440B09D229EAAC /* Pods-TopGames.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -2268,7 +2342,7 @@
 		};
 		5F4090255AF7088E8D8F81942D0BBA31 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B61DFA65AB9E9371851A5156BC41774 /* Pods-TopGamesTests.release.xcconfig */;
+			baseConfigurationReference = F90659CA21243B94FBE826AB462873F4 /* Pods-TopGamesTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -2324,6 +2398,39 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9794E5CB78BFEECD9B8B15FDC4EF4757 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EF1C642F4942E5778BCC3FB6EBAFEBF /* Pods-TopGamesToday.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TopGamesToday/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TopGamesToday/Pods-TopGamesToday.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TopGamesToday;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -2490,7 +2597,7 @@
 		};
 		CB6147D1384264422454E8A8CFB3F2F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D9F251C4FFA652541FF2196FF7DF54C /* Pods-TopGamesTests.debug.xcconfig */;
+			baseConfigurationReference = C4F0A88039333165A3ECF81FA9A79ED3 /* Pods-TopGamesTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -2554,7 +2661,7 @@
 		};
 		DA6D5D2F2EDFB2657175670E3FFDD0C2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A4163023AF728731862EBD1718CF39B /* Pods-TopGames.release.xcconfig */;
+			baseConfigurationReference = F5E3D864695B7D3B75A4D1333E4A1DA1 /* Pods-TopGames.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -2681,6 +2788,38 @@
 			};
 			name = Release;
 		};
+		F07F93455DFFD1014DD3928DF2DD6D91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF48A9AE5893007FCEF15562B2291CCF /* Pods-TopGamesToday.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TopGamesToday/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TopGamesToday/Pods-TopGamesToday.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TopGamesToday;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		FA047AAAFC629CB52F817C0721C81F3B /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2C1977B90D42DFCF336775B5AC933CF8 /* Realm.xcconfig */;
@@ -2765,6 +2904,15 @@
 			buildConfigurations = (
 				5643E6E2AE8863750FABF84A1E278A25 /* Debug */,
 				CC248524436A644DBEAF1DC4BC46B531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		718BCE892808CB9E3B8AD09F14F7823C /* Build configuration list for PBXNativeTarget "Pods-TopGamesToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F07F93455DFFD1014DD3928DF2DD6D91 /* Debug */,
+				9794E5CB78BFEECD9B8B15FDC4EF4757 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -13,4 +13,8 @@ target 'TopGames' do
     target 'TopGamesTests' do
         inherit! :search_paths
     end
+
+    target 'TopGamesToday' do
+        inherit! :search_paths
+    end
 end
