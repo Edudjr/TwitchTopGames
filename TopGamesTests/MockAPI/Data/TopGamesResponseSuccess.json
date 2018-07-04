@@ -1,0 +1,107 @@
+{
+    "data": [
+        {
+            "id": "29307",
+            "name": "Path of Exile",
+            "box_art_url": "https://static-cdn.jtvnw.net/ttv-boxart/Path%20of%20Exile-{width}x{height}.jpg"
+        },
+        {
+            "id": "27471",
+            "name": "Minecraft",
+            "box_art_url": "https://static-cdn.jtvnw.net/ttv-boxart/Minecraft-{width}x{height}.jpg"
+        },
+        {
+            "id": "9234",
+            "name": "Casino",
+            "box_art_url": "https://static-cdn.jtvnw.net/ttv-boxart/Casino-{width}x{height}.jpg"
+        },
+        {
+            "id": "491487",
+            "name": "Dead by Daylight",
+            "box_art_url": "https://static-cdn.jtvnw.net/ttv-boxart/Dead%20by%20Daylight-{width}x{height}.jpg"
+        },
+        {
+            "id": "488191",
+            "name": "Creative",
+            "box_art_url": "https://static-cdn.jtvnw.net/ttv-boxart/Creative-{width}x{height}.jpg"
+        },
+        {
+            "id": "417892",
+            "name": "H1Z1",
+            "box_art_url": "https://static-cdn.jtvnw.net/ttv-boxart/H1Z1-{width}x{height}.jpg"
+        },
+        {
+            "id": "497057",
+            "name": "Destiny 2",
+            "box_art_url": "https://static-cdn.jtvnw.net/ttv-boxart/Destiny%202-{width}x{height}.jpg"
+        },
+        {
+            "id": "417752",
+            "name": "Talk Shows",
+            "box_art_url": "https://static-cdn.jtvnw.net/ttv-boxart/Talk%20Shows-{width}x{height}.jpg"
+        },
+        {
+            "id": "26936",
+            "name": "Music",
+            "box_art_url": "https://static-cdn.jtvnw.net/ttv-boxart/Music-{width}x{height}.jpg"
+        },
+        {
+            "id": "31621",
+            "name": "Dungeons & Dragons",
+            "box_art_url": "https://static-cdn.jtvnw.net/ttv-boxart/Dungeons%20&%20Dragons-{width}x{height}.jpg"
+        },
+        {
+            "id": "490292",
+            "name": "Dark Souls III",
+            "box_art_url": "https://static-cdn.jtvnw.net/ttv-boxart/Dark%20Souls%20III-{width}x{height}.jpg"
+        },
+        {
+            "id": "30028",
+            "name": "The Elder Scrolls V: Skyrim",
+            "box_art_url": "https://static-cdn.jtvnw.net/ttv-boxart/The%20Elder%20Scrolls%20V:%20Skyrim-{width}x{height}.jpg"
+        },
+        {
+            "id": "498459",
+            "name": "Jurassic World Evolution",
+            "box_art_url": "https://static-cdn.jtvnw.net/ttv-boxart/Jurassic%20World%20Evolution-{width}x{height}.jpg"
+        },
+        {
+            "id": "490422",
+            "name": "StarCraft II",
+            "box_art_url": "https://static-cdn.jtvnw.net/ttv-boxart/StarCraft%20II-{width}x{height}.jpg"
+        },
+        {
+            "id": "29433",
+            "name": "Dark Souls",
+            "box_art_url": "https://static-cdn.jtvnw.net/ttv-boxart/Dark%20Souls-{width}x{height}.jpg"
+        },
+        {
+            "id": "313558",
+            "name": "Diablo III: Reaper of Souls",
+            "box_art_url": "https://static-cdn.jtvnw.net/ttv-boxart/Diablo%20III:%20Reaper%20of%20Souls-{width}x{height}.jpg"
+        },
+        {
+            "id": "30921",
+            "name": "Rocket League",
+            "box_art_url": "https://static-cdn.jtvnw.net/ttv-boxart/Rocket%20League-{width}x{height}.jpg"
+        },
+        {
+            "id": "488353",
+            "name": "Super Smash Bros. for Wii U",
+            "box_art_url": "https://static-cdn.jtvnw.net/ttv-boxart/Super%20Smash%20Bros.%20for%20Wii%20U-{width}x{height}.jpg"
+        },
+        {
+            "id": "2748",
+            "name": "Magic: The Gathering",
+            "box_art_url": "https://static-cdn.jtvnw.net/ttv-boxart/Magic:%20The%20Gathering-{width}x{height}.jpg"
+        },
+        {
+            "id": "66170",
+            "name": "Warframe",
+            "box_art_url": "https://static-cdn.jtvnw.net/ttv-boxart/Warframe-{width}x{height}.jpg"
+        }
+    ],
+    "pagination": {
+        "cursor": "eyJiIjp7Ik9mZnNldCI6MH0sImEiOnsiT2Zmc2V0Ijo0MH19"
+    }
+}

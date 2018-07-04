@@ -7,15 +7,68 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CAC5497BC9F366150FB2A12 /* Pods_TopGames.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E23B35CFF47B39C9F0353753 /* Pods_TopGames.framework */; };
+		280A48D520E5FB7500C42F8B /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280A48D420E5FB7500C42F8B /* FavoritesViewController.swift */; };
+		280A48D720E5FC4600C42F8B /* CacheAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280A48D620E5FC4600C42F8B /* CacheAPI.swift */; };
+		2815DF1620EC4B2000211A80 /* GameRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815DF1520EC4B2000211A80 /* GameRepositoryProtocol.swift */; };
+		2815DF1A20EC4C1000211A80 /* GameRepositoryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815DF1920EC4C1000211A80 /* GameRepositoryAPI.swift */; };
+		2815DF1C20EC500900211A80 /* NetworkStreamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815DF1B20EC500900211A80 /* NetworkStreamModel.swift */; };
+		2815DF1E20EC519E00211A80 /* NetworkStreamsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815DF1D20EC519E00211A80 /* NetworkStreamsModel.swift */; };
+		2815DF2220EC819700211A80 /* TopGamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815DF2120EC819700211A80 /* TopGamesViewController.swift */; };
+		2815DF2920EC924800211A80 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2815DF2820EC924800211A80 /* NotificationCenter.framework */; };
+		2815DF2C20EC924800211A80 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815DF2B20EC924800211A80 /* TodayViewController.swift */; };
+		2815DF2F20EC924800211A80 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2815DF2D20EC924800211A80 /* MainInterface.storyboard */; };
+		2815DF3320EC924800211A80 /* TopGamesToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2815DF2720EC924800211A80 /* TopGamesToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2815DF3920EC939600211A80 /* TodayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815DF3820EC939600211A80 /* TodayTableViewCell.swift */; };
+		2815DF3A20EC975A00211A80 /* TwitchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D6986A20E44C210031D561 /* TwitchAPI.swift */; };
+		2815DF3B20EC976600211A80 /* NetworkAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D6986E20E453300031D561 /* NetworkAPIProtocol.swift */; };
+		2815DF3C20EC97B100211A80 /* AlamofireRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D6986620E4445A0031D561 /* AlamofireRequest.swift */; };
+		2815DF3D20EC97B400211A80 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D6986420E4429E0031D561 /* RequestProtocol.swift */; };
+		281EAF4E20E5D3B0004C7C39 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281EAF4D20E5D3B0004C7C39 /* GradientView.swift */; };
+		281EAF5120E5DFFA004C7C39 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281EAF5020E5DFFA004C7C39 /* UIView+Extension.swift */; };
+		281EAF5520E5E571004C7C39 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281EAF5420E5E571004C7C39 /* FavoriteButton.swift */; };
+		28260B6320EC98D000DBB0D5 /* NetworkGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D6987120E45A910031D561 /* NetworkGameModel.swift */; };
+		28260B6420EC98D000DBB0D5 /* NetworkGamesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D6987320E45D2C0031D561 /* NetworkGamesModel.swift */; };
+		28260B6520EC98D000DBB0D5 /* NetworkStreamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815DF1B20EC500900211A80 /* NetworkStreamModel.swift */; };
+		28260B6620EC98D000DBB0D5 /* NetworkStreamsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815DF1D20EC519E00211A80 /* NetworkStreamsModel.swift */; };
+		2842F49C20E98D9500C1BEED /* FavoritesRepositoryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2842F49B20E98D9500C1BEED /* FavoritesRepositoryAPI.swift */; };
+		28D4096720E71BC400786E5D /* GameModelCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D4096620E71BC400786E5D /* GameModelCache.swift */; };
+		28D4097020E7342500786E5D /* CatalogRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D4096F20E7342500786E5D /* CatalogRepositoryProtocol.swift */; };
+		28D4097220E7353D00786E5D /* CacheAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D4097120E7353D00786E5D /* CacheAPIProtocol.swift */; };
+		28D4097420E73AF000786E5D /* CatalogRepositoryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D4097320E73AF000786E5D /* CatalogRepositoryAPI.swift */; };
+		28D4097720E73BC900786E5D /* RepositoryGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D4097620E73BC900786E5D /* RepositoryGameModel.swift */; };
 		28D6984420E440C30031D561 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D6984320E440C30031D561 /* AppDelegate.swift */; };
 		28D6984620E440C30031D561 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D6984520E440C30031D561 /* ViewController.swift */; };
 		28D6984920E440C30031D561 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28D6984720E440C30031D561 /* Main.storyboard */; };
 		28D6984B20E440C50031D561 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28D6984A20E440C50031D561 /* Assets.xcassets */; };
 		28D6984E20E440C50031D561 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28D6984C20E440C50031D561 /* LaunchScreen.storyboard */; };
-		28D6985920E440C50031D561 /* TopGamesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D6985820E440C50031D561 /* TopGamesTests.swift */; };
+		28D6985920E440C50031D561 /* TwitchAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D6985820E440C50031D561 /* TwitchAPITests.swift */; };
+		28D6986520E4429E0031D561 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D6986420E4429E0031D561 /* RequestProtocol.swift */; };
+		28D6986720E4445A0031D561 /* AlamofireRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D6986620E4445A0031D561 /* AlamofireRequest.swift */; };
+		28D6986B20E44C210031D561 /* TwitchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D6986A20E44C210031D561 /* TwitchAPI.swift */; };
+		28D6986D20E44CA10031D561 /* SwinjectStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D6986C20E44CA10031D561 /* SwinjectStoryboard+Extension.swift */; };
+		28D6986F20E453300031D561 /* NetworkAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D6986E20E453300031D561 /* NetworkAPIProtocol.swift */; };
+		28D6987220E45A910031D561 /* NetworkGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D6987120E45A910031D561 /* NetworkGameModel.swift */; };
+		28D6987420E45D2C0031D561 /* NetworkGamesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D6987320E45D2C0031D561 /* NetworkGamesModel.swift */; };
+		28D6987720E47DF90031D561 /* MockRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D6987620E47DF90031D561 /* MockRequest.swift */; };
+		28D6987A20E483930031D561 /* TopGamesResponseSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = 28D6987820E483930031D561 /* TopGamesResponseSuccess.json */; };
+		28D6987B20E483930031D561 /* TopGamesResponseEmpty.json in Resources */ = {isa = PBXBuildFile; fileRef = 28D6987920E483930031D561 /* TopGamesResponseEmpty.json */; };
+		28D6988020E48AFA0031D561 /* TopGamesResponseFailure.json in Resources */ = {isa = PBXBuildFile; fileRef = 28D6987F20E48AF90031D561 /* TopGamesResponseFailure.json */; };
+		28D6988320E4A3890031D561 /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D6988220E4A3890031D561 /* CatalogViewController.swift */; };
+		28D6988720E4A58D0031D561 /* GameItemColletionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D6988620E4A58D0031D561 /* GameItemColletionViewCell.swift */; };
+		28F0511E20EB29790022DB43 /* GameDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F0511D20EB29790022DB43 /* GameDetailsViewController.swift */; };
+		3C4C01BA4DC86B2FF883FA35 /* Pods_TopGamesToday.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8312DA6474BBE8C96F82018 /* Pods_TopGamesToday.framework */; };
+		5D8B7BB06278E17EA8398E4B /* Pods_TopGamesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7B248A9D9A0F58DA27DB91 /* Pods_TopGamesTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2815DF3120EC924800211A80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28D6983820E440C30031D561 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2815DF2620EC924800211A80;
+			remoteInfo = TopGamesToday;
+		};
 		28D6985520E440C50031D561 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 28D6983820E440C30031D561 /* Project object */;
@@ -25,7 +78,45 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2815DF3720EC924800211A80 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2815DF3320EC924800211A80 /* TopGamesToday.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		025A1BCE7C6B70067CB9CFC2 /* Pods-TopGames.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopGames.release.xcconfig"; path = "Pods/Target Support Files/Pods-TopGames/Pods-TopGames.release.xcconfig"; sourceTree = "<group>"; };
+		06F27996FA898CEB834A1C1A /* Pods-TopGamesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopGamesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TopGamesTests/Pods-TopGamesTests.release.xcconfig"; sourceTree = "<group>"; };
+		280A48D420E5FB7500C42F8B /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		280A48D620E5FC4600C42F8B /* CacheAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheAPI.swift; sourceTree = "<group>"; };
+		2815DF1520EC4B2000211A80 /* GameRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRepositoryProtocol.swift; sourceTree = "<group>"; };
+		2815DF1920EC4C1000211A80 /* GameRepositoryAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRepositoryAPI.swift; sourceTree = "<group>"; };
+		2815DF1B20EC500900211A80 /* NetworkStreamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStreamModel.swift; sourceTree = "<group>"; };
+		2815DF1D20EC519E00211A80 /* NetworkStreamsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStreamsModel.swift; sourceTree = "<group>"; };
+		2815DF2120EC819700211A80 /* TopGamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopGamesViewController.swift; sourceTree = "<group>"; };
+		2815DF2720EC924800211A80 /* TopGamesToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TopGamesToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2815DF2820EC924800211A80 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		2815DF2B20EC924800211A80 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		2815DF2E20EC924800211A80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		2815DF3020EC924800211A80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2815DF3820EC939600211A80 /* TodayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayTableViewCell.swift; sourceTree = "<group>"; };
+		281EAF4D20E5D3B0004C7C39 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		281EAF5020E5DFFA004C7C39 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		281EAF5420E5E571004C7C39 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
+		2842F49B20E98D9500C1BEED /* FavoritesRepositoryAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesRepositoryAPI.swift; sourceTree = "<group>"; };
+		28D4096620E71BC400786E5D /* GameModelCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModelCache.swift; sourceTree = "<group>"; };
+		28D4096F20E7342500786E5D /* CatalogRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogRepositoryProtocol.swift; sourceTree = "<group>"; };
+		28D4097120E7353D00786E5D /* CacheAPIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheAPIProtocol.swift; sourceTree = "<group>"; };
+		28D4097320E73AF000786E5D /* CatalogRepositoryAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogRepositoryAPI.swift; sourceTree = "<group>"; };
+		28D4097620E73BC900786E5D /* RepositoryGameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryGameModel.swift; sourceTree = "<group>"; };
 		28D6984020E440C30031D561 /* TopGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28D6984320E440C30031D561 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28D6984520E440C30031D561 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,15 +125,46 @@
 		28D6984D20E440C50031D561 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28D6984F20E440C50031D561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28D6985420E440C50031D561 /* TopGamesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopGamesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		28D6985820E440C50031D561 /* TopGamesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopGamesTests.swift; sourceTree = "<group>"; };
+		28D6985820E440C50031D561 /* TwitchAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitchAPITests.swift; sourceTree = "<group>"; };
 		28D6985A20E440C50031D561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28D6986420E4429E0031D561 /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
+		28D6986620E4445A0031D561 /* AlamofireRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireRequest.swift; sourceTree = "<group>"; };
+		28D6986A20E44C210031D561 /* TwitchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitchAPI.swift; sourceTree = "<group>"; };
+		28D6986C20E44CA10031D561 /* SwinjectStoryboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwinjectStoryboard+Extension.swift"; sourceTree = "<group>"; };
+		28D6986E20E453300031D561 /* NetworkAPIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAPIProtocol.swift; sourceTree = "<group>"; };
+		28D6987120E45A910031D561 /* NetworkGameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkGameModel.swift; sourceTree = "<group>"; };
+		28D6987320E45D2C0031D561 /* NetworkGamesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkGamesModel.swift; sourceTree = "<group>"; };
+		28D6987620E47DF90031D561 /* MockRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRequest.swift; sourceTree = "<group>"; };
+		28D6987820E483930031D561 /* TopGamesResponseSuccess.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TopGamesResponseSuccess.json; sourceTree = "<group>"; };
+		28D6987920E483930031D561 /* TopGamesResponseEmpty.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TopGamesResponseEmpty.json; sourceTree = "<group>"; };
+		28D6987F20E48AF90031D561 /* TopGamesResponseFailure.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TopGamesResponseFailure.json; sourceTree = "<group>"; };
+		28D6988220E4A3890031D561 /* CatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = "<group>"; };
+		28D6988620E4A58D0031D561 /* GameItemColletionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameItemColletionViewCell.swift; sourceTree = "<group>"; };
+		28F0511D20EB29790022DB43 /* GameDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailsViewController.swift; sourceTree = "<group>"; };
+		64ABAFBFE9FF18E12749B3AF /* Pods-TopGamesToday.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopGamesToday.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TopGamesToday/Pods-TopGamesToday.debug.xcconfig"; sourceTree = "<group>"; };
+		6A7FAA2635335E7466D0BCB1 /* Pods-TopGamesToday.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopGamesToday.release.xcconfig"; path = "Pods/Target Support Files/Pods-TopGamesToday/Pods-TopGamesToday.release.xcconfig"; sourceTree = "<group>"; };
+		A0CB07803622F4507DE57F14 /* Pods-TopGamesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopGamesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TopGamesTests/Pods-TopGamesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A2AA677D44C1FFEC56DBF0F1 /* Pods-TopGames.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopGames.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TopGames/Pods-TopGames.debug.xcconfig"; sourceTree = "<group>"; };
+		A8312DA6474BBE8C96F82018 /* Pods_TopGamesToday.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TopGamesToday.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E23B35CFF47B39C9F0353753 /* Pods_TopGames.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TopGames.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE7B248A9D9A0F58DA27DB91 /* Pods_TopGamesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TopGamesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2815DF2420EC924800211A80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2815DF2920EC924800211A80 /* NotificationCenter.framework in Frameworks */,
+				3C4C01BA4DC86B2FF883FA35 /* Pods_TopGamesToday.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		28D6983D20E440C30031D561 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CAC5497BC9F366150FB2A12 /* Pods_TopGames.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +172,177 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D8B7BB06278E17EA8398E4B /* Pods_TopGamesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		280A48D320E5FB5B00C42F8B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2815DF2020EC7FE600211A80 /* Favorites */,
+				2815DF1F20EC7FD700211A80 /* TopGames */,
+				28F0511C20EB29680022DB43 /* Details */,
+				2842F49A20E9815F00C1BEED /* Main */,
+				28D6988120E4A3620031D561 /* Catalog */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		280A48D820E5FF8600C42F8B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				28D6984720E440C30031D561 /* Main.storyboard */,
+				28D6984C20E440C50031D561 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2815DF1720EC4B7000211A80 /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				28D4096F20E7342500786E5D /* CatalogRepositoryProtocol.swift */,
+				28D4097320E73AF000786E5D /* CatalogRepositoryAPI.swift */,
+				2842F49B20E98D9500C1BEED /* FavoritesRepositoryAPI.swift */,
+			);
+			path = Catalog;
+			sourceTree = "<group>";
+		};
+		2815DF1820EC4B7E00211A80 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				2815DF1520EC4B2000211A80 /* GameRepositoryProtocol.swift */,
+				2815DF1920EC4C1000211A80 /* GameRepositoryAPI.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		2815DF1F20EC7FD700211A80 /* TopGames */ = {
+			isa = PBXGroup;
+			children = (
+				2815DF2120EC819700211A80 /* TopGamesViewController.swift */,
+			);
+			path = TopGames;
+			sourceTree = "<group>";
+		};
+		2815DF2020EC7FE600211A80 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				280A48D420E5FB7500C42F8B /* FavoritesViewController.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		2815DF2A20EC924800211A80 /* TopGamesToday */ = {
+			isa = PBXGroup;
+			children = (
+				2815DF2B20EC924800211A80 /* TodayViewController.swift */,
+				2815DF2D20EC924800211A80 /* MainInterface.storyboard */,
+				2815DF3020EC924800211A80 /* Info.plist */,
+				2815DF3820EC939600211A80 /* TodayTableViewCell.swift */,
+			);
+			path = TopGamesToday;
+			sourceTree = "<group>";
+		};
+		281EAF4C20E5D388004C7C39 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				281EAF4D20E5D3B0004C7C39 /* GradientView.swift */,
+				281EAF5420E5E571004C7C39 /* FavoriteButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		281EAF4F20E5DFE4004C7C39 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				28D6986C20E44CA10031D561 /* SwinjectStoryboard+Extension.swift */,
+				281EAF5020E5DFFA004C7C39 /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2842F49920E9814800C1BEED /* API */ = {
+			isa = PBXGroup;
+			children = (
+				2815DF1820EC4B7E00211A80 /* Game */,
+				2815DF1720EC4B7000211A80 /* Catalog */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		2842F49A20E9815F00C1BEED /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				28D6984520E440C30031D561 /* ViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		28D4096420E71B8E00786E5D /* Caching */ = {
+			isa = PBXGroup;
+			children = (
+				28D4096A20E71D6400786E5D /* API */,
+				28D4096520E71BA600786E5D /* Models */,
+			);
+			path = Caching;
+			sourceTree = "<group>";
+		};
+		28D4096520E71BA600786E5D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				28D4096620E71BC400786E5D /* GameModelCache.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		28D4096A20E71D6400786E5D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				280A48D620E5FC4600C42F8B /* CacheAPI.swift */,
+				28D4097120E7353D00786E5D /* CacheAPIProtocol.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		28D4096D20E733DB00786E5D /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				28D4096E20E7340100786E5D /* RepositoryFacade */,
+				28D4096420E71B8E00786E5D /* Caching */,
+				28D6986320E441E00031D561 /* Networking */,
+			);
+			path = DataStore;
+			sourceTree = "<group>";
+		};
+		28D4096E20E7340100786E5D /* RepositoryFacade */ = {
+			isa = PBXGroup;
+			children = (
+				2842F49920E9814800C1BEED /* API */,
+				28D4097520E73AF900786E5D /* Models */,
+			);
+			path = RepositoryFacade;
+			sourceTree = "<group>";
+		};
+		28D4097520E73AF900786E5D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				28D4097620E73BC900786E5D /* RepositoryGameModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		28D6983720E440C30031D561 = {
 			isa = PBXGroup;
 			children = (
 				28D6984220E440C30031D561 /* TopGames */,
 				28D6985720E440C50031D561 /* TopGamesTests */,
+				2815DF2A20EC924800211A80 /* TopGamesToday */,
 				28D6984120E440C30031D561 /* Products */,
+				62937AB3CD8D5F989AEBDBC4 /* Pods */,
+				6795F5837F35DE4BD5EF39F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +351,7 @@
 			children = (
 				28D6984020E440C30031D561 /* TopGames.app */,
 				28D6985420E440C50031D561 /* TopGamesTests.xctest */,
+				2815DF2720EC924800211A80 /* TopGamesToday.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,11 +359,13 @@
 		28D6984220E440C30031D561 /* TopGames */ = {
 			isa = PBXGroup;
 			children = (
+				28D4096D20E733DB00786E5D /* DataStore */,
+				280A48D820E5FF8600C42F8B /* Storyboards */,
+				280A48D320E5FB5B00C42F8B /* Controllers */,
+				281EAF4F20E5DFE4004C7C39 /* Extensions */,
+				281EAF4C20E5D388004C7C39 /* Components */,
 				28D6984320E440C30031D561 /* AppDelegate.swift */,
-				28D6984520E440C30031D561 /* ViewController.swift */,
-				28D6984720E440C30031D561 /* Main.storyboard */,
 				28D6984A20E440C50031D561 /* Assets.xcassets */,
-				28D6984C20E440C50031D561 /* LaunchScreen.storyboard */,
 				28D6984F20E440C50031D561 /* Info.plist */,
 			);
 			path = TopGames;
@@ -90,26 +374,150 @@
 		28D6985720E440C50031D561 /* TopGamesTests */ = {
 			isa = PBXGroup;
 			children = (
-				28D6985820E440C50031D561 /* TopGamesTests.swift */,
+				28D6987520E47CE00031D561 /* MockAPI */,
+				28D6985820E440C50031D561 /* TwitchAPITests.swift */,
 				28D6985A20E440C50031D561 /* Info.plist */,
 			);
 			path = TopGamesTests;
 			sourceTree = "<group>";
 		};
+		28D6986320E441E00031D561 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				28D6987020E45A3D0031D561 /* Models */,
+				28D6986920E44C130031D561 /* API */,
+				28D6986820E44C0A0031D561 /* Request */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		28D6986820E44C0A0031D561 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				28D6986420E4429E0031D561 /* RequestProtocol.swift */,
+				28D6986620E4445A0031D561 /* AlamofireRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		28D6986920E44C130031D561 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				28D6986A20E44C210031D561 /* TwitchAPI.swift */,
+				28D6986E20E453300031D561 /* NetworkAPIProtocol.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		28D6987020E45A3D0031D561 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				28D6987120E45A910031D561 /* NetworkGameModel.swift */,
+				28D6987320E45D2C0031D561 /* NetworkGamesModel.swift */,
+				2815DF1B20EC500900211A80 /* NetworkStreamModel.swift */,
+				2815DF1D20EC519E00211A80 /* NetworkStreamsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		28D6987520E47CE00031D561 /* MockAPI */ = {
+			isa = PBXGroup;
+			children = (
+				28D6987C20E488010031D561 /* Data */,
+				28D6987620E47DF90031D561 /* MockRequest.swift */,
+			);
+			path = MockAPI;
+			sourceTree = "<group>";
+		};
+		28D6987C20E488010031D561 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				28D6987F20E48AF90031D561 /* TopGamesResponseFailure.json */,
+				28D6987820E483930031D561 /* TopGamesResponseSuccess.json */,
+				28D6987920E483930031D561 /* TopGamesResponseEmpty.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		28D6988120E4A3620031D561 /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				28D6988220E4A3890031D561 /* CatalogViewController.swift */,
+				28D6988620E4A58D0031D561 /* GameItemColletionViewCell.swift */,
+			);
+			path = Catalog;
+			sourceTree = "<group>";
+		};
+		28F0511C20EB29680022DB43 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				28F0511D20EB29790022DB43 /* GameDetailsViewController.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		62937AB3CD8D5F989AEBDBC4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A2AA677D44C1FFEC56DBF0F1 /* Pods-TopGames.debug.xcconfig */,
+				025A1BCE7C6B70067CB9CFC2 /* Pods-TopGames.release.xcconfig */,
+				A0CB07803622F4507DE57F14 /* Pods-TopGamesTests.debug.xcconfig */,
+				06F27996FA898CEB834A1C1A /* Pods-TopGamesTests.release.xcconfig */,
+				64ABAFBFE9FF18E12749B3AF /* Pods-TopGamesToday.debug.xcconfig */,
+				6A7FAA2635335E7466D0BCB1 /* Pods-TopGamesToday.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6795F5837F35DE4BD5EF39F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E23B35CFF47B39C9F0353753 /* Pods_TopGames.framework */,
+				FE7B248A9D9A0F58DA27DB91 /* Pods_TopGamesTests.framework */,
+				2815DF2820EC924800211A80 /* NotificationCenter.framework */,
+				A8312DA6474BBE8C96F82018 /* Pods_TopGamesToday.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		28D6983F20E440C30031D561 /* TopGames */ = {
+		2815DF2620EC924800211A80 /* TopGamesToday */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28D6985D20E440C50031D561 /* Build configuration list for PBXNativeTarget "TopGames" */;
+			buildConfigurationList = 2815DF3620EC924800211A80 /* Build configuration list for PBXNativeTarget "TopGamesToday" */;
 			buildPhases = (
-				28D6983C20E440C30031D561 /* Sources */,
-				28D6983D20E440C30031D561 /* Frameworks */,
-				28D6983E20E440C30031D561 /* Resources */,
+				3E421D38A9EE225D305E2650 /* [CP] Check Pods Manifest.lock */,
+				2815DF2320EC924800211A80 /* Sources */,
+				2815DF2420EC924800211A80 /* Frameworks */,
+				2815DF2520EC924800211A80 /* Resources */,
+				DB147765F7C9BDD424A49355 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			name = TopGamesToday;
+			productName = TopGamesToday;
+			productReference = 2815DF2720EC924800211A80 /* TopGamesToday.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		28D6983F20E440C30031D561 /* TopGames */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28D6985D20E440C50031D561 /* Build configuration list for PBXNativeTarget "TopGames" */;
+			buildPhases = (
+				823C7C212359689C5188B381 /* [CP] Check Pods Manifest.lock */,
+				28D6983C20E440C30031D561 /* Sources */,
+				28D6983D20E440C30031D561 /* Frameworks */,
+				28D6983E20E440C30031D561 /* Resources */,
+				29B93910AA5036FC8948F0C3 /* [CP] Embed Pods Frameworks */,
+				5FBD1A2F5503ABC0F9940C70 /* [CP] Copy Pods Resources */,
+				2815DF3720EC924800211A80 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2815DF3220EC924800211A80 /* PBXTargetDependency */,
 			);
 			name = TopGames;
 			productName = TopGames;
@@ -120,9 +528,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28D6986020E440C50031D561 /* Build configuration list for PBXNativeTarget "TopGamesTests" */;
 			buildPhases = (
+				4587AF40DF5EDB5048E106E5 /* [CP] Check Pods Manifest.lock */,
 				28D6985020E440C50031D561 /* Sources */,
 				28D6985120E440C50031D561 /* Frameworks */,
 				28D6985220E440C50031D561 /* Resources */,
+				3C9A4E15EFD6B6A317CFA307 /* [CP] Embed Pods Frameworks */,
+				719F2F02F378A3AD64667405 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,6 +555,9 @@
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Eduardo Domene Junior";
 				TargetAttributes = {
+					2815DF2620EC924800211A80 = {
+						CreatedOnToolsVersion = 9.3;
+					};
 					28D6983F20E440C30031D561 = {
 						CreatedOnToolsVersion = 9.3;
 					};
@@ -168,11 +582,20 @@
 			targets = (
 				28D6983F20E440C30031D561 /* TopGames */,
 				28D6985320E440C50031D561 /* TopGamesTests */,
+				2815DF2620EC924800211A80 /* TopGamesToday */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2815DF2520EC924800211A80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2815DF2F20EC924800211A80 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		28D6983E20E440C30031D561 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -187,18 +610,211 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28D6987B20E483930031D561 /* TopGamesResponseEmpty.json in Resources */,
+				28D6987A20E483930031D561 /* TopGamesResponseSuccess.json in Resources */,
+				28D6988020E48AFA0031D561 /* TopGamesResponseFailure.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		29B93910AA5036FC8948F0C3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TopGames/Pods-TopGames-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Marshal/Marshal.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Marshal.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TopGames/Pods-TopGames-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C9A4E15EFD6B6A317CFA307 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TopGamesTests/Pods-TopGamesTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E421D38A9EE225D305E2650 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TopGamesToday-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4587AF40DF5EDB5048E106E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TopGamesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FBD1A2F5503ABC0F9940C70 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TopGames/Pods-TopGames-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		719F2F02F378A3AD64667405 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TopGamesTests/Pods-TopGamesTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		823C7C212359689C5188B381 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TopGames-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB147765F7C9BDD424A49355 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TopGamesToday/Pods-TopGamesToday-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		2815DF2320EC924800211A80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2815DF3A20EC975A00211A80 /* TwitchAPI.swift in Sources */,
+				28260B6520EC98D000DBB0D5 /* NetworkStreamModel.swift in Sources */,
+				2815DF3B20EC976600211A80 /* NetworkAPIProtocol.swift in Sources */,
+				28260B6420EC98D000DBB0D5 /* NetworkGamesModel.swift in Sources */,
+				2815DF2C20EC924800211A80 /* TodayViewController.swift in Sources */,
+				2815DF3D20EC97B400211A80 /* RequestProtocol.swift in Sources */,
+				28260B6320EC98D000DBB0D5 /* NetworkGameModel.swift in Sources */,
+				2815DF3C20EC97B100211A80 /* AlamofireRequest.swift in Sources */,
+				28260B6620EC98D000DBB0D5 /* NetworkStreamsModel.swift in Sources */,
+				2815DF3920EC939600211A80 /* TodayTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		28D6983C20E440C30031D561 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28D4097420E73AF000786E5D /* CatalogRepositoryAPI.swift in Sources */,
+				280A48D720E5FC4600C42F8B /* CacheAPI.swift in Sources */,
+				2842F49C20E98D9500C1BEED /* FavoritesRepositoryAPI.swift in Sources */,
+				28D6988320E4A3890031D561 /* CatalogViewController.swift in Sources */,
+				28D4096720E71BC400786E5D /* GameModelCache.swift in Sources */,
+				281EAF5120E5DFFA004C7C39 /* UIView+Extension.swift in Sources */,
+				281EAF5520E5E571004C7C39 /* FavoriteButton.swift in Sources */,
+				28D6986520E4429E0031D561 /* RequestProtocol.swift in Sources */,
+				281EAF4E20E5D3B0004C7C39 /* GradientView.swift in Sources */,
+				28D4097020E7342500786E5D /* CatalogRepositoryProtocol.swift in Sources */,
 				28D6984620E440C30031D561 /* ViewController.swift in Sources */,
+				28F0511E20EB29790022DB43 /* GameDetailsViewController.swift in Sources */,
+				28D6986720E4445A0031D561 /* AlamofireRequest.swift in Sources */,
+				28D6986D20E44CA10031D561 /* SwinjectStoryboard+Extension.swift in Sources */,
+				2815DF1A20EC4C1000211A80 /* GameRepositoryAPI.swift in Sources */,
+				28D6986B20E44C210031D561 /* TwitchAPI.swift in Sources */,
+				2815DF1C20EC500900211A80 /* NetworkStreamModel.swift in Sources */,
+				28D6987220E45A910031D561 /* NetworkGameModel.swift in Sources */,
+				28D4097720E73BC900786E5D /* RepositoryGameModel.swift in Sources */,
+				28D6988720E4A58D0031D561 /* GameItemColletionViewCell.swift in Sources */,
+				28D6986F20E453300031D561 /* NetworkAPIProtocol.swift in Sources */,
+				2815DF1E20EC519E00211A80 /* NetworkStreamsModel.swift in Sources */,
+				2815DF2220EC819700211A80 /* TopGamesViewController.swift in Sources */,
+				2815DF1620EC4B2000211A80 /* GameRepositoryProtocol.swift in Sources */,
 				28D6984420E440C30031D561 /* AppDelegate.swift in Sources */,
+				28D4097220E7353D00786E5D /* CacheAPIProtocol.swift in Sources */,
+				280A48D520E5FB7500C42F8B /* FavoritesViewController.swift in Sources */,
+				28D6987420E45D2C0031D561 /* NetworkGamesModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,13 +822,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28D6985920E440C50031D561 /* TopGamesTests.swift in Sources */,
+				28D6985920E440C50031D561 /* TwitchAPITests.swift in Sources */,
+				28D6987720E47DF90031D561 /* MockRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2815DF3220EC924800211A80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2815DF2620EC924800211A80 /* TopGamesToday */;
+			targetProxy = 2815DF3120EC924800211A80 /* PBXContainerItemProxy */;
+		};
 		28D6985620E440C50031D561 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 28D6983F20E440C30031D561 /* TopGames */;
@@ -221,6 +843,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		2815DF2D20EC924800211A80 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2815DF2E20EC924800211A80 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		28D6984720E440C30031D561 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -240,6 +870,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2815DF3420EC924800211A80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64ABAFBFE9FF18E12749B3AF /* Pods-TopGamesToday.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6RDBHT79U2;
+				INFOPLIST_FILE = TopGamesToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.edudjr.TopGames.TopGamesToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2815DF3520EC924800211A80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A7FAA2635335E7466D0BCB1 /* Pods-TopGamesToday.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6RDBHT79U2;
+				INFOPLIST_FILE = TopGamesToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.edudjr.TopGames.TopGamesToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		28D6985B20E440C50031D561 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -356,7 +1026,9 @@
 		};
 		28D6985E20E440C50031D561 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2AA677D44C1FFEC56DBF0F1 /* Pods-TopGames.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6RDBHT79U2;
@@ -374,7 +1046,9 @@
 		};
 		28D6985F20E440C50031D561 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 025A1BCE7C6B70067CB9CFC2 /* Pods-TopGames.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6RDBHT79U2;
@@ -392,6 +1066,7 @@
 		};
 		28D6986120E440C50031D561 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0CB07803622F4507DE57F14 /* Pods-TopGamesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -413,6 +1088,7 @@
 		};
 		28D6986220E440C50031D561 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06F27996FA898CEB834A1C1A /* Pods-TopGamesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -435,6 +1111,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2815DF3620EC924800211A80 /* Build configuration list for PBXNativeTarget "TopGamesToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2815DF3420EC924800211A80 /* Debug */,
+				2815DF3520EC924800211A80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		28D6983B20E440C30031D561 /* Build configuration list for PBXProject "TopGames" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
