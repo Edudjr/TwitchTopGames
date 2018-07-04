@@ -14,6 +14,7 @@
 		2815DF1A20EC4C1000211A80 /* GameRepositoryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815DF1920EC4C1000211A80 /* GameRepositoryAPI.swift */; };
 		2815DF1C20EC500900211A80 /* NetworkStreamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815DF1B20EC500900211A80 /* NetworkStreamModel.swift */; };
 		2815DF1E20EC519E00211A80 /* NetworkStreamsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815DF1D20EC519E00211A80 /* NetworkStreamsModel.swift */; };
+		2815DF2220EC819700211A80 /* TopGamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815DF2120EC819700211A80 /* TopGamesViewController.swift */; };
 		281EAF4E20E5D3B0004C7C39 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281EAF4D20E5D3B0004C7C39 /* GradientView.swift */; };
 		281EAF5120E5DFFA004C7C39 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281EAF5020E5DFFA004C7C39 /* UIView+Extension.swift */; };
 		281EAF5520E5E571004C7C39 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281EAF5420E5E571004C7C39 /* FavoriteButton.swift */; };
@@ -65,6 +66,7 @@
 		2815DF1920EC4C1000211A80 /* GameRepositoryAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRepositoryAPI.swift; sourceTree = "<group>"; };
 		2815DF1B20EC500900211A80 /* NetworkStreamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStreamModel.swift; sourceTree = "<group>"; };
 		2815DF1D20EC519E00211A80 /* NetworkStreamsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStreamsModel.swift; sourceTree = "<group>"; };
+		2815DF2120EC819700211A80 /* TopGamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopGamesViewController.swift; sourceTree = "<group>"; };
 		281EAF4D20E5D3B0004C7C39 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		281EAF5020E5DFFA004C7C39 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		281EAF5420E5E571004C7C39 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
@@ -127,6 +129,8 @@
 		280A48D320E5FB5B00C42F8B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2815DF2020EC7FE600211A80 /* Favorites */,
+				2815DF1F20EC7FD700211A80 /* TopGames */,
 				28F0511C20EB29680022DB43 /* Details */,
 				2842F49A20E9815F00C1BEED /* Main */,
 				28D6988120E4A3620031D561 /* Catalog */,
@@ -162,6 +166,22 @@
 			path = Game;
 			sourceTree = "<group>";
 		};
+		2815DF1F20EC7FD700211A80 /* TopGames */ = {
+			isa = PBXGroup;
+			children = (
+				2815DF2120EC819700211A80 /* TopGamesViewController.swift */,
+			);
+			path = TopGames;
+			sourceTree = "<group>";
+		};
+		2815DF2020EC7FE600211A80 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				280A48D420E5FB7500C42F8B /* FavoritesViewController.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
 		281EAF4C20E5D388004C7C39 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,7 +212,6 @@
 		2842F49A20E9815F00C1BEED /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				280A48D420E5FB7500C42F8B /* FavoritesViewController.swift */,
 				28D6984520E440C30031D561 /* ViewController.swift */,
 			);
 			path = Main;
@@ -637,6 +656,7 @@
 				28D6988720E4A58D0031D561 /* GameItemColletionViewCell.swift in Sources */,
 				28D6986F20E453300031D561 /* NetworkAPIProtocol.swift in Sources */,
 				2815DF1E20EC519E00211A80 /* NetworkStreamsModel.swift in Sources */,
+				2815DF2220EC819700211A80 /* TopGamesViewController.swift in Sources */,
 				2815DF1620EC4B2000211A80 /* GameRepositoryProtocol.swift in Sources */,
 				28D6984420E440C30031D561 /* AppDelegate.swift in Sources */,
 				28D4097220E7353D00786E5D /* CacheAPIProtocol.swift in Sources */,

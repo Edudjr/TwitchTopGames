@@ -10,9 +10,11 @@ import UIKit
 import Kingfisher
 
 class CatalogViewController: UIViewController {
-    var repository: RepositoryProtocol?
-    var shouldFetch = true
-    var lastFetchedCount = 0
+    private var shouldFetch = true
+    private var lastFetchedCount = 0
+    
+    var screenTitle = ""
+    var repository: CatalogRepositoryProtocol?
     var currentGames: [RepositoryGameModel]? {
         didSet {
             collectionView.reloadData()
@@ -25,6 +27,7 @@ class CatalogViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         containerView.isHidden = true
         setupCollectionViewCellSize()
         repository?.getMoreTopGames(completion: handleGetMoreTopGames)
@@ -32,6 +35,7 @@ class CatalogViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.topItem?.title = screenTitle
         repository?.getCurrentGames(completion: { (success, games) in
             if success {
                 self.currentGames = games!
@@ -62,8 +66,10 @@ class CatalogViewController: UIViewController {
     
     // Routing
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let destination = segue.destination as? GameDetailsViewController {
-            
+        if let destination = segue.destination as? GameDetailsViewController, let game = sender as? RepositoryGameModel {
+            destination.gameId = String(describing: game.id!)
+            destination.gameTitle = game.name
+            destination.gameThumbnail = game.thumbnail
         }
     }
 }
@@ -82,6 +88,12 @@ extension CatalogViewController: UICollectionViewDelegate, UICollectionViewDataS
             }
         }
         return UICollectionViewCell()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let game = currentGames?[indexPath.row] {
+            performSegue(withIdentifier: "DetailsSegue", sender: game)
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

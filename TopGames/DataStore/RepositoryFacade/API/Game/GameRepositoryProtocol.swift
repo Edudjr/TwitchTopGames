@@ -7,9 +7,10 @@
 //
 
 typealias CompletionWithRepositoryGame = (Bool, RepositoryGameModel?)->Void
+typealias CompletionWithInt = (Bool, Int?)->Void
 
 protocol GameRepositoryProtocol {
-    func getGameBy(id: String, completion: @escaping CompletionWithRepositoryGame)
+    func getGameViewsBy(id: String, completion: @escaping CompletionWithInt)
     func addFavoriteGame(_ game: RepositoryGameModel, completion: @escaping CompletionWithRepositoryGame)
     func removeFavoriteGame(_ game: RepositoryGameModel, completion: @escaping CompletionWithRepositoryGame)
 }

@@ -17,21 +17,13 @@ class GameRepositoryAPI: GameRepositoryProtocol {
         self.cacheAPI = cacheAPI
     }
     
-    func getGameBy(id: String, completion: @escaping CompletionWithRepositoryGame) {
-        networkAPI?.getGameStreams(first: 1, gameId: id, completion: { (success, streams) in
-            if success {
-                self.cacheAPI?.getFavoriteGame(id: id, completion: { (success, cachedGame) in
-                    let stream = streams!.data!.first
-                    let repoGame = RepositoryGameModel(id: Int(stream?.gameId ?? "0"),
-                                                       name: nil,
-                                                       thumbnail: stream?.thumbnail,
-                                                       viewersCount: stream?.viewerCount,
-                                                       isFavorite: success)
-                    completion(true, repoGame)
-                    return
-                })
+    func getGameViewsBy(id: String, completion: @escaping CompletionWithInt) {
+        self.networkAPI?.getGameStreams(first: 1, gameId: id, completion: { (success, streams) in
+            if success, let stream = streams?.data?.first {
+                completion(true, stream.viewerCount)
+            } else {
+                completion(false, nil)
             }
-            completion(false, nil)
         })
     }
     
