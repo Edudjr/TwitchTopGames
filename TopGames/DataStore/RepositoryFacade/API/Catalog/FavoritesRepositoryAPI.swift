@@ -18,7 +18,7 @@ import Foundation
 
 import Foundation
 
-class FavoritesRepositoryAPI: RepositoryProtocol {
+class FavoritesRepositoryAPI: CatalogRepositoryProtocol {
     var cacheAPI: CacheAPIProtocol?
     var currentGames = [RepositoryGameModel]()
     

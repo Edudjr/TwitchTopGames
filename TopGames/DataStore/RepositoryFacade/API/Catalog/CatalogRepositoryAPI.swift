@@ -8,7 +8,7 @@
 
 import Foundation
 
-class CatalogRepositoryAPI: RepositoryProtocol {
+class CatalogRepositoryAPI: CatalogRepositoryProtocol {
     var networkAPI: NetworkAPIProtocol?
     var cacheAPI: CacheAPIProtocol?
     

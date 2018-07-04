@@ -59,6 +59,13 @@ class CatalogViewController: UIViewController {
         }
         //TODO: Alert for failure
     }
+    
+    // Routing
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? GameDetailsViewController {
+            
+        }
+    }
 }
 
 

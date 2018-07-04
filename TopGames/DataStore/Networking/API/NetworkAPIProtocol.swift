@@ -6,7 +6,9 @@
 //  Copyright © 2018 Eduardo Domene Junior. All rights reserved.
 //
 typealias CompletionWithGames = (Bool, NetworkGamesModel?)->Void
+typealias CompletionWithStreams = (Bool, NetworkStreamsModel?)->Void
 
 protocol NetworkAPIProtocol {
     func getTopGames(_ fetchNextFromCursor: String?, completion: @escaping CompletionWithGames)
+    func getGameStreams(first: Int, gameId: String, completion: @escaping CompletionWithStreams)
 }
