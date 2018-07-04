@@ -10,9 +10,11 @@ import UIKit
 import Kingfisher
 
 class CatalogViewController: UIViewController {
-    var repository: RepositoryProtocol?
-    var shouldFetch = true
-    var lastFetchedCount = 0
+    private var shouldFetch = true
+    private var lastFetchedCount = 0
+    
+    var screenTitle = ""
+    var repository: CatalogRepositoryProtocol?
     var currentGames: [RepositoryGameModel]? {
         didSet {
             collectionView.reloadData()
@@ -25,6 +27,7 @@ class CatalogViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         containerView.isHidden = true
         setupCollectionViewCellSize()
         repository?.getMoreTopGames(completion: handleGetMoreTopGames)
@@ -32,6 +35,7 @@ class CatalogViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.topItem?.title = screenTitle
         repository?.getCurrentGames(completion: { (success, games) in
             if success {
                 self.currentGames = games!
@@ -47,8 +51,11 @@ class CatalogViewController: UIViewController {
         flowLayout.itemSize = CGSize(width: width, height: height)
     }
     
-    private func findGameBy(id: Int) -> RepositoryGameModel? {
-        return currentGames?.filter({ $0.id! == id}).first
+    private func findGameIndexBy(id: Int) -> Int? {
+        let index = currentGames?.index(where: { (repoGame) -> Bool in
+            repoGame.id! == id
+        })
+        return index
     }
     
     private func handleGetMoreTopGames(success: Bool, games: [RepositoryGameModel]?) {
@@ -58,6 +65,16 @@ class CatalogViewController: UIViewController {
             self.lastFetchedCount = games.count
         }
         //TODO: Alert for failure
+    }
+    
+    // Routing
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? GameDetailsViewController, let game = sender as? RepositoryGameModel {
+            destination.gameId = String(describing: game.id!)
+            destination.gameTitle = game.name
+            destination.gameThumbnail = game.thumbnail
+            destination.isFavorite = game.isFavorite
+        }
     }
 }
 
@@ -75,6 +92,12 @@ extension CatalogViewController: UICollectionViewDelegate, UICollectionViewDataS
             }
         }
         return UICollectionViewCell()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let game = currentGames?[indexPath.row] {
+            performSegue(withIdentifier: "DetailsSegue", sender: game)
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -124,14 +147,25 @@ extension CatalogViewController: UICollectionViewDelegateFlowLayout {
 
 extension CatalogViewController: GameItemCellDelegate {
     func clickToAddFavoriteGame(gameId: Int) {
-        if let game = findGameBy(id: gameId) {
-            repository?.addFavoriteGame(game, completion: handleGetMoreTopGames)
+        if let index = findGameIndexBy(id: gameId), let game = currentGames?[index] {
+            repository?.addFavoriteGame(game, completion: { (success, _) in
+                //Only set model if successful
+                if success {
+                    self.currentGames![index].isFavorite = true
+                }
+            })
         }
     }
     
     func clickToRemoveFavoriteGame(gameId: Int) {
-        if let game = findGameBy(id: gameId) {
-            repository?.removeFavoriteGame(game, completion: handleGetMoreTopGames)
+        if let index = findGameIndexBy(id: gameId), let game = currentGames?[index] {
+            currentGames![index].isFavorite = false
+            repository?.removeFavoriteGame(game, completion: { (success, _) in
+                //Only set model if successful
+                if success {
+                    self.currentGames![index].isFavorite = false
+                }
+            })
         }
     }
 }

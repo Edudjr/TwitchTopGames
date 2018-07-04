@@ -7,7 +7,7 @@
 //
 typealias CompletionWithRepositoryGames = (Bool, [RepositoryGameModel]?)->Void
 
-protocol RepositoryProtocol {
+protocol CatalogRepositoryProtocol {
     func getMoreTopGames(completion: @escaping CompletionWithRepositoryGames)
     func getCurrentGames(completion: @escaping CompletionWithRepositoryGames)
     func addFavoriteGame(_ game: RepositoryGameModel, completion: @escaping CompletionWithRepositoryGames)

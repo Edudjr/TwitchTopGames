@@ -8,7 +8,7 @@
 
 import Foundation
 
-class CatalogRepositoryAPI: RepositoryProtocol {
+class CatalogRepositoryAPI: CatalogRepositoryProtocol {
     var networkAPI: NetworkAPIProtocol?
     var cacheAPI: CacheAPIProtocol?
     
@@ -128,6 +128,6 @@ extension CatalogRepositoryAPI {
             .replacingOccurrences(of: "{width}", with: "400")
             .replacingOccurrences(of: "{height}", with: "500")
 
-        return RepositoryGameModel(id: Int(id), name: name, thumbnail: thumb, isFavorite: nil)
+        return RepositoryGameModel(id: Int(id), name: name, thumbnail: thumb, viewersCount: nil, isFavorite: nil)
     }
 }

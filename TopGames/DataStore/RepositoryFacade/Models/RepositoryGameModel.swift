@@ -10,5 +10,6 @@ struct RepositoryGameModel {
     let id: Int?
     let name: String?
     let thumbnail: String?
+    let viewersCount: Int?
     var isFavorite: Bool?
 }

@@ -18,7 +18,7 @@ import Foundation
 
 import Foundation
 
-class FavoritesRepositoryAPI: RepositoryProtocol {
+class FavoritesRepositoryAPI: CatalogRepositoryProtocol {
     var cacheAPI: CacheAPIProtocol?
     var currentGames = [RepositoryGameModel]()
     
@@ -76,7 +76,7 @@ extension FavoritesRepositoryAPI {
     private func createRepositoryGameModel(fromGameModelCache game: GameModelCache) -> RepositoryGameModel? {
         guard let id = game.id, let name = game.name, let thumb = game.thumbnail else { return nil }
         let intId = Int(id)
-        let game = RepositoryGameModel(id: intId, name: name, thumbnail: thumb, isFavorite: true)
+        let game = RepositoryGameModel(id: intId, name: name, thumbnail: thumb, viewersCount: nil, isFavorite: true)
         return game
     }
 }
