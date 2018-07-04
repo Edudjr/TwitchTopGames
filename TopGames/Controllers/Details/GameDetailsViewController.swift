@@ -23,6 +23,15 @@ class GameDetailsViewController: UIViewController {
     var gameId: String?
     var gameTitle: String?
     var gameThumbnail: String?
+    var isFavorite: Bool? {
+        didSet {
+            if isFavorite! {
+                self.navigationItem.rightBarButtonItem?.image = #imageLiteral(resourceName: "heart_filled")
+            } else {
+                self.navigationItem.rightBarButtonItem?.image = #imageLiteral(resourceName: "heart_outline")
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,13 +50,38 @@ class GameDetailsViewController: UIViewController {
     }
     
     private func setupView() {
-        guard let title = gameTitle, let thumbnail = gameThumbnail else { return }
+        guard let title = gameTitle, let thumbnail = gameThumbnail, let favorite = isFavorite else { return }
         self.title = title
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "heart_outline"), style: .plain, target: self, action: #selector(clickedAtFavorite))
+        isFavorite = favorite
         gameLabel.text = title
         gameUIImage.kf.setImage(with: URL(string: thumbnail), placeholder: #imageLiteral(resourceName: "placeholder"), options: nil, progressBlock: nil) { (image, error, cacheType, url) in
             let percentage = 100 - image!.size.width*100/self.view.frame.width
             let newHeight = image!.size.height*(percentage/100 + 1)
             self.imageHeight.constant = newHeight
+        }
+    }
+    
+    @objc func clickedAtFavorite(sender: Any) {
+        guard let favorite = isFavorite else { return }
+        self.isFavorite = !favorite
+        let game = RepositoryGameModel(id: Int(gameId ?? "0"),
+                                       name: gameTitle,
+                                       thumbnail: gameThumbnail,
+                                       viewersCount: nil,
+                                       isFavorite: favorite)
+        if favorite {
+            repository?.removeFavoriteGame(game, completion: { (success, _) in
+                if success {
+                   self.isFavorite = false
+                }
+            })
+        } else {
+            repository?.addFavoriteGame(game, completion: { (success, _) in
+                if success {
+                    self.isFavorite = true
+                }
+            })
         }
     }
     
