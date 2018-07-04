@@ -1,22 +1,33 @@
 PODS:
   - Alamofire (4.7.2)
+  - Kingfisher (4.8.0)
   - Marshal (1.2.4)
+  - Realm (3.7.4):
+    - Realm/Headers (= 3.7.4)
+  - Realm/Headers (3.7.4)
+  - RealmSwift (3.7.4):
+    - Realm (= 3.7.4)
   - Swinject (2.4.0)
   - SwinjectStoryboard (2.0.1):
     - Swinject (~> 2.4)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
+  - Kingfisher (~> 4.0)
   - Marshal (~> 1.2)
+  - RealmSwift (~> 3.7)
   - Swinject (~> 2.4)
   - SwinjectStoryboard (~> 2.0)
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  Kingfisher: 976d828df2b24834c6a3f2fc4d82cdbd26552be1
   Marshal: 8e04e6624e506921db7143b0bfd83caee03f32d6
+  Realm: a469bb59e33f9926102ccaea4349822c53b9117e
+  RealmSwift: a45861b21c180f5cf0f122144b9759fa8dde3e9e
   Swinject: a1364b0f66c2736bb03c1c7cab54809e16df25da
   SwinjectStoryboard: ad2529218a1504cc888040ee56c13d7cb1cc7998
 
-PODFILE CHECKSUM: e284b5e2cc35617208302e126ae5927f638011d5
+PODFILE CHECKSUM: 0bf720288d56a3e8dab38c6e23c3c8b29e10b6b1
 
 COCOAPODS: 1.4.0

@@ -13,9 +13,9 @@ import SwinjectStoryboard
 @testable import TopGames
 
 class TwitchAPITests: XCTestCase {
-    var api: TwitchAPIProtocol?
-    var emptyApi: TwitchAPIProtocol?
-    var failureApi: TwitchAPIProtocol?
+    var api: NetworkAPIProtocol?
+    var emptyApi: NetworkAPIProtocol?
+    var failureApi: NetworkAPIProtocol?
     
     override func setUp() {
         super.setUp()
@@ -23,27 +23,27 @@ class TwitchAPITests: XCTestCase {
         //Container with successful responses from Mock
         let container = Container()
         container.register(RequestProtocol.self) { _ in MockRequest(responseType: .success) }
-        container.register(TwitchAPIProtocol.self) { r in
+        container.register(NetworkAPIProtocol.self) { r in
             TwitchAPI(provider: r.resolve(RequestProtocol.self)!)
         }
         
         //Container injecting empty responses from Mock
         let containerEmpty = Container()
         containerEmpty.register(RequestProtocol.self) { _ in MockRequest(responseType: .empty) }
-        containerEmpty.register(TwitchAPIProtocol.self) { r in
+        containerEmpty.register(NetworkAPIProtocol.self) { r in
             TwitchAPI(provider: r.resolve(RequestProtocol.self)!)
         }
         
-        //Container injecting empty responses from Mock
+        //Container injecting failure responses from Mock
         let containerFailure = Container()
         containerFailure.register(RequestProtocol.self) { _ in MockRequest(responseType: .failure) }
-        containerFailure.register(TwitchAPIProtocol.self) { r in
+        containerFailure.register(NetworkAPIProtocol.self) { r in
             TwitchAPI(provider: r.resolve(RequestProtocol.self)!)
         }
         
-        api = container.resolve(TwitchAPIProtocol.self)
-        emptyApi = containerEmpty.resolve(TwitchAPIProtocol.self)
-        failureApi = containerFailure.resolve(TwitchAPIProtocol.self)
+        api = container.resolve(NetworkAPIProtocol.self)
+        emptyApi = containerEmpty.resolve(NetworkAPIProtocol.self)
+        failureApi = containerFailure.resolve(NetworkAPIProtocol.self)
     }
     
     override func tearDown() {

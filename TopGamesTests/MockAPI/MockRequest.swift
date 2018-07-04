@@ -21,7 +21,7 @@ class MockRequest: RequestProtocol {
         self.responseType = responseType
     }
     
-    func request(url: String, method: HTTPMethod, params: [String : Any]?, headers: HTTPHeaders?, completion: @escaping (DataResponse<Any>) -> Void) {
+    func request(url: String, method: HTTPMethod, params: [String : String]?, headers: HTTPHeaders?, completion: @escaping (DataResponse<Any>) -> Void) {
         
         //Get curresponding json 'base' filename for url
         var filename = getFilenameFor(url)!
